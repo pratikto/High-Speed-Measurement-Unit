@@ -85,3 +85,6 @@
 !*.elf
 !*.bmm
 !*.xmp
+High Speed Measurement Unit.cache/
+
+High Speed Measurement Unit.runs/
