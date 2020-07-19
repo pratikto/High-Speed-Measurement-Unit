@@ -1,19 +1,346 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x0",
+      "boundary_crc": "0xD376894D60CAF0E9",
       "device": "xc7z020clg400-1",
       "name": "DAQ",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2"
+      "tool_version": "2019.2",
+      "validated": "true"
     },
     "design_tree": {
-      "c_counter_binary_0": ""
+      "c_counter_binary_0": "",
+      "c_counter_binary_1": "",
+      "c_counter_binary_2": "",
+      "c_counter_binary_3": "",
+      "mux4_0": "",
+      "xlconcat_0": "",
+      "xlconcat_1": ""
+    },
+    "ports": {
+      "Z0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "Z1": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "Z2": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "Z3": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "sel0": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortType": {
+            "value": "data",
+            "value_src": "default"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
+      },
+      "sel1": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortType": {
+            "value": "data",
+            "value_src": "default"
+          },
+          "PortType.PROP_SRC": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
+      },
+      "EN": {
+        "type": "ce",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "A0": {
+        "direction": "I"
+      },
+      "A1": {
+        "direction": "I"
+      },
+      "A2": {
+        "direction": "I"
+      },
+      "A3": {
+        "direction": "I"
+      }
     },
     "components": {
       "c_counter_binary_0": {
         "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_0_0"
+        "xci_name": "DAQ_c_counter_binary_0_0",
+        "parameters": {
+          "CE": {
+            "value": "true"
+          },
+          "Implementation": {
+            "value": "DSP48"
+          },
+          "Output_Width": {
+            "value": "15"
+          },
+          "SCLR": {
+            "value": "true"
+          }
+        }
+      },
+      "c_counter_binary_1": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "DAQ_c_counter_binary_0_1",
+        "parameters": {
+          "CE": {
+            "value": "true"
+          },
+          "Implementation": {
+            "value": "DSP48"
+          },
+          "Output_Width": {
+            "value": "15"
+          },
+          "SCLR": {
+            "value": "true"
+          }
+        }
+      },
+      "c_counter_binary_2": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "DAQ_c_counter_binary_0_2",
+        "parameters": {
+          "CE": {
+            "value": "true"
+          },
+          "Implementation": {
+            "value": "DSP48"
+          },
+          "Output_Width": {
+            "value": "15"
+          },
+          "SCLR": {
+            "value": "true"
+          }
+        }
+      },
+      "c_counter_binary_3": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "DAQ_c_counter_binary_0_3",
+        "parameters": {
+          "CE": {
+            "value": "true"
+          },
+          "Implementation": {
+            "value": "DSP48"
+          },
+          "Output_Width": {
+            "value": "15"
+          },
+          "SCLR": {
+            "value": "true"
+          }
+        }
+      },
+      "mux4_0": {
+        "vlnv": "xilinx.com:module_ref:mux4:1.0",
+        "xci_name": "DAQ_mux4_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I",
+            "left": "3",
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "4",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "2",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "b": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconcat_1": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_1_0"
+      }
+    },
+    "nets": {
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "mux4_0/a"
+        ]
+      },
+      "Z0_1": {
+        "ports": [
+          "Z0",
+          "xlconcat_0/In0"
+        ]
+      },
+      "Z1_1": {
+        "ports": [
+          "Z1",
+          "xlconcat_0/In1"
+        ]
+      },
+      "Z2_1": {
+        "ports": [
+          "Z2",
+          "xlconcat_0/In2"
+        ]
+      },
+      "Z3_1": {
+        "ports": [
+          "Z3",
+          "xlconcat_0/In3"
+        ]
+      },
+      "sel1_1": {
+        "ports": [
+          "sel1",
+          "xlconcat_1/In1"
+        ]
+      },
+      "sel0_1": {
+        "ports": [
+          "sel0",
+          "xlconcat_1/In0"
+        ]
+      },
+      "xlconcat_1_dout": {
+        "ports": [
+          "xlconcat_1/dout",
+          "mux4_0/sel"
+        ]
+      },
+      "EN_1": {
+        "ports": [
+          "EN",
+          "c_counter_binary_0/CE",
+          "c_counter_binary_1/CE",
+          "c_counter_binary_3/CE",
+          "c_counter_binary_2/CE"
+        ]
+      },
+      "mux4_0_b": {
+        "ports": [
+          "mux4_0/b",
+          "c_counter_binary_2/SCLR",
+          "c_counter_binary_3/SCLR",
+          "c_counter_binary_1/SCLR",
+          "c_counter_binary_0/SCLR"
+        ]
+      },
+      "A0_1": {
+        "ports": [
+          "A0",
+          "c_counter_binary_0/CLK"
+        ]
+      },
+      "A1_1": {
+        "ports": [
+          "A1",
+          "c_counter_binary_1/CLK"
+        ]
+      },
+      "A2_1": {
+        "ports": [
+          "A2",
+          "c_counter_binary_2/CLK"
+        ]
+      },
+      "A3_1": {
+        "ports": [
+          "A3",
+          "c_counter_binary_3/CLK"
+        ]
       }
     }
   }
