@@ -10,8 +10,8 @@ end mux4;
 architecture rtl of mux4 is
   -- declarative part: empty
 begin
-  b <= a(1) when (sel = "00") else
-       a(2) when (sel = "01") else
-       a(3) when (sel = "10") else
-       a(4);
+  b <= a(0) when (sel = "00") else
+       a(1) when (sel = "01") else
+       a(2) when (sel = "10") else
+       a(3);
 end rtl;
