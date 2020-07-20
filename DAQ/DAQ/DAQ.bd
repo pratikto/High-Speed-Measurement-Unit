@@ -5,27 +5,22 @@
       "device": "xc7z020clg400-1",
       "name": "DAQ",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2",
-      "validated": "true"
+      "tool_version": "2019.2"
     },
     "design_tree": {
       "c_counter_binary_0": "",
       "c_counter_binary_1": "",
       "c_counter_binary_2": "",
       "c_counter_binary_3": "",
-      "mux4_0": "",
       "xlconcat_0": "",
-      "xlconcat_1": ""
+      "xlconcat_1": "",
+      "mux4_0": ""
     },
     "ports": {
       "Z0": {
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -35,10 +30,6 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -48,10 +39,6 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -61,10 +48,6 @@
         "type": "rst",
         "direction": "I",
         "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -72,39 +55,11 @@
       },
       "sel0": {
         "type": "data",
-        "direction": "I",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          },
-          "PortType": {
-            "value": "data",
-            "value_src": "default"
-          },
-          "PortType.PROP_SRC": {
-            "value": "false",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "sel1": {
         "type": "data",
-        "direction": "I",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          },
-          "PortType": {
-            "value": "data",
-            "value_src": "default"
-          },
-          "PortType.PROP_SRC": {
-            "value": "false",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "EN": {
         "type": "ce",
@@ -201,42 +156,6 @@
           }
         }
       },
-      "mux4_0": {
-        "vlnv": "xilinx.com:module_ref:mux4:1.0",
-        "xci_name": "DAQ_mux4_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "mux4",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "a": {
-            "direction": "I",
-            "left": "3",
-            "right": "0",
-            "parameters": {
-              "PortWidth": {
-                "value": "4",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "sel": {
-            "direction": "I",
-            "left": "1",
-            "right": "0",
-            "parameters": {
-              "PortWidth": {
-                "value": "2",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "b": {
-            "direction": "O"
-          }
-        }
-      },
       "xlconcat_0": {
         "vlnv": "xilinx.com:ip:xlconcat:2.1",
         "xci_name": "DAQ_xlconcat_0_0",
@@ -249,6 +168,30 @@
       "xlconcat_1": {
         "vlnv": "xilinx.com:ip:xlconcat:2.1",
         "xci_name": "DAQ_xlconcat_1_0"
+      },
+      "mux4_0": {
+        "vlnv": "xilinx.com:module_ref:mux4:1.0",
+        "xci_name": "DAQ_mux4_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux4",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "sel": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "b": {
+            "direction": "O"
+          }
+        }
       }
     },
     "nets": {

@@ -1,44 +1,44 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.977333",
-   "Default View_TopLeft":"-504,120",
+   "Default View_TopLeft":"-178,395",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port Z0 -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
-preplace port Z1 -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
-preplace port Z2 -pg 1 -lvl 0 -x 0 -y 570 -defaultsOSRD
-preplace port Z3 -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
-preplace port sel0 -pg 1 -lvl 0 -x 0 -y 400 -defaultsOSRD
-preplace port sel1 -pg 1 -lvl 0 -x 0 -y 430 -defaultsOSRD
-preplace port EN -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
-preplace port A0 -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
-preplace port A1 -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
-preplace port A2 -pg 1 -lvl 0 -x 0 -y 650 -defaultsOSRD
-preplace port A3 -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
-preplace inst c_counter_binary_0 -pg 1 -lvl 3 -x 480 -y 80 -defaultsOSRD
-preplace inst c_counter_binary_1 -pg 1 -lvl 3 -x 480 -y 220 -defaultsOSRD
-preplace inst c_counter_binary_2 -pg 1 -lvl 3 -x 480 -y 670 -defaultsOSRD
-preplace inst c_counter_binary_3 -pg 1 -lvl 3 -x 480 -y 360 -defaultsOSRD
-preplace inst mux4_0 -pg 1 -lvl 2 -x 290 -y 410 -defaultsOSRD
+preplace port Z0 -pg 1 -lvl 0 -x -10 -y 510 -defaultsOSRD
+preplace port Z1 -pg 1 -lvl 0 -x -10 -y 540 -defaultsOSRD
+preplace port Z2 -pg 1 -lvl 0 -x -10 -y 570 -defaultsOSRD
+preplace port Z3 -pg 1 -lvl 0 -x -10 -y 600 -defaultsOSRD
+preplace port sel0 -pg 1 -lvl 0 -x -10 -y 400 -defaultsOSRD
+preplace port sel1 -pg 1 -lvl 0 -x -10 -y 430 -defaultsOSRD
+preplace port EN -pg 1 -lvl 0 -x -10 -y 230 -defaultsOSRD
+preplace port A0 -pg 1 -lvl 0 -x -10 -y 60 -defaultsOSRD
+preplace port A1 -pg 1 -lvl 0 -x -10 -y 200 -defaultsOSRD
+preplace port A2 -pg 1 -lvl 0 -x -10 -y 650 -defaultsOSRD
+preplace port A3 -pg 1 -lvl 0 -x -10 -y 340 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 3 -x 500 -y 80 -defaultsOSRD
+preplace inst c_counter_binary_1 -pg 1 -lvl 3 -x 500 -y 220 -defaultsOSRD
+preplace inst c_counter_binary_2 -pg 1 -lvl 3 -x 500 -y 670 -defaultsOSRD
+preplace inst c_counter_binary_3 -pg 1 -lvl 3 -x 500 -y 360 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 1 -x 110 -y 560 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 1 -x 110 -y 420 -defaultsOSRD
+preplace inst mux4_0 -pg 1 -lvl 2 -x 300 -y 410 -defaultsOSRD
 preplace netloc xlconcat_0_dout 1 1 1 200 400n
-preplace netloc Z0_1 1 0 1 20J 510n
-preplace netloc Z1_1 1 0 1 20J 540n
+preplace netloc Z0_1 1 0 1 10J 510n
+preplace netloc Z1_1 1 0 1 10J 540n
 preplace netloc Z2_1 1 0 1 NJ 570
-preplace netloc Z3_1 1 0 1 20J 590n
+preplace netloc Z3_1 1 0 1 10J 590n
 preplace netloc sel1_1 1 0 1 NJ 430
-preplace netloc sel0_1 1 0 1 20J 400n
+preplace netloc sel0_1 1 0 1 10J 400n
 preplace netloc xlconcat_1_dout 1 1 1 N 420
-preplace netloc EN_1 1 0 3 NJ 230 NJ 230 380
-preplace netloc mux4_0_b 1 2 1 390 100n
+preplace netloc EN_1 1 0 3 NJ 230 NJ 230 390
+preplace netloc mux4_0_b 1 2 1 400 100n
 preplace netloc A0_1 1 0 3 NJ 60 NJ 60 NJ
 preplace netloc A1_1 1 0 3 NJ 200 NJ 200 NJ
 preplace netloc A2_1 1 0 3 NJ 650 NJ 650 NJ
 preplace netloc A3_1 1 0 3 NJ 340 NJ 340 NJ
-levelinfo -pg 1 0 110 290 480 580
-pagesize -pg 1 -db -bbox -sgen -80 0 580 750
+levelinfo -pg 1 -10 110 300 500 600
+pagesize -pg 1 -db -bbox -sgen -90 -20 600 750
 "
 }
 0
