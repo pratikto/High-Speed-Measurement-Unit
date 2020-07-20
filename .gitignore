@@ -85,6 +85,16 @@
 !*.elf
 !*.bmm
 !*.xmp
+#########
+#Document-files
+#########
+!*.pdf
+!*.doc
+!*.docx
+!*.vsdx
+!*.png
+!*.jpg
+
 High Speed Measurement Unit.cache/
 
 High Speed Measurement Unit.runs/
