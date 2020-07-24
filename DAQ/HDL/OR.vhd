@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07/19/2020 10:16:53 AM
+-- Create Date: 07/24/2020 02:20:10 PM
 -- Design Name: 
--- Module Name: Differential - Behavioral
+-- Module Name: OR - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -21,7 +21,6 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -32,19 +31,13 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Differential is
-    Port ( Count0   : in STD_LOGIC_VECTOR (15 downto 0);
-           Count1   : in STD_LOGIC_VECTOR (15 downto 0);
-           Count2   : in STD_LOGIC_VECTOR (15 downto 0);
-           Count3   : in STD_LOGIC_VECTOR (15 downto 0);
-           sel      : in STD_LOGIC_VECTOR (1 downto 0);
-           result0  : in STD_LOGIC_VECTOR (15 downto 0);
-           result1  : in STD_LOGIC_VECTOR (15 downto 0);
-           result2  : in STD_LOGIC_VECTOR (15 downto 0);
-           result3  : in STD_LOGIC_VECTOR (15 downto 0));
-end Differential;
+entity OR is
+    Port ( X : in STD_LOGIC;
+           Y : in STD_LOGIC;
+           Z : out STD_LOGIC);
+end OR;
 
-architecture Behavioral of Differential is
+architecture Behavioral of OR is
 
 begin
 
