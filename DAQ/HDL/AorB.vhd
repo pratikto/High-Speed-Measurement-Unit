@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07/24/2020 02:20:10 PM
+-- Create Date: 07/24/2020 02:23:26 PM
 -- Design Name: 
--- Module Name: OR - Behavioral
+-- Module Name: AorB - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,15 +31,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity OR is
-    Port ( X : in STD_LOGIC;
-           Y : in STD_LOGIC;
-           Z : out STD_LOGIC);
-end OR;
+entity AorB is
+    Port ( A : in STD_LOGIC;
+           B : in STD_LOGIC;
+           C : out STD_LOGIC);
+end AorB;
 
-architecture Behavioral of OR is
+architecture Behavioral of AorB is
 
 begin
-
+    C <= A or B;
 
 end Behavioral;
