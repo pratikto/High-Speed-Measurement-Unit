@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 07/27/2020 06:15:26 AM
 -- Design Name: 
--- Module Name: counter_testbench - Behavioral
+-- Module Name: DAQ_testbench - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,12 +31,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity counter_testbench is
+entity DAQ_testbench is
 --  Port ( );
-end counter_testbench;
+end DAQ_testbench;
 
-architecture Behavioral of counter_testbench is
-component counter_wrapper
+architecture Behavioral of DAQ_testbench is
+component DAQ_wrapper
     port(
     CountRef : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -106,7 +106,7 @@ end component;
     constant Aclk : time := 1ps;
 
 begin
-    UUT : counter_wrapper port map(
+    UUT : DAQ_wrapper port map(
         Q0 => Q0,
         Q1 => Q1,
         Q2 => Q2,
@@ -167,9 +167,9 @@ begin
     clk2_stimulus : process
     begin
         A(2) <= '0';
-        wait for Aclk*256;        
+        wait for Aclk*4;        
         A(2) <= '1';
-        wait for Aclk;          
+        wait for Aclk*4;          
     end process;  
     
     clk3_stimulus : process
