@@ -1,0 +1,105 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.491946",
+   "Default View_TopLeft":"-1248,89",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port cout0 -pg 1 -lvl 5 -x 1200 -y 160 -defaultsOSRD
+preplace port cout1 -pg 1 -lvl 5 -x 1200 -y 340 -defaultsOSRD
+preplace port cout2 -pg 1 -lvl 5 -x 1200 -y 520 -defaultsOSRD
+preplace port cout3 -pg 1 -lvl 5 -x 1200 -y 720 -defaultsOSRD
+preplace port cout4 -pg 1 -lvl 5 -x 1200 -y 890 -defaultsOSRD
+preplace port cout5 -pg 1 -lvl 5 -x 1200 -y 1060 -defaultsOSRD
+preplace port cout6 -pg 1 -lvl 5 -x 1200 -y 1230 -defaultsOSRD
+preplace port cout7 -pg 1 -lvl 5 -x 1200 -y 1400 -defaultsOSRD
+preplace portBus Q0 -pg 1 -lvl 5 -x 1200 -y 60 -defaultsOSRD
+preplace portBus Q1 -pg 1 -lvl 5 -x 1200 -y 240 -defaultsOSRD
+preplace portBus Q2 -pg 1 -lvl 5 -x 1200 -y 420 -defaultsOSRD
+preplace portBus Q3 -pg 1 -lvl 5 -x 1200 -y 620 -defaultsOSRD
+preplace portBus sel -pg 1 -lvl 0 -x -40 -y 1160 -defaultsOSRD
+preplace portBus Q4 -pg 1 -lvl 5 -x 1200 -y 790 -defaultsOSRD
+preplace portBus Q5 -pg 1 -lvl 5 -x 1200 -y 960 -defaultsOSRD
+preplace portBus Q6 -pg 1 -lvl 5 -x 1200 -y 1130 -defaultsOSRD
+preplace portBus Q7 -pg 1 -lvl 5 -x 1200 -y 1300 -defaultsOSRD
+preplace portBus Z -pg 1 -lvl 0 -x -40 -y 1130 -defaultsOSRD
+preplace portBus CountRef -pg 1 -lvl 5 -x 1200 -y 1520 -defaultsOSRD
+preplace portBus diff0 -pg 1 -lvl 5 -x 1200 -y 130 -defaultsOSRD
+preplace portBus diff1 -pg 1 -lvl 5 -x 1200 -y 310 -defaultsOSRD
+preplace portBus diff2 -pg 1 -lvl 5 -x 1200 -y 480 -defaultsOSRD
+preplace portBus diff3 -pg 1 -lvl 5 -x 1200 -y 690 -defaultsOSRD
+preplace portBus diff4 -pg 1 -lvl 5 -x 1200 -y 860 -defaultsOSRD
+preplace portBus diff5 -pg 1 -lvl 5 -x 1200 -y 1030 -defaultsOSRD
+preplace portBus diff6 -pg 1 -lvl 5 -x 1200 -y 1200 -defaultsOSRD
+preplace portBus diff7 -pg 1 -lvl 5 -x 1200 -y 1370 -defaultsOSRD
+preplace portBus A -pg 1 -lvl 0 -x -40 -y 1190 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 2 -x 300 -y 200 -defaultsOSRD
+preplace inst c_counter_binary_1 -pg 1 -lvl 2 -x 300 -y 320 -defaultsOSRD
+preplace inst c_counter_binary_2 -pg 1 -lvl 2 -x 300 -y 440 -defaultsOSRD
+preplace inst c_counter_binary_3 -pg 1 -lvl 2 -x 300 -y 560 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x 90 -y 190 -defaultsOSRD
+preplace inst c_counter_binary_4 -pg 1 -lvl 2 -x 300 -y 690 -defaultsOSRD
+preplace inst c_counter_binary_5 -pg 1 -lvl 2 -x 300 -y 820 -defaultsOSRD
+preplace inst c_counter_binary_6 -pg 1 -lvl 2 -x 300 -y 940 -defaultsOSRD
+preplace inst c_counter_binary_7 -pg 1 -lvl 2 -x 300 -y 1060 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 1 -x 90 -y 670 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 1 -x 90 -y 810 -defaultsOSRD
+preplace inst xlslice_6 -pg 1 -lvl 1 -x 90 -y 930 -defaultsOSRD
+preplace inst xlslice_7 -pg 1 -lvl 1 -x 90 -y 1030 -defaultsOSRD
+preplace inst mux8to1_0 -pg 1 -lvl 1 -x 90 -y 1140 -defaultsOSRD
+preplace inst CounterMux_0 -pg 1 -lvl 3 -x 610 -y 1440 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 610 -y 1240 -defaultsOSRD
+preplace inst KSAddSubb_0 -pg 1 -lvl 4 -x 940 -y 140 -defaultsOSRD
+preplace inst KSAddSubb_1 -pg 1 -lvl 4 -x 940 -y 320 -defaultsOSRD
+preplace inst KSAddSubb_2 -pg 1 -lvl 4 -x 940 -y 500 -defaultsOSRD
+preplace inst KSAddSubb_3 -pg 1 -lvl 4 -x 940 -y 700 -defaultsOSRD
+preplace inst KSAddSubb_4 -pg 1 -lvl 4 -x 940 -y 870 -defaultsOSRD
+preplace inst KSAddSubb_5 -pg 1 -lvl 4 -x 940 -y 1040 -defaultsOSRD
+preplace inst KSAddSubb_6 -pg 1 -lvl 4 -x 940 -y 1210 -defaultsOSRD
+preplace inst KSAddSubb_7 -pg 1 -lvl 4 -x 940 -y 1380 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 1 -x 90 -y 550 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 1 -x 90 -y 430 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -x 90 -y 310 -defaultsOSRD
+preplace netloc clk_1 1 0 1 -20 190n
+preplace netloc xlslice_0_Dout 1 1 1 NJ 190
+preplace netloc c_counter_binary_0_Q 1 2 3 470 140 750 60 N
+preplace netloc c_counter_binary_2_Q 1 2 3 450 440 790 420 N
+preplace netloc xlslice_4_Dout 1 1 1 NJ 670
+preplace netloc xlslice_5_Dout 1 1 1 NJ 810
+preplace netloc xlslice_6_Dout 1 1 1 NJ 930
+preplace netloc xlslice_7_Dout 1 1 1 190J 1030n
+preplace netloc c_counter_binary_5_Q 1 2 3 420 960 750 960 N
+preplace netloc c_counter_binary_6_Q 1 2 3 410 1130 750 1130 N
+preplace netloc c_counter_binary_7_Q 1 2 3 400 1300 750 1300 N
+preplace netloc Z_1 1 0 1 NJ 1130
+preplace netloc mux8to1_0_b 1 1 1 210 210n
+preplace netloc CounterMux_0_countRef 1 3 2 760 1520 N
+preplace netloc sel_1 1 0 3 -10 870 200J 1130 390
+preplace netloc c_counter_binary_1_Q 1 2 3 460 320 770 240 N
+preplace netloc c_counter_binary_3_Q 1 2 3 440 620 790 620 N
+preplace netloc c_counter_binary_4_Q 1 2 3 430 790 770 790 N
+preplace netloc xlconstant_0_dout 1 3 1 780 160n
+preplace netloc KSAddSubb_0_sum 1 4 1 N 130
+preplace netloc KSAddSubb_1_sum 1 4 1 N 310
+preplace netloc KSAddSubb_2_sum 1 4 1 1050 480n
+preplace netloc KSAddSubb_3_sum 1 4 1 N 690
+preplace netloc KSAddSubb_4_sum 1 4 1 N 860
+preplace netloc KSAddSubb_5_sum 1 4 1 N 1030
+preplace netloc KSAddSubb_0_cout 1 4 1 1050 150n
+preplace netloc KSAddSubb_1_cout 1 4 1 1050 330n
+preplace netloc KSAddSubb_2_cout 1 4 1 1050 510n
+preplace netloc KSAddSubb_3_cout 1 4 1 1050 710n
+preplace netloc KSAddSubb_4_cout 1 4 1 1050 880n
+preplace netloc KSAddSubb_5_cout 1 4 1 1050 1050n
+preplace netloc KSAddSubb_7_cout 1 4 1 1050 1390n
+preplace netloc KSAddSubb_7_sum 1 4 1 N 1370
+preplace netloc KSAddSubb_6_sum 1 4 1 N 1200
+preplace netloc KSAddSubb_6_cout 1 4 1 1050 1220n
+preplace netloc xlslice_3_Dout 1 1 1 NJ 550
+preplace netloc xlslice_2_Dout 1 1 1 NJ 430
+preplace netloc xlslice_1_Dout 1 1 1 NJ 310
+levelinfo -pg 1 -40 90 300 610 940 1200
+pagesize -pg 1 -db -bbox -sgen -140 -30 1350 1580
+"
+}
+

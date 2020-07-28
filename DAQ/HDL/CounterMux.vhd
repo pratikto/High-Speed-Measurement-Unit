@@ -32,16 +32,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity CounterMux is
-    Port ( count0 : in STD_LOGIC_VECTOR (14 downto 0);
-           count1 : in STD_LOGIC_VECTOR (14 downto 0);
-           count2 : in STD_LOGIC_VECTOR (14 downto 0);
-           count3 : in STD_LOGIC_VECTOR (14 downto 0);
-           count4 : in STD_LOGIC_VECTOR (14 downto 0);
-           count5 : in STD_LOGIC_VECTOR (14 downto 0);
-           count6 : in STD_LOGIC_VECTOR (14 downto 0);
-           count7 : in STD_LOGIC_VECTOR (14 downto 0);
+    Port ( count0 : in STD_LOGIC_VECTOR (15 downto 0);
+           count1 : in STD_LOGIC_VECTOR (15 downto 0);
+           count2 : in STD_LOGIC_VECTOR (15 downto 0);
+           count3 : in STD_LOGIC_VECTOR (15 downto 0);
+           count4 : in STD_LOGIC_VECTOR (15 downto 0);
+           count5 : in STD_LOGIC_VECTOR (15 downto 0);
+           count6 : in STD_LOGIC_VECTOR (15 downto 0);
+           count7 : in STD_LOGIC_VECTOR (15 downto 0);
            sel : in STD_LOGIC_VECTOR (2 downto 0);
-           countRef : out STD_LOGIC_VECTOR (14 downto 0));
+           countRef : out STD_LOGIC_VECTOR (15 downto 0));
 end CounterMux;
 
 architecture Behavioral of CounterMux is
