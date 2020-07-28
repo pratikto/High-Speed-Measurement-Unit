@@ -2,198 +2,262 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="DAQ" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1595924321"/>
-    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1595924321"/>
-    <Generation Name="SIMULATION" State="STALE" Timestamp="1595924321"/>
-    <Generation Name="HW_HANDOFF" State="STALE" Timestamp="1595924321"/>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1595926606"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1595926606"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1595926611"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1595926611"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\counter_c_counter_binary_0_0\counter_c_counter_binary_0_0.xci" Type="IP">
+      <File Name="ip\DAQ_c_counter_binary_0_0\DAQ_c_counter_binary_0_0.xci" Type="IP">
+        <Instance HierarchyPath="c_counter_binary_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_c_counter_binary_1_0\counter_c_counter_binary_1_0.xci" Type="IP">
+      <File Name="ip\DAQ_c_counter_binary_1_0\DAQ_c_counter_binary_1_0.xci" Type="IP">
+        <Instance HierarchyPath="c_counter_binary_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_c_counter_binary_2_0\counter_c_counter_binary_2_0.xci" Type="IP">
+      <File Name="ip\DAQ_c_counter_binary_2_0\DAQ_c_counter_binary_2_0.xci" Type="IP">
+        <Instance HierarchyPath="c_counter_binary_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_c_counter_binary_3_0\counter_c_counter_binary_3_0.xci" Type="IP">
+      <File Name="ip\DAQ_c_counter_binary_3_0\DAQ_c_counter_binary_3_0.xci" Type="IP">
+        <Instance HierarchyPath="c_counter_binary_3"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_xlslice_0_0\counter_xlslice_0_0.xci" Type="IP">
+      <File Name="ip\DAQ_xlslice_0_0\DAQ_xlslice_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_c_counter_binary_4_0\counter_c_counter_binary_4_0.xci" Type="IP">
+      <File Name="ip\DAQ_c_counter_binary_4_0\DAQ_c_counter_binary_4_0.xci" Type="IP">
+        <Instance HierarchyPath="c_counter_binary_4"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_c_counter_binary_5_0\counter_c_counter_binary_5_0.xci" Type="IP">
+      <File Name="ip\DAQ_c_counter_binary_5_0\DAQ_c_counter_binary_5_0.xci" Type="IP">
+        <Instance HierarchyPath="c_counter_binary_5"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_c_counter_binary_6_0\counter_c_counter_binary_6_0.xci" Type="IP">
+      <File Name="ip\DAQ_c_counter_binary_6_0\DAQ_c_counter_binary_6_0.xci" Type="IP">
+        <Instance HierarchyPath="c_counter_binary_6"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_c_counter_binary_7_0\counter_c_counter_binary_7_0.xci" Type="IP">
+      <File Name="ip\DAQ_c_counter_binary_7_0\DAQ_c_counter_binary_7_0.xci" Type="IP">
+        <Instance HierarchyPath="c_counter_binary_7"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_xlslice_4_0\counter_xlslice_4_0.xci" Type="IP">
+      <File Name="ip\DAQ_xlslice_4_0\DAQ_xlslice_4_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_4"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_xlslice_5_0\counter_xlslice_5_0.xci" Type="IP">
+      <File Name="ip\DAQ_xlslice_5_0\DAQ_xlslice_5_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_5"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_xlslice_6_0\counter_xlslice_6_0.xci" Type="IP">
+      <File Name="ip\DAQ_xlslice_6_0\DAQ_xlslice_6_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_6"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_xlslice_7_0\counter_xlslice_7_0.xci" Type="IP">
+      <File Name="ip\DAQ_xlslice_7_0\DAQ_xlslice_7_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_7"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_mux8to1_0_0\counter_mux8to1_0_0.xci" Type="IP">
+      <File Name="ip\DAQ_mux8to1_0_0\DAQ_mux8to1_0_0.xci" Type="IP">
+        <Instance HierarchyPath="mux8to1_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_CounterMux_0_0\counter_CounterMux_0_0.xci" Type="IP">
+      <File Name="ip\DAQ_CounterMux_0_0\DAQ_CounterMux_0_0.xci" Type="IP">
+        <Instance HierarchyPath="CounterMux_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_xlconstant_0_0\counter_xlconstant_0_0.xci" Type="IP">
+      <File Name="ip\DAQ_xlconstant_0_0\DAQ_xlconstant_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconstant_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_KSAddSubb_0_0\counter_KSAddSubb_0_0.xci" Type="IP">
+      <File Name="ip\DAQ_KSAddSubb_0_0\DAQ_KSAddSubb_0_0.xci" Type="IP">
+        <Instance HierarchyPath="KSAddSubb_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_KSAddSubb_1_0\counter_KSAddSubb_1_0.xci" Type="IP">
+      <File Name="ip\DAQ_KSAddSubb_1_0\DAQ_KSAddSubb_1_0.xci" Type="IP">
+        <Instance HierarchyPath="KSAddSubb_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_KSAddSubb_2_0\counter_KSAddSubb_2_0.xci" Type="IP">
+      <File Name="ip\DAQ_KSAddSubb_2_0\DAQ_KSAddSubb_2_0.xci" Type="IP">
+        <Instance HierarchyPath="KSAddSubb_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_KSAddSubb_3_0\counter_KSAddSubb_3_0.xci" Type="IP">
+      <File Name="ip\DAQ_KSAddSubb_3_0\DAQ_KSAddSubb_3_0.xci" Type="IP">
+        <Instance HierarchyPath="KSAddSubb_3"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_KSAddSubb_4_0\counter_KSAddSubb_4_0.xci" Type="IP">
+      <File Name="ip\DAQ_KSAddSubb_4_0\DAQ_KSAddSubb_4_0.xci" Type="IP">
+        <Instance HierarchyPath="KSAddSubb_4"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_KSAddSubb_5_0\counter_KSAddSubb_5_0.xci" Type="IP">
+      <File Name="ip\DAQ_KSAddSubb_5_0\DAQ_KSAddSubb_5_0.xci" Type="IP">
+        <Instance HierarchyPath="KSAddSubb_5"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_KSAddSubb_6_0\counter_KSAddSubb_6_0.xci" Type="IP">
+      <File Name="ip\DAQ_KSAddSubb_6_0\DAQ_KSAddSubb_6_0.xci" Type="IP">
+        <Instance HierarchyPath="KSAddSubb_6"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_KSAddSubb_7_0\counter_KSAddSubb_7_0.xci" Type="IP">
+      <File Name="ip\DAQ_KSAddSubb_7_0\DAQ_KSAddSubb_7_0.xci" Type="IP">
+        <Instance HierarchyPath="KSAddSubb_7"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_xlslice_3_0\counter_xlslice_3_0.xci" Type="IP">
+      <File Name="ip\DAQ_xlslice_3_0\DAQ_xlslice_3_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_3"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_xlslice_2_0\counter_xlslice_2_0.xci" Type="IP">
+      <File Name="ip\DAQ_xlslice_2_0\DAQ_xlslice_2_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_2"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\counter_xlslice_1_0\counter_xlslice_1_0.xci" Type="IP">
+      <File Name="ip\DAQ_xlslice_1_0\DAQ_xlslice_1_0.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth\DAQ.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+      </File>
+      <File Name="sim\DAQ.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="DAQ_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+      </File>
+      <File Name="hw_handoff\DAQ.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="hw_handoff\DAQ_bd.tcl">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="synth\DAQ.hwdef">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+      </File>
+      <File Name="sim\DAQ.protoinst">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
     </FileCollection>
