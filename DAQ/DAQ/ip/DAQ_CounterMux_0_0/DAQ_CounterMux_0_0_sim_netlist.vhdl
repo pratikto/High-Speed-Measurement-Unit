@@ -1,9 +1,9 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Fri Jul 24 14:54:54 2020
+-- Date        : Wed Jul 29 09:26:44 2020
 -- Host        : CNB406-TT081 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {c:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
+-- Command     : write_vhdl -force -mode funcsim {C:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 --               Unit/DAQ/DAQ/ip/DAQ_CounterMux_0_0/DAQ_CounterMux_0_0_sim_netlist.vhdl}
 -- Design      : DAQ_CounterMux_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
@@ -16,16 +16,16 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity DAQ_CounterMux_0_0 is
   port (
-    count0 : in STD_LOGIC_VECTOR ( 14 downto 0 );
-    count1 : in STD_LOGIC_VECTOR ( 14 downto 0 );
-    count2 : in STD_LOGIC_VECTOR ( 14 downto 0 );
-    count3 : in STD_LOGIC_VECTOR ( 14 downto 0 );
-    count4 : in STD_LOGIC_VECTOR ( 14 downto 0 );
-    count5 : in STD_LOGIC_VECTOR ( 14 downto 0 );
-    count6 : in STD_LOGIC_VECTOR ( 14 downto 0 );
-    count7 : in STD_LOGIC_VECTOR ( 14 downto 0 );
+    count0 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    count1 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    count2 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    count3 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    count4 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    count5 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    count6 : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    count7 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     sel : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    countRef : out STD_LOGIC_VECTOR ( 14 downto 0 )
+    countRef : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of DAQ_CounterMux_0_0 : entity is true;
@@ -52,6 +52,8 @@ architecture STRUCTURE of DAQ_CounterMux_0_0 is
   signal \countRef[13]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \countRef[14]_INST_0_i_1_n_0\ : STD_LOGIC;
   signal \countRef[14]_INST_0_i_2_n_0\ : STD_LOGIC;
+  signal \countRef[15]_INST_0_i_1_n_0\ : STD_LOGIC;
+  signal \countRef[15]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \countRef[1]_INST_0_i_1_n_0\ : STD_LOGIC;
   signal \countRef[1]_INST_0_i_2_n_0\ : STD_LOGIC;
   signal \countRef[2]_INST_0_i_1_n_0\ : STD_LOGIC;
@@ -268,6 +270,39 @@ begin
       I4 => sel(0),
       I5 => count4(14),
       O => \countRef[14]_INST_0_i_2_n_0\
+    );
+\countRef[15]_INST_0\: unisim.vcomponents.MUXF7
+     port map (
+      I0 => \countRef[15]_INST_0_i_1_n_0\,
+      I1 => \countRef[15]_INST_0_i_2_n_0\,
+      O => countRef(15),
+      S => sel(2)
+    );
+\countRef[15]_INST_0_i_1\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AFA0CFCFAFA0C0C0"
+    )
+        port map (
+      I0 => count3(15),
+      I1 => count2(15),
+      I2 => sel(1),
+      I3 => count1(15),
+      I4 => sel(0),
+      I5 => count0(15),
+      O => \countRef[15]_INST_0_i_1_n_0\
+    );
+\countRef[15]_INST_0_i_2\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"AFA0CFCFAFA0C0C0"
+    )
+        port map (
+      I0 => count7(15),
+      I1 => count6(15),
+      I2 => sel(1),
+      I3 => count5(15),
+      I4 => sel(0),
+      I5 => count4(15),
+      O => \countRef[15]_INST_0_i_2_n_0\
     );
 \countRef[1]_INST_0\: unisim.vcomponents.MUXF7
      port map (

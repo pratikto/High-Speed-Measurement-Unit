@@ -1,65 +1,89 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2B49AB25934E04EA",
+      "boundary_crc": "0xCE657423C5641438",
       "device": "xc7z020clg400-1",
       "name": "DAQ",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2"
+      "tool_version": "2019.2",
+      "validated": "true"
     },
     "design_tree": {
-      "c_counter_binary_0": "",
-      "c_counter_binary_1": "",
-      "c_counter_binary_2": "",
-      "c_counter_binary_3": "",
-      "c_counter_binary_4": "",
       "xlslice_0": "",
-      "xlslice_1": "",
-      "xlslice_2": "",
-      "xlslice_3": "",
       "xlslice_4": "",
-      "c_addsub_0": "",
-      "c_addsub_1": "",
-      "c_addsub_2": "",
-      "c_addsub_3": "",
-      "c_addsub_4": "",
-      "CounterMux_0": "",
-      "c_counter_binary_5": "",
       "xlslice_5": "",
-      "c_counter_binary_6": "",
       "xlslice_6": "",
-      "c_counter_binary_7": "",
       "xlslice_7": "",
-      "c_addsub_5": "",
-      "c_addsub_6": "",
-      "c_addsub_7": "",
-      "decoder3to8_0": "",
-      "xlslice_8": "",
-      "xlslice_9": "",
-      "xlslice_10": "",
-      "xlslice_11": "",
-      "xlslice_12": "",
-      "xlslice_13": "",
-      "xlslice_14": "",
-      "xlslice_15": "",
-      "AorB_0": "",
-      "AorB_1": "",
-      "AorB_2": "",
-      "AorB_3": "",
-      "AorB_4": "",
-      "AorB_5": "",
-      "AorB_6": "",
-      "AorB_7": "",
-      "mux4_0": "",
-      "mux4_1": ""
+      "mux8to1_0": "",
+      "CounterMux_0": "",
+      "xlconstant_0": "",
+      "KSAddSubb_0": "",
+      "KSAddSubb_1": "",
+      "KSAddSubb_2": "",
+      "KSAddSubb_3": "",
+      "KSAddSubb_4": "",
+      "KSAddSubb_5": "",
+      "KSAddSubb_6": "",
+      "KSAddSubb_7": "",
+      "xlslice_3": "",
+      "xlslice_2": "",
+      "xlslice_1": "",
+      "xlconstant_1": "",
+      "CounterUp16bit_0": "",
+      "CounterUp16bit_1": "",
+      "CounterUp16bit_2": "",
+      "CounterUp16bit_3": "",
+      "CounterUp16bit_4": "",
+      "CounterUp16bit_5": "",
+      "CounterUp16bit_6": "",
+      "CounterUp16bit_7": ""
     },
     "ports": {
-      "EN": {
-        "type": "ce",
-        "direction": "I",
+      "Q0": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
         "parameters": {
-          "POLARITY": {
-            "value": "ACTIVE_HIGH"
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "Q1": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "Q2": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "Q3": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+            "value_src": "ip_prop"
           }
         }
       },
@@ -67,12 +91,61 @@
         "type": "data",
         "direction": "I",
         "left": "2",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
-      "A": {
-        "direction": "I",
-        "left": "7",
-        "right": "0"
+      "Q4": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "Q5": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "Q6": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "Q7": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+            "value_src": "ip_prop"
+          }
+        }
       },
       "Z": {
         "type": "rst",
@@ -80,151 +153,210 @@
         "left": "7",
         "right": "0",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
         }
       },
-      "Result0": {
+      "CountRef": {
         "type": "data",
         "direction": "O",
-        "left": "14",
-        "right": "0"
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
-      "Result1": {
+      "diff0": {
         "type": "data",
         "direction": "O",
-        "left": "14",
-        "right": "0"
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
-      "Result2": {
+      "diff1": {
         "type": "data",
         "direction": "O",
-        "left": "14",
-        "right": "0"
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
-      "Result3": {
+      "diff2": {
         "type": "data",
         "direction": "O",
-        "left": "14",
-        "right": "0"
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
-      "Result4": {
+      "diff3": {
         "type": "data",
         "direction": "O",
-        "left": "14",
-        "right": "0"
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
-      "Result5": {
+      "diff4": {
         "type": "data",
         "direction": "O",
-        "left": "14",
-        "right": "0"
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
-      "Result6": {
+      "diff5": {
         "type": "data",
         "direction": "O",
-        "left": "14",
-        "right": "0"
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
-      "Result7": {
+      "diff6": {
         "type": "data",
         "direction": "O",
-        "left": "14",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "cout0": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "cout1": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "cout2": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "cout3": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "cout4": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "cout5": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "cout6": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "cout7": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "diff7": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "A": {
+        "direction": "I",
+        "left": "7",
         "right": "0"
       }
     },
     "components": {
-      "c_counter_binary_0": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_0_0",
-        "parameters": {
-          "CE": {
-            "value": "true"
-          },
-          "Implementation": {
-            "value": "DSP48"
-          },
-          "Output_Width": {
-            "value": "15"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_1": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_0_1",
-        "parameters": {
-          "CE": {
-            "value": "true"
-          },
-          "Implementation": {
-            "value": "DSP48"
-          },
-          "Output_Width": {
-            "value": "15"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_2": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_0_2",
-        "parameters": {
-          "CE": {
-            "value": "true"
-          },
-          "Implementation": {
-            "value": "DSP48"
-          },
-          "Output_Width": {
-            "value": "15"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_3": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_0_3",
-        "parameters": {
-          "CE": {
-            "value": "true"
-          },
-          "Implementation": {
-            "value": "DSP48"
-          },
-          "Output_Width": {
-            "value": "15"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_4": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_3_0",
-        "parameters": {
-          "CE": {
-            "value": "true"
-          },
-          "Implementation": {
-            "value": "DSP48"
-          },
-          "Output_Width": {
-            "value": "15"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
       "xlslice_0": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "xci_name": "DAQ_xlslice_0_0",
@@ -234,63 +366,9 @@
           }
         }
       },
-      "xlslice_1": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_0_1",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "1"
-          },
-          "DIN_TO": {
-            "value": "1"
-          },
-          "DIN_WIDTH": {
-            "value": "8"
-          },
-          "DOUT_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "xlslice_2": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_1_0",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "2"
-          },
-          "DIN_TO": {
-            "value": "2"
-          },
-          "DIN_WIDTH": {
-            "value": "8"
-          },
-          "DOUT_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "xlslice_3": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_2_0",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "3"
-          },
-          "DIN_TO": {
-            "value": "3"
-          },
-          "DIN_WIDTH": {
-            "value": "8"
-          },
-          "DOUT_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
       "xlslice_4": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_3_0",
+        "xci_name": "DAQ_xlslice_4_0",
         "parameters": {
           "DIN_FROM": {
             "value": "4"
@@ -303,111 +381,12 @@
           },
           "DOUT_WIDTH": {
             "value": "1"
-          }
-        }
-      },
-      "c_addsub_0": {
-        "vlnv": "xilinx.com:ip:c_addsub:12.0",
-        "xci_name": "DAQ_c_addsub_0_0"
-      },
-      "c_addsub_1": {
-        "vlnv": "xilinx.com:ip:c_addsub:12.0",
-        "xci_name": "DAQ_c_addsub_0_3"
-      },
-      "c_addsub_2": {
-        "vlnv": "xilinx.com:ip:c_addsub:12.0",
-        "xci_name": "DAQ_c_addsub_1_0"
-      },
-      "c_addsub_3": {
-        "vlnv": "xilinx.com:ip:c_addsub:12.0",
-        "xci_name": "DAQ_c_addsub_2_0"
-      },
-      "c_addsub_4": {
-        "vlnv": "xilinx.com:ip:c_addsub:12.0",
-        "xci_name": "DAQ_c_addsub_3_0"
-      },
-      "CounterMux_0": {
-        "vlnv": "xilinx.com:module_ref:CounterMux:1.0",
-        "xci_name": "DAQ_CounterMux_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "CounterMux",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "count0": {
-            "direction": "I",
-            "left": "14",
-            "right": "0"
-          },
-          "count1": {
-            "direction": "I",
-            "left": "14",
-            "right": "0"
-          },
-          "count2": {
-            "direction": "I",
-            "left": "14",
-            "right": "0"
-          },
-          "count3": {
-            "direction": "I",
-            "left": "14",
-            "right": "0"
-          },
-          "count4": {
-            "direction": "I",
-            "left": "14",
-            "right": "0"
-          },
-          "count5": {
-            "direction": "I",
-            "left": "14",
-            "right": "0"
-          },
-          "count6": {
-            "direction": "I",
-            "left": "14",
-            "right": "0"
-          },
-          "count7": {
-            "direction": "I",
-            "left": "14",
-            "right": "0"
-          },
-          "sel": {
-            "direction": "I",
-            "left": "2",
-            "right": "0"
-          },
-          "countRef": {
-            "direction": "O",
-            "left": "14",
-            "right": "0"
-          }
-        }
-      },
-      "c_counter_binary_5": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_4_1",
-        "parameters": {
-          "CE": {
-            "value": "true"
-          },
-          "Implementation": {
-            "value": "DSP48"
-          },
-          "Output_Width": {
-            "value": "15"
-          },
-          "SCLR": {
-            "value": "true"
           }
         }
       },
       "xlslice_5": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_4_1",
+        "xci_name": "DAQ_xlslice_5_0",
         "parameters": {
           "DIN_FROM": {
             "value": "5"
@@ -420,196 +399,10 @@
           },
           "DOUT_WIDTH": {
             "value": "1"
-          }
-        }
-      },
-      "c_counter_binary_6": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_4_2",
-        "parameters": {
-          "CE": {
-            "value": "true"
-          },
-          "Implementation": {
-            "value": "DSP48"
-          },
-          "Output_Width": {
-            "value": "15"
-          },
-          "SCLR": {
-            "value": "true"
           }
         }
       },
       "xlslice_6": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_4_2",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "6"
-          },
-          "DIN_TO": {
-            "value": "6"
-          },
-          "DIN_WIDTH": {
-            "value": "8"
-          },
-          "DOUT_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "c_counter_binary_7": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_4_3",
-        "parameters": {
-          "CE": {
-            "value": "true"
-          },
-          "Implementation": {
-            "value": "DSP48"
-          },
-          "Output_Width": {
-            "value": "15"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "xlslice_7": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_4_3",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "7"
-          },
-          "DIN_TO": {
-            "value": "7"
-          },
-          "DIN_WIDTH": {
-            "value": "8"
-          },
-          "DOUT_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "c_addsub_5": {
-        "vlnv": "xilinx.com:ip:c_addsub:12.0",
-        "xci_name": "DAQ_c_addsub_4_0"
-      },
-      "c_addsub_6": {
-        "vlnv": "xilinx.com:ip:c_addsub:12.0",
-        "xci_name": "DAQ_c_addsub_5_0"
-      },
-      "c_addsub_7": {
-        "vlnv": "xilinx.com:ip:c_addsub:12.0",
-        "xci_name": "DAQ_c_addsub_6_0"
-      },
-      "decoder3to8_0": {
-        "vlnv": "xilinx.com:module_ref:decoder3to8:1.0",
-        "xci_name": "DAQ_decoder3to8_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "decoder3to8",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "sel": {
-            "direction": "I",
-            "left": "2",
-            "right": "0"
-          },
-          "y": {
-            "direction": "O",
-            "left": "7",
-            "right": "0"
-          }
-        }
-      },
-      "xlslice_8": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_0_2",
-        "parameters": {
-          "DIN_WIDTH": {
-            "value": "8"
-          }
-        }
-      },
-      "xlslice_9": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_1_1",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "1"
-          },
-          "DIN_TO": {
-            "value": "1"
-          },
-          "DIN_WIDTH": {
-            "value": "8"
-          },
-          "DOUT_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "xlslice_10": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_2_2",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "2"
-          },
-          "DIN_TO": {
-            "value": "2"
-          },
-          "DIN_WIDTH": {
-            "value": "8"
-          },
-          "DOUT_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "xlslice_11": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_3_1",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "3"
-          },
-          "DIN_TO": {
-            "value": "3"
-          },
-          "DIN_WIDTH": {
-            "value": "8"
-          },
-          "DOUT_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "xlslice_12": {
-        "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_4_4",
-        "parameters": {
-          "DIN_FROM": {
-            "value": "4"
-          },
-          "DIN_TO": {
-            "value": "4"
-          },
-          "DIN_WIDTH": {
-            "value": "8"
-          },
-          "DOUT_WIDTH": {
-            "value": "1"
-          }
-        }
-      },
-      "xlslice_13": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "xci_name": "DAQ_xlslice_6_0",
         "parameters": {
@@ -627,7 +420,7 @@
           }
         }
       },
-      "xlslice_14": {
+      "xlslice_7": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "xci_name": "DAQ_xlslice_7_0",
         "parameters": {
@@ -645,15 +438,479 @@
           }
         }
       },
-      "xlslice_15": {
+      "mux8to1_0": {
+        "vlnv": "xilinx.com:module_ref:mux8to1:1.0",
+        "xci_name": "DAQ_mux8to1_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux8to1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I",
+            "left": "7",
+            "right": "0",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "b": {
+            "direction": "O"
+          }
+        }
+      },
+      "CounterMux_0": {
+        "vlnv": "xilinx.com:module_ref:CounterMux:1.0",
+        "xci_name": "DAQ_CounterMux_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterMux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "count0": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "count1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "count2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "count3": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "count4": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "count5": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "count6": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "count7": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "countRef": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "DAQ_xlconstant_0_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0b1"
+          }
+        }
+      },
+      "KSAddSubb_0": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "add": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "KSAddSubb_1": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "add": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "KSAddSubb_2": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "add": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "KSAddSubb_3": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "add": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "KSAddSubb_4": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_4_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "add": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "KSAddSubb_5": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_5_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "add": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "KSAddSubb_6": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_6_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "add": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "KSAddSubb_7": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_7_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "add": {
+            "direction": "I"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlslice_3": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
-        "xci_name": "DAQ_xlslice_6_1",
+        "xci_name": "DAQ_xlslice_3_0",
         "parameters": {
           "DIN_FROM": {
-            "value": "6"
+            "value": "3"
           },
           "DIN_TO": {
-            "value": "6"
+            "value": "3"
           },
           "DIN_WIDTH": {
             "value": "8"
@@ -663,564 +920,594 @@
           }
         }
       },
-      "AorB_0": {
-        "vlnv": "xilinx.com:module_ref:AorB:1.0",
-        "xci_name": "DAQ_AorB_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "AorB",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "A": {
-            "direction": "I"
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "DAQ_xlslice_2_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
           },
-          "B": {
-            "direction": "I"
+          "DIN_TO": {
+            "value": "2"
           },
-          "C": {
-            "direction": "O"
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
           }
         }
       },
-      "AorB_1": {
-        "vlnv": "xilinx.com:module_ref:AorB:1.0",
-        "xci_name": "DAQ_AorB_0_1",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "AorB",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "A": {
-            "direction": "I"
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "DAQ_xlslice_1_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "1"
           },
-          "B": {
-            "direction": "I"
+          "DIN_TO": {
+            "value": "1"
           },
-          "C": {
-            "direction": "O"
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
           }
         }
       },
-      "AorB_2": {
-        "vlnv": "xilinx.com:module_ref:AorB:1.0",
-        "xci_name": "DAQ_AorB_1_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "AorB",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "A": {
-            "direction": "I"
-          },
-          "B": {
-            "direction": "I"
-          },
-          "C": {
-            "direction": "O"
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "DAQ_xlconstant_0_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0b0"
           }
         }
       },
-      "AorB_3": {
-        "vlnv": "xilinx.com:module_ref:AorB:1.0",
-        "xci_name": "DAQ_AorB_2_0",
+      "CounterUp16bit_0": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_0_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "AorB",
+          "ref_name": "CounterUp16bit",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "A": {
+          "CE": {
             "direction": "I"
           },
-          "B": {
+          "Clk": {
+            "type": "clk",
             "direction": "I"
           },
-          "C": {
-            "direction": "O"
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
           }
         }
       },
-      "AorB_4": {
-        "vlnv": "xilinx.com:module_ref:AorB:1.0",
-        "xci_name": "DAQ_AorB_3_0",
+      "CounterUp16bit_1": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_0_1",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "AorB",
+          "ref_name": "CounterUp16bit",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "A": {
+          "CE": {
             "direction": "I"
           },
-          "B": {
+          "Clk": {
+            "type": "clk",
             "direction": "I"
           },
-          "C": {
-            "direction": "O"
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
           }
         }
       },
-      "AorB_5": {
-        "vlnv": "xilinx.com:module_ref:AorB:1.0",
-        "xci_name": "DAQ_AorB_4_0",
+      "CounterUp16bit_2": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_1_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "AorB",
+          "ref_name": "CounterUp16bit",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "A": {
+          "CE": {
             "direction": "I"
           },
-          "B": {
+          "Clk": {
+            "type": "clk",
             "direction": "I"
           },
-          "C": {
-            "direction": "O"
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
           }
         }
       },
-      "AorB_6": {
-        "vlnv": "xilinx.com:module_ref:AorB:1.0",
-        "xci_name": "DAQ_AorB_5_0",
+      "CounterUp16bit_3": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_2_1",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "AorB",
+          "ref_name": "CounterUp16bit",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "A": {
+          "CE": {
             "direction": "I"
           },
-          "B": {
+          "Clk": {
+            "type": "clk",
             "direction": "I"
           },
-          "C": {
-            "direction": "O"
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
           }
         }
       },
-      "AorB_7": {
-        "vlnv": "xilinx.com:module_ref:AorB:1.0",
-        "xci_name": "DAQ_AorB_6_0",
+      "CounterUp16bit_4": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_2_2",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "AorB",
+          "ref_name": "CounterUp16bit",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "A": {
+          "CE": {
             "direction": "I"
           },
-          "B": {
+          "Clk": {
+            "type": "clk",
             "direction": "I"
           },
-          "C": {
-            "direction": "O"
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
           }
         }
       },
-      "mux4_0": {
-        "vlnv": "xilinx.com:module_ref:mux4:1.0",
-        "xci_name": "DAQ_mux4_0_1",
+      "CounterUp16bit_5": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_4_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "mux4",
+          "ref_name": "CounterUp16bit",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "a": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
+          "CE": {
+            "direction": "I"
           },
-          "sel": {
-            "direction": "I",
-            "left": "2",
-            "right": "0"
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
           },
-          "b": {
-            "direction": "O"
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
           }
         }
       },
-      "mux4_1": {
-        "vlnv": "xilinx.com:module_ref:mux4:1.0",
-        "xci_name": "DAQ_mux4_0_2",
+      "CounterUp16bit_6": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_5_0",
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "mux4",
+          "ref_name": "CounterUp16bit",
           "boundary_crc": "0x0"
         },
         "ports": {
-          "a": {
-            "direction": "I",
-            "left": "7",
-            "right": "0"
+          "CE": {
+            "direction": "I"
           },
-          "sel": {
-            "direction": "I",
-            "left": "2",
-            "right": "0"
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
           },
-          "b": {
-            "direction": "O"
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "CounterUp16bit_7": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_6_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterUp16bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CE": {
+            "direction": "I"
+          },
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
           }
         }
       }
     },
     "nets": {
-      "EN_1": {
-        "ports": [
-          "EN",
-          "c_counter_binary_0/CE",
-          "c_counter_binary_1/CE",
-          "c_counter_binary_3/CE",
-          "c_counter_binary_2/CE",
-          "c_counter_binary_4/CE",
-          "c_counter_binary_5/CE",
-          "c_counter_binary_6/CE",
-          "c_counter_binary_7/CE"
-        ]
-      },
-      "mux4_0_b": {
-        "ports": [
-          "mux4_0/b",
-          "c_counter_binary_3/SCLR",
-          "c_counter_binary_2/SCLR",
-          "c_counter_binary_4/SCLR",
-          "c_counter_binary_1/SCLR",
-          "c_counter_binary_0/SCLR",
-          "c_counter_binary_5/SCLR",
-          "c_counter_binary_6/SCLR",
-          "c_counter_binary_7/SCLR"
-        ]
-      },
-      "A_1": {
+      "clk_1": {
         "ports": [
           "A",
           "xlslice_0/Din",
-          "xlslice_1/Din",
-          "xlslice_2/Din",
-          "xlslice_3/Din",
           "xlslice_4/Din",
           "xlslice_5/Din",
           "xlslice_6/Din",
           "xlslice_7/Din",
-          "mux4_1/a"
-        ]
-      },
-      "xlslice_4_Dout": {
-        "ports": [
-          "xlslice_4/Dout",
-          "c_counter_binary_4/CLK",
-          "AorB_4/A"
-        ]
-      },
-      "xlslice_0_Dout": {
-        "ports": [
-          "xlslice_0/Dout",
-          "c_counter_binary_0/CLK",
-          "AorB_0/A"
-        ]
-      },
-      "xlslice_1_Dout": {
-        "ports": [
-          "xlslice_1/Dout",
-          "c_counter_binary_1/CLK",
-          "AorB_1/A"
-        ]
-      },
-      "xlslice_2_Dout": {
-        "ports": [
-          "xlslice_2/Dout",
-          "c_counter_binary_2/CLK",
-          "AorB_2/A"
-        ]
-      },
-      "xlslice_3_Dout": {
-        "ports": [
-          "xlslice_3/Dout",
-          "c_counter_binary_3/CLK",
-          "AorB_3/A"
+          "xlslice_3/Din",
+          "xlslice_2/Din",
+          "xlslice_1/Din"
         ]
       },
       "c_counter_binary_0_Q": {
         "ports": [
-          "c_counter_binary_0/Q",
-          "c_addsub_0/B",
+          "CounterUp16bit_0/Q",
+          "Q0",
+          "KSAddSubb_0/y",
           "CounterMux_0/count0"
-        ]
-      },
-      "c_counter_binary_1_Q": {
-        "ports": [
-          "c_counter_binary_1/Q",
-          "c_addsub_1/B",
-          "CounterMux_0/count1"
-        ]
-      },
-      "c_counter_binary_2_Q": {
-        "ports": [
-          "c_counter_binary_2/Q",
-          "c_addsub_2/B",
-          "CounterMux_0/count2"
-        ]
-      },
-      "c_counter_binary_3_Q": {
-        "ports": [
-          "c_counter_binary_3/Q",
-          "c_addsub_3/B",
-          "CounterMux_0/count3"
-        ]
-      },
-      "c_counter_binary_4_Q": {
-        "ports": [
-          "c_counter_binary_4/Q",
-          "c_addsub_4/B",
-          "CounterMux_0/count4"
-        ]
-      },
-      "CounterMux_0_result": {
-        "ports": [
-          "CounterMux_0/countRef",
-          "c_addsub_0/A",
-          "c_addsub_1/A",
-          "c_addsub_2/A",
-          "c_addsub_3/A",
-          "c_addsub_4/A",
-          "c_addsub_5/A",
-          "c_addsub_6/A",
-          "c_addsub_7/A"
-        ]
-      },
-      "xlslice_5_Dout": {
-        "ports": [
-          "xlslice_5/Dout",
-          "c_counter_binary_5/CLK",
-          "AorB_5/A"
-        ]
-      },
-      "xlslice_6_Dout": {
-        "ports": [
-          "xlslice_6/Dout",
-          "c_counter_binary_6/CLK",
-          "AorB_6/A"
-        ]
-      },
-      "xlslice_7_Dout": {
-        "ports": [
-          "xlslice_7/Dout",
-          "c_counter_binary_7/CLK",
-          "AorB_7/A"
-        ]
-      },
-      "c_counter_binary_5_Q": {
-        "ports": [
-          "c_counter_binary_5/Q",
-          "CounterMux_0/count5",
-          "c_addsub_5/B"
-        ]
-      },
-      "c_counter_binary_6_Q": {
-        "ports": [
-          "c_counter_binary_6/Q",
-          "CounterMux_0/count6",
-          "c_addsub_6/B"
-        ]
-      },
-      "c_counter_binary_7_Q": {
-        "ports": [
-          "c_counter_binary_7/Q",
-          "CounterMux_0/count7",
-          "c_addsub_7/B"
-        ]
-      },
-      "sel_1": {
-        "ports": [
-          "sel",
-          "CounterMux_0/sel",
-          "decoder3to8_0/sel",
-          "mux4_0/sel",
-          "mux4_1/sel"
         ]
       },
       "Z_1": {
         "ports": [
           "Z",
-          "mux4_0/a"
+          "mux8to1_0/a"
         ]
       },
-      "xlslice_8_Dout": {
+      "CounterMux_0_countRef": {
         "ports": [
-          "xlslice_8/Dout",
-          "c_addsub_0/CE"
+          "CounterMux_0/countRef",
+          "CountRef",
+          "KSAddSubb_4/x",
+          "KSAddSubb_3/x",
+          "KSAddSubb_2/x",
+          "KSAddSubb_1/x",
+          "KSAddSubb_0/x",
+          "KSAddSubb_5/x",
+          "KSAddSubb_6/x",
+          "KSAddSubb_7/x"
         ]
       },
-      "decoder3to8_0_y": {
+      "sel_1": {
         "ports": [
-          "decoder3to8_0/y",
-          "xlslice_8/Din",
-          "xlslice_9/Din",
-          "xlslice_10/Din",
-          "xlslice_11/Din",
-          "xlslice_12/Din",
-          "xlslice_13/Din",
-          "xlslice_14/Din",
-          "xlslice_15/Din"
+          "sel",
+          "mux8to1_0/sel",
+          "CounterMux_0/sel"
         ]
       },
-      "xlslice_9_Dout": {
+      "xlconstant_0_dout": {
         "ports": [
-          "xlslice_9/Dout",
-          "c_addsub_1/CE"
+          "xlconstant_0/dout",
+          "KSAddSubb_6/add",
+          "KSAddSubb_7/add",
+          "KSAddSubb_5/add",
+          "KSAddSubb_4/add",
+          "KSAddSubb_3/add",
+          "KSAddSubb_2/add",
+          "KSAddSubb_1/add",
+          "KSAddSubb_0/add"
         ]
       },
-      "xlslice_10_Dout": {
+      "KSAddSubb_0_sum": {
         "ports": [
-          "xlslice_10/Dout",
-          "c_addsub_2/CE"
+          "KSAddSubb_0/sum",
+          "diff0"
         ]
       },
-      "xlslice_11_Dout": {
+      "KSAddSubb_1_sum": {
         "ports": [
-          "xlslice_11/Dout",
-          "c_addsub_3/CE"
+          "KSAddSubb_1/sum",
+          "diff1"
         ]
       },
-      "xlslice_12_Dout": {
+      "KSAddSubb_2_sum": {
         "ports": [
-          "xlslice_12/Dout",
-          "c_addsub_4/CE"
+          "KSAddSubb_2/sum",
+          "diff2"
         ]
       },
-      "AorB_0_C": {
+      "KSAddSubb_3_sum": {
         "ports": [
-          "AorB_0/C",
-          "c_addsub_0/CLK"
+          "KSAddSubb_3/sum",
+          "diff3"
         ]
       },
-      "AorB_1_C": {
+      "KSAddSubb_4_sum": {
         "ports": [
-          "AorB_1/C",
-          "c_addsub_1/CLK"
+          "KSAddSubb_4/sum",
+          "diff4"
         ]
       },
-      "AorB_2_C": {
+      "KSAddSubb_5_sum": {
         "ports": [
-          "AorB_2/C",
-          "c_addsub_2/CLK"
+          "KSAddSubb_5/sum",
+          "diff5"
         ]
       },
-      "AorB_3_C": {
+      "KSAddSubb_0_cout": {
         "ports": [
-          "AorB_3/C",
-          "c_addsub_3/CLK"
+          "KSAddSubb_0/cout",
+          "cout0"
+        ]
+      },
+      "KSAddSubb_1_cout": {
+        "ports": [
+          "KSAddSubb_1/cout",
+          "cout1"
+        ]
+      },
+      "KSAddSubb_2_cout": {
+        "ports": [
+          "KSAddSubb_2/cout",
+          "cout2"
+        ]
+      },
+      "KSAddSubb_3_cout": {
+        "ports": [
+          "KSAddSubb_3/cout",
+          "cout3"
+        ]
+      },
+      "KSAddSubb_4_cout": {
+        "ports": [
+          "KSAddSubb_4/cout",
+          "cout4"
+        ]
+      },
+      "KSAddSubb_5_cout": {
+        "ports": [
+          "KSAddSubb_5/cout",
+          "cout5"
+        ]
+      },
+      "KSAddSubb_7_cout": {
+        "ports": [
+          "KSAddSubb_7/cout",
+          "cout7"
+        ]
+      },
+      "KSAddSubb_7_sum": {
+        "ports": [
+          "KSAddSubb_7/sum",
+          "diff7"
+        ]
+      },
+      "KSAddSubb_6_sum": {
+        "ports": [
+          "KSAddSubb_6/sum",
+          "diff6"
+        ]
+      },
+      "KSAddSubb_6_cout": {
+        "ports": [
+          "KSAddSubb_6/cout",
+          "cout6"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "CounterUp16bit_1/Clk"
+        ]
+      },
+      "CounterUp16bit_1_Q": {
+        "ports": [
+          "CounterUp16bit_1/Q",
+          "KSAddSubb_1/y",
+          "Q1",
+          "CounterMux_0/count1"
+        ]
+      },
+      "CounterUp16bit_2_Q": {
+        "ports": [
+          "CounterUp16bit_2/Q",
+          "KSAddSubb_2/y",
+          "Q2",
+          "CounterMux_0/count2"
+        ]
+      },
+      "CounterUp16bit_3_Q": {
+        "ports": [
+          "CounterUp16bit_3/Q",
+          "KSAddSubb_3/y",
+          "Q3",
+          "CounterMux_0/count3"
+        ]
+      },
+      "CounterUp16bit_4_Q": {
+        "ports": [
+          "CounterUp16bit_4/Q",
+          "KSAddSubb_4/y",
+          "Q4",
+          "CounterMux_0/count4"
+        ]
+      },
+      "CounterUp16bit_5_Q": {
+        "ports": [
+          "CounterUp16bit_5/Q",
+          "Q5",
+          "KSAddSubb_5/y",
+          "CounterMux_0/count5"
+        ]
+      },
+      "CounterUp16bit_6_Q": {
+        "ports": [
+          "CounterUp16bit_6/Q",
+          "Q6",
+          "KSAddSubb_6/y",
+          "CounterMux_0/count6"
+        ]
+      },
+      "CounterUp16bit_7_Q": {
+        "ports": [
+          "CounterUp16bit_7/Q",
+          "KSAddSubb_7/y",
+          "Q7",
+          "CounterMux_0/count7"
+        ]
+      },
+      "mux8to1_0_b": {
+        "ports": [
+          "mux8to1_0/b",
+          "CounterUp16bit_0/SCLR",
+          "CounterUp16bit_1/SCLR",
+          "CounterUp16bit_2/SCLR",
+          "CounterUp16bit_3/SCLR",
+          "CounterUp16bit_4/SCLR",
+          "CounterUp16bit_5/SCLR",
+          "CounterUp16bit_6/SCLR",
+          "CounterUp16bit_7/SCLR"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "CounterUp16bit_0/Clk"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "CounterUp16bit_2/Clk"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "xlslice_3/Dout",
+          "CounterUp16bit_3/Clk"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "xlslice_4/Dout",
+          "CounterUp16bit_4/Clk"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "xlslice_5/Dout",
+          "CounterUp16bit_5/Clk"
+        ]
+      },
+      "xlslice_6_Dout": {
+        "ports": [
+          "xlslice_6/Dout",
+          "CounterUp16bit_6/Clk"
+        ]
+      },
+      "xlslice_7_Dout": {
+        "ports": [
+          "xlslice_7/Dout",
+          "CounterUp16bit_7/Clk"
         ]
       },
       "Net": {
         "ports": [
-          "mux4_1/b",
-          "AorB_0/B",
-          "AorB_1/B",
-          "AorB_2/B",
-          "AorB_3/B",
-          "AorB_4/B",
-          "AorB_5/B",
-          "AorB_6/B",
-          "AorB_7/B"
-        ]
-      },
-      "AorB_4_C": {
-        "ports": [
-          "AorB_4/C",
-          "c_addsub_4/CLK"
-        ]
-      },
-      "AorB_5_C": {
-        "ports": [
-          "AorB_5/C",
-          "c_addsub_5/CLK"
-        ]
-      },
-      "xlslice_13_Dout": {
-        "ports": [
-          "xlslice_13/Dout",
-          "c_addsub_6/CE"
-        ]
-      },
-      "xlslice_15_Dout": {
-        "ports": [
-          "xlslice_15/Dout",
-          "c_addsub_5/CE"
-        ]
-      },
-      "AorB_6_C": {
-        "ports": [
-          "AorB_6/C",
-          "c_addsub_6/CLK"
-        ]
-      },
-      "xlslice_14_Dout": {
-        "ports": [
-          "xlslice_14/Dout",
-          "c_addsub_7/CE"
-        ]
-      },
-      "AorB_7_C": {
-        "ports": [
-          "AorB_7/C",
-          "c_addsub_7/CLK"
-        ]
-      },
-      "c_addsub_2_S": {
-        "ports": [
-          "c_addsub_2/S",
-          "Result2"
-        ]
-      },
-      "c_addsub_3_S": {
-        "ports": [
-          "c_addsub_3/S",
-          "Result3"
-        ]
-      },
-      "c_addsub_4_S": {
-        "ports": [
-          "c_addsub_4/S",
-          "Result4"
-        ]
-      },
-      "c_addsub_5_S": {
-        "ports": [
-          "c_addsub_5/S",
-          "Result5"
-        ]
-      },
-      "c_addsub_6_S": {
-        "ports": [
-          "c_addsub_6/S",
-          "Result6"
-        ]
-      },
-      "c_addsub_7_S": {
-        "ports": [
-          "c_addsub_7/S",
-          "Result7"
-        ]
-      },
-      "c_addsub_0_S": {
-        "ports": [
-          "c_addsub_0/S",
-          "Result0"
-        ]
-      },
-      "c_addsub_1_S": {
-        "ports": [
-          "c_addsub_1/S",
-          "Result1"
+          "xlconstant_1/dout",
+          "CounterUp16bit_0/CE",
+          "CounterUp16bit_1/CE",
+          "CounterUp16bit_2/CE",
+          "CounterUp16bit_3/CE",
+          "CounterUp16bit_4/CE",
+          "CounterUp16bit_5/CE",
+          "CounterUp16bit_6/CE",
+          "CounterUp16bit_7/CE"
         ]
       }
     }

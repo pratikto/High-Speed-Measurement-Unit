@@ -1,9 +1,9 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Fri Jul 24 14:54:54 2020
+// Date        : Wed Jul 29 09:26:44 2020
 // Host        : CNB406-TT081 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {c:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
+// Command     : write_verilog -force -mode funcsim {C:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 //               Unit/DAQ/DAQ/ip/DAQ_CounterMux_0_0/DAQ_CounterMux_0_0_sim_netlist.v}
 // Design      : DAQ_CounterMux_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
@@ -26,26 +26,26 @@ module DAQ_CounterMux_0_0
     count7,
     sel,
     countRef);
-  input [14:0]count0;
-  input [14:0]count1;
-  input [14:0]count2;
-  input [14:0]count3;
-  input [14:0]count4;
-  input [14:0]count5;
-  input [14:0]count6;
-  input [14:0]count7;
+  input [15:0]count0;
+  input [15:0]count1;
+  input [15:0]count2;
+  input [15:0]count3;
+  input [15:0]count4;
+  input [15:0]count5;
+  input [15:0]count6;
+  input [15:0]count7;
   input [2:0]sel;
-  output [14:0]countRef;
+  output [15:0]countRef;
 
-  wire [14:0]count0;
-  wire [14:0]count1;
-  wire [14:0]count2;
-  wire [14:0]count3;
-  wire [14:0]count4;
-  wire [14:0]count5;
-  wire [14:0]count6;
-  wire [14:0]count7;
-  wire [14:0]countRef;
+  wire [15:0]count0;
+  wire [15:0]count1;
+  wire [15:0]count2;
+  wire [15:0]count3;
+  wire [15:0]count4;
+  wire [15:0]count5;
+  wire [15:0]count6;
+  wire [15:0]count7;
+  wire [15:0]countRef;
   wire \countRef[0]_INST_0_i_1_n_0 ;
   wire \countRef[0]_INST_0_i_2_n_0 ;
   wire \countRef[10]_INST_0_i_1_n_0 ;
@@ -58,6 +58,8 @@ module DAQ_CounterMux_0_0
   wire \countRef[13]_INST_0_i_2_n_0 ;
   wire \countRef[14]_INST_0_i_1_n_0 ;
   wire \countRef[14]_INST_0_i_2_n_0 ;
+  wire \countRef[15]_INST_0_i_1_n_0 ;
+  wire \countRef[15]_INST_0_i_2_n_0 ;
   wire \countRef[1]_INST_0_i_1_n_0 ;
   wire \countRef[1]_INST_0_i_2_n_0 ;
   wire \countRef[2]_INST_0_i_1_n_0 ;
@@ -228,6 +230,31 @@ module DAQ_CounterMux_0_0
         .I4(sel[0]),
         .I5(count4[14]),
         .O(\countRef[14]_INST_0_i_2_n_0 ));
+  MUXF7 \countRef[15]_INST_0 
+       (.I0(\countRef[15]_INST_0_i_1_n_0 ),
+        .I1(\countRef[15]_INST_0_i_2_n_0 ),
+        .O(countRef[15]),
+        .S(sel[2]));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \countRef[15]_INST_0_i_1 
+       (.I0(count3[15]),
+        .I1(count2[15]),
+        .I2(sel[1]),
+        .I3(count1[15]),
+        .I4(sel[0]),
+        .I5(count0[15]),
+        .O(\countRef[15]_INST_0_i_1_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \countRef[15]_INST_0_i_2 
+       (.I0(count7[15]),
+        .I1(count6[15]),
+        .I2(sel[1]),
+        .I3(count5[15]),
+        .I4(sel[0]),
+        .I5(count4[15]),
+        .O(\countRef[15]_INST_0_i_2_n_0 ));
   MUXF7 \countRef[1]_INST_0 
        (.I0(\countRef[1]_INST_0_i_1_n_0 ),
         .I1(\countRef[1]_INST_0_i_2_n_0 ),
