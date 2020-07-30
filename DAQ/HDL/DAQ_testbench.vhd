@@ -143,9 +143,9 @@ begin
     z_stimulus : process
     begin
         Z <= "00000000";
-        wait for Aclk*50;        
+        wait for Aclk*36000;        
         Z <= "00000001";
-        wait for Aclk;          
+        wait for Aclk*1;          
     end process;
     
     clk0_stimulus : process
