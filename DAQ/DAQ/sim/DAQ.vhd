@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Tue Jul 28 15:56:46 2020
+--Date        : Wed Jul 29 12:20:05 2020
 --Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 --Command     : generate_target DAQ.bd
 --Design      : DAQ
@@ -43,75 +43,18 @@ entity DAQ is
     sel : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of DAQ : entity is "DAQ,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DAQ,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=27,numReposBlks=27,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=10,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of DAQ : entity is "DAQ,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DAQ,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=28,numReposBlks=28,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=18,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of DAQ : entity is "DAQ.hwdef";
 end DAQ;
 
 architecture STRUCTURE of DAQ is
-  component DAQ_c_counter_binary_0_0 is
-  port (
-    CLK : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component DAQ_c_counter_binary_0_0;
-  component DAQ_c_counter_binary_1_0 is
-  port (
-    CLK : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component DAQ_c_counter_binary_1_0;
-  component DAQ_c_counter_binary_2_0 is
-  port (
-    CLK : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component DAQ_c_counter_binary_2_0;
-  component DAQ_c_counter_binary_3_0 is
-  port (
-    CLK : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component DAQ_c_counter_binary_3_0;
   component DAQ_xlslice_0_0 is
   port (
     Din : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component DAQ_xlslice_0_0;
-  component DAQ_c_counter_binary_4_0 is
-  port (
-    CLK : in STD_LOGIC;
-    CE : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component DAQ_c_counter_binary_4_0;
-  component DAQ_c_counter_binary_5_0 is
-  port (
-    CLK : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component DAQ_c_counter_binary_5_0;
-  component DAQ_c_counter_binary_6_0 is
-  port (
-    CLK : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component DAQ_c_counter_binary_6_0;
-  component DAQ_c_counter_binary_7_0 is
-  port (
-    CLK : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-  end component DAQ_c_counter_binary_7_0;
   component DAQ_xlslice_4_0 is
   port (
     Din : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -252,7 +195,83 @@ architecture STRUCTURE of DAQ is
     Dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component DAQ_xlslice_1_0;
+  component DAQ_xlconstant_0_1 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component DAQ_xlconstant_0_1;
+  component DAQ_CounterUp16bit_0_0 is
+  port (
+    CE : in STD_LOGIC;
+    Clk : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQ_CounterUp16bit_0_0;
+  component DAQ_CounterUp16bit_0_1 is
+  port (
+    CE : in STD_LOGIC;
+    Clk : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQ_CounterUp16bit_0_1;
+  component DAQ_CounterUp16bit_1_0 is
+  port (
+    CE : in STD_LOGIC;
+    Clk : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQ_CounterUp16bit_1_0;
+  component DAQ_CounterUp16bit_2_1 is
+  port (
+    CE : in STD_LOGIC;
+    Clk : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQ_CounterUp16bit_2_1;
+  component DAQ_CounterUp16bit_2_2 is
+  port (
+    CE : in STD_LOGIC;
+    Clk : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQ_CounterUp16bit_2_2;
+  component DAQ_CounterUp16bit_4_0 is
+  port (
+    CE : in STD_LOGIC;
+    Clk : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQ_CounterUp16bit_4_0;
+  component DAQ_CounterUp16bit_5_0 is
+  port (
+    CE : in STD_LOGIC;
+    Clk : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQ_CounterUp16bit_5_0;
+  component DAQ_CounterUp16bit_6_0 is
+  port (
+    CE : in STD_LOGIC;
+    Clk : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQ_CounterUp16bit_6_0;
   signal CounterMux_0_countRef : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal CounterUp16bit_1_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal CounterUp16bit_2_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal CounterUp16bit_3_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal CounterUp16bit_4_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal CounterUp16bit_5_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal CounterUp16bit_6_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal CounterUp16bit_7_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal KSAddSubb_0_cout : STD_LOGIC;
   signal KSAddSubb_0_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal KSAddSubb_1_cout : STD_LOGIC;
@@ -269,15 +288,9 @@ architecture STRUCTURE of DAQ is
   signal KSAddSubb_6_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal KSAddSubb_7_cout : STD_LOGIC;
   signal KSAddSubb_7_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal Net : STD_LOGIC_VECTOR ( 0 to 0 );
   signal Z_1 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal c_counter_binary_0_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal c_counter_binary_1_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal c_counter_binary_2_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal c_counter_binary_3_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal c_counter_binary_4_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal c_counter_binary_5_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal c_counter_binary_6_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal c_counter_binary_7_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal clk_1 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal mux8to1_0_b : STD_LOGIC;
   signal sel_1 : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -349,13 +362,13 @@ architecture STRUCTURE of DAQ is
 begin
   CountRef(15 downto 0) <= CounterMux_0_countRef(15 downto 0);
   Q0(15 downto 0) <= c_counter_binary_0_Q(15 downto 0);
-  Q1(15 downto 0) <= c_counter_binary_1_Q(15 downto 0);
-  Q2(15 downto 0) <= c_counter_binary_2_Q(15 downto 0);
-  Q3(15 downto 0) <= c_counter_binary_3_Q(15 downto 0);
-  Q4(15 downto 0) <= c_counter_binary_4_Q(15 downto 0);
-  Q5(15 downto 0) <= c_counter_binary_5_Q(15 downto 0);
-  Q6(15 downto 0) <= c_counter_binary_6_Q(15 downto 0);
-  Q7(15 downto 0) <= c_counter_binary_7_Q(15 downto 0);
+  Q1(15 downto 0) <= CounterUp16bit_1_Q(15 downto 0);
+  Q2(15 downto 0) <= CounterUp16bit_2_Q(15 downto 0);
+  Q3(15 downto 0) <= CounterUp16bit_3_Q(15 downto 0);
+  Q4(15 downto 0) <= CounterUp16bit_4_Q(15 downto 0);
+  Q5(15 downto 0) <= CounterUp16bit_5_Q(15 downto 0);
+  Q6(15 downto 0) <= CounterUp16bit_6_Q(15 downto 0);
+  Q7(15 downto 0) <= CounterUp16bit_7_Q(15 downto 0);
   Z_1(7 downto 0) <= Z(7 downto 0);
   clk_1(7 downto 0) <= A(7 downto 0);
   cout0 <= KSAddSubb_0_cout;
@@ -378,15 +391,71 @@ begin
 CounterMux_0: component DAQ_CounterMux_0_0
      port map (
       count0(15 downto 0) => c_counter_binary_0_Q(15 downto 0),
-      count1(15 downto 0) => c_counter_binary_1_Q(15 downto 0),
-      count2(15 downto 0) => c_counter_binary_2_Q(15 downto 0),
-      count3(15 downto 0) => c_counter_binary_3_Q(15 downto 0),
-      count4(15 downto 0) => c_counter_binary_4_Q(15 downto 0),
-      count5(15 downto 0) => c_counter_binary_5_Q(15 downto 0),
-      count6(15 downto 0) => c_counter_binary_6_Q(15 downto 0),
-      count7(15 downto 0) => c_counter_binary_7_Q(15 downto 0),
+      count1(15 downto 0) => CounterUp16bit_1_Q(15 downto 0),
+      count2(15 downto 0) => CounterUp16bit_2_Q(15 downto 0),
+      count3(15 downto 0) => CounterUp16bit_3_Q(15 downto 0),
+      count4(15 downto 0) => CounterUp16bit_4_Q(15 downto 0),
+      count5(15 downto 0) => CounterUp16bit_5_Q(15 downto 0),
+      count6(15 downto 0) => CounterUp16bit_6_Q(15 downto 0),
+      count7(15 downto 0) => CounterUp16bit_7_Q(15 downto 0),
       countRef(15 downto 0) => CounterMux_0_countRef(15 downto 0),
       sel(2 downto 0) => sel_1(2 downto 0)
+    );
+CounterUp16bit_0: component DAQ_CounterUp16bit_0_0
+     port map (
+      CE => Net(0),
+      Clk => xlslice_0_Dout(0),
+      Q(15 downto 0) => c_counter_binary_0_Q(15 downto 0),
+      SCLR => mux8to1_0_b
+    );
+CounterUp16bit_1: component DAQ_CounterUp16bit_0_1
+     port map (
+      CE => Net(0),
+      Clk => xlslice_1_Dout(0),
+      Q(15 downto 0) => CounterUp16bit_1_Q(15 downto 0),
+      SCLR => mux8to1_0_b
+    );
+CounterUp16bit_2: component DAQ_CounterUp16bit_1_0
+     port map (
+      CE => Net(0),
+      Clk => xlslice_2_Dout(0),
+      Q(15 downto 0) => CounterUp16bit_2_Q(15 downto 0),
+      SCLR => mux8to1_0_b
+    );
+CounterUp16bit_3: component DAQ_CounterUp16bit_2_1
+     port map (
+      CE => Net(0),
+      Clk => xlslice_3_Dout(0),
+      Q(15 downto 0) => CounterUp16bit_3_Q(15 downto 0),
+      SCLR => mux8to1_0_b
+    );
+CounterUp16bit_4: component DAQ_CounterUp16bit_2_2
+     port map (
+      CE => Net(0),
+      Clk => xlslice_4_Dout(0),
+      Q(15 downto 0) => CounterUp16bit_4_Q(15 downto 0),
+      SCLR => mux8to1_0_b
+    );
+CounterUp16bit_5: component DAQ_CounterUp16bit_4_0
+     port map (
+      CE => Net(0),
+      Clk => xlslice_5_Dout(0),
+      Q(15 downto 0) => CounterUp16bit_5_Q(15 downto 0),
+      SCLR => mux8to1_0_b
+    );
+CounterUp16bit_6: component DAQ_CounterUp16bit_5_0
+     port map (
+      CE => Net(0),
+      Clk => xlslice_6_Dout(0),
+      Q(15 downto 0) => CounterUp16bit_6_Q(15 downto 0),
+      SCLR => mux8to1_0_b
+    );
+CounterUp16bit_7: component DAQ_CounterUp16bit_6_0
+     port map (
+      CE => Net(0),
+      Clk => xlslice_7_Dout(0),
+      Q(15 downto 0) => CounterUp16bit_7_Q(15 downto 0),
+      SCLR => mux8to1_0_b
     );
 KSAddSubb_0: component DAQ_KSAddSubb_0_0
      port map (
@@ -402,7 +471,7 @@ KSAddSubb_1: component DAQ_KSAddSubb_1_0
       cout => KSAddSubb_1_cout,
       sum(15 downto 0) => KSAddSubb_1_sum(15 downto 0),
       x(15 downto 0) => CounterMux_0_countRef(15 downto 0),
-      y(15 downto 0) => c_counter_binary_1_Q(15 downto 0)
+      y(15 downto 0) => CounterUp16bit_1_Q(15 downto 0)
     );
 KSAddSubb_2: component DAQ_KSAddSubb_2_0
      port map (
@@ -410,7 +479,7 @@ KSAddSubb_2: component DAQ_KSAddSubb_2_0
       cout => KSAddSubb_2_cout,
       sum(15 downto 0) => KSAddSubb_2_sum(15 downto 0),
       x(15 downto 0) => CounterMux_0_countRef(15 downto 0),
-      y(15 downto 0) => c_counter_binary_2_Q(15 downto 0)
+      y(15 downto 0) => CounterUp16bit_2_Q(15 downto 0)
     );
 KSAddSubb_3: component DAQ_KSAddSubb_3_0
      port map (
@@ -418,7 +487,7 @@ KSAddSubb_3: component DAQ_KSAddSubb_3_0
       cout => KSAddSubb_3_cout,
       sum(15 downto 0) => KSAddSubb_3_sum(15 downto 0),
       x(15 downto 0) => CounterMux_0_countRef(15 downto 0),
-      y(15 downto 0) => c_counter_binary_3_Q(15 downto 0)
+      y(15 downto 0) => CounterUp16bit_3_Q(15 downto 0)
     );
 KSAddSubb_4: component DAQ_KSAddSubb_4_0
      port map (
@@ -426,7 +495,7 @@ KSAddSubb_4: component DAQ_KSAddSubb_4_0
       cout => KSAddSubb_4_cout,
       sum(15 downto 0) => KSAddSubb_4_sum(15 downto 0),
       x(15 downto 0) => CounterMux_0_countRef(15 downto 0),
-      y(15 downto 0) => c_counter_binary_4_Q(15 downto 0)
+      y(15 downto 0) => CounterUp16bit_4_Q(15 downto 0)
     );
 KSAddSubb_5: component DAQ_KSAddSubb_5_0
      port map (
@@ -434,7 +503,7 @@ KSAddSubb_5: component DAQ_KSAddSubb_5_0
       cout => KSAddSubb_5_cout,
       sum(15 downto 0) => KSAddSubb_5_sum(15 downto 0),
       x(15 downto 0) => CounterMux_0_countRef(15 downto 0),
-      y(15 downto 0) => c_counter_binary_5_Q(15 downto 0)
+      y(15 downto 0) => CounterUp16bit_5_Q(15 downto 0)
     );
 KSAddSubb_6: component DAQ_KSAddSubb_6_0
      port map (
@@ -442,7 +511,7 @@ KSAddSubb_6: component DAQ_KSAddSubb_6_0
       cout => KSAddSubb_6_cout,
       sum(15 downto 0) => KSAddSubb_6_sum(15 downto 0),
       x(15 downto 0) => CounterMux_0_countRef(15 downto 0),
-      y(15 downto 0) => c_counter_binary_6_Q(15 downto 0)
+      y(15 downto 0) => CounterUp16bit_6_Q(15 downto 0)
     );
 KSAddSubb_7: component DAQ_KSAddSubb_7_0
      port map (
@@ -450,56 +519,7 @@ KSAddSubb_7: component DAQ_KSAddSubb_7_0
       cout => KSAddSubb_7_cout,
       sum(15 downto 0) => KSAddSubb_7_sum(15 downto 0),
       x(15 downto 0) => CounterMux_0_countRef(15 downto 0),
-      y(15 downto 0) => c_counter_binary_7_Q(15 downto 0)
-    );
-c_counter_binary_0: component DAQ_c_counter_binary_0_0
-     port map (
-      CLK => xlslice_0_Dout(0),
-      Q(15 downto 0) => c_counter_binary_0_Q(15 downto 0),
-      SCLR => mux8to1_0_b
-    );
-c_counter_binary_1: component DAQ_c_counter_binary_1_0
-     port map (
-      CLK => xlslice_1_Dout(0),
-      Q(15 downto 0) => c_counter_binary_1_Q(15 downto 0),
-      SCLR => mux8to1_0_b
-    );
-c_counter_binary_2: component DAQ_c_counter_binary_2_0
-     port map (
-      CLK => xlslice_2_Dout(0),
-      Q(15 downto 0) => c_counter_binary_2_Q(15 downto 0),
-      SCLR => mux8to1_0_b
-    );
-c_counter_binary_3: component DAQ_c_counter_binary_3_0
-     port map (
-      CLK => xlslice_3_Dout(0),
-      Q(15 downto 0) => c_counter_binary_3_Q(15 downto 0),
-      SCLR => mux8to1_0_b
-    );
-c_counter_binary_4: component DAQ_c_counter_binary_4_0
-     port map (
-      CE => '1',
-      CLK => xlslice_4_Dout(0),
-      Q(15 downto 0) => c_counter_binary_4_Q(15 downto 0),
-      SCLR => mux8to1_0_b
-    );
-c_counter_binary_5: component DAQ_c_counter_binary_5_0
-     port map (
-      CLK => xlslice_5_Dout(0),
-      Q(15 downto 0) => c_counter_binary_5_Q(15 downto 0),
-      SCLR => mux8to1_0_b
-    );
-c_counter_binary_6: component DAQ_c_counter_binary_6_0
-     port map (
-      CLK => xlslice_6_Dout(0),
-      Q(15 downto 0) => c_counter_binary_6_Q(15 downto 0),
-      SCLR => mux8to1_0_b
-    );
-c_counter_binary_7: component DAQ_c_counter_binary_7_0
-     port map (
-      CLK => xlslice_7_Dout(0),
-      Q(15 downto 0) => c_counter_binary_7_Q(15 downto 0),
-      SCLR => mux8to1_0_b
+      y(15 downto 0) => CounterUp16bit_7_Q(15 downto 0)
     );
 mux8to1_0: component DAQ_mux8to1_0_0
      port map (
@@ -510,6 +530,10 @@ mux8to1_0: component DAQ_mux8to1_0_0
 xlconstant_0: component DAQ_xlconstant_0_0
      port map (
       dout(0) => xlconstant_0_dout(0)
+    );
+xlconstant_1: component DAQ_xlconstant_0_1
+     port map (
+      dout(0) => Net(0)
     );
 xlslice_0: component DAQ_xlslice_0_0
      port map (

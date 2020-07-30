@@ -9,15 +9,7 @@
       "validated": "true"
     },
     "design_tree": {
-      "c_counter_binary_0": "",
-      "c_counter_binary_1": "",
-      "c_counter_binary_2": "",
-      "c_counter_binary_3": "",
       "xlslice_0": "",
-      "c_counter_binary_4": "",
-      "c_counter_binary_5": "",
-      "c_counter_binary_6": "",
-      "c_counter_binary_7": "",
       "xlslice_4": "",
       "xlslice_5": "",
       "xlslice_6": "",
@@ -35,7 +27,16 @@
       "KSAddSubb_7": "",
       "xlslice_3": "",
       "xlslice_2": "",
-      "xlslice_1": ""
+      "xlslice_1": "",
+      "xlconstant_1": "",
+      "CounterUp16bit_0": "",
+      "CounterUp16bit_1": "",
+      "CounterUp16bit_2": "",
+      "CounterUp16bit_3": "",
+      "CounterUp16bit_4": "",
+      "CounterUp16bit_5": "",
+      "CounterUp16bit_6": "",
+      "CounterUp16bit_7": ""
     },
     "ports": {
       "Q0": {
@@ -356,108 +357,12 @@
       }
     },
     "components": {
-      "c_counter_binary_0": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_0_0",
-        "parameters": {
-          "CE": {
-            "value": "false"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_1": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_1_0",
-        "parameters": {
-          "CE": {
-            "value": "false"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_2": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_2_0",
-        "parameters": {
-          "CE": {
-            "value": "false"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_3": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_3_0",
-        "parameters": {
-          "CE": {
-            "value": "false"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
       "xlslice_0": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "xci_name": "DAQ_xlslice_0_0",
         "parameters": {
           "DIN_WIDTH": {
             "value": "8"
-          }
-        }
-      },
-      "c_counter_binary_4": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_4_0",
-        "parameters": {
-          "CE": {
-            "value": "true"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_5": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_5_0",
-        "parameters": {
-          "CE": {
-            "value": "false"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_6": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_6_0",
-        "parameters": {
-          "CE": {
-            "value": "false"
-          },
-          "SCLR": {
-            "value": "true"
-          }
-        }
-      },
-      "c_counter_binary_7": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "DAQ_c_counter_binary_7_0",
-        "parameters": {
-          "CE": {
-            "value": "false"
-          },
-          "SCLR": {
-            "value": "true"
           }
         }
       },
@@ -1050,6 +955,271 @@
             "value": "1"
           }
         }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "DAQ_xlconstant_0_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0b0"
+          }
+        }
+      },
+      "CounterUp16bit_0": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterUp16bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CE": {
+            "direction": "I"
+          },
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "CounterUp16bit_1": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterUp16bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CE": {
+            "direction": "I"
+          },
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "CounterUp16bit_2": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterUp16bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CE": {
+            "direction": "I"
+          },
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "CounterUp16bit_3": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_2_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterUp16bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CE": {
+            "direction": "I"
+          },
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "CounterUp16bit_4": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_2_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterUp16bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CE": {
+            "direction": "I"
+          },
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "CounterUp16bit_5": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_4_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterUp16bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CE": {
+            "direction": "I"
+          },
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "CounterUp16bit_6": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_5_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterUp16bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CE": {
+            "direction": "I"
+          },
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      },
+      "CounterUp16bit_7": {
+        "vlnv": "xilinx.com:module_ref:CounterUp16bit:1.0",
+        "xci_name": "DAQ_CounterUp16bit_6_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "CounterUp16bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "CE": {
+            "direction": "I"
+          },
+          "Clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "SCLR": {
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
       }
     },
     "nets": {
@@ -1066,93 +1236,18 @@
           "xlslice_1/Din"
         ]
       },
-      "xlslice_0_Dout": {
-        "ports": [
-          "xlslice_0/Dout",
-          "c_counter_binary_0/CLK"
-        ]
-      },
       "c_counter_binary_0_Q": {
         "ports": [
-          "c_counter_binary_0/Q",
+          "CounterUp16bit_0/Q",
           "Q0",
-          "CounterMux_0/count0",
-          "KSAddSubb_0/y"
-        ]
-      },
-      "c_counter_binary_2_Q": {
-        "ports": [
-          "c_counter_binary_2/Q",
-          "Q2",
-          "CounterMux_0/count2",
-          "KSAddSubb_2/y"
-        ]
-      },
-      "xlslice_4_Dout": {
-        "ports": [
-          "xlslice_4/Dout",
-          "c_counter_binary_4/CLK"
-        ]
-      },
-      "xlslice_5_Dout": {
-        "ports": [
-          "xlslice_5/Dout",
-          "c_counter_binary_5/CLK"
-        ]
-      },
-      "xlslice_6_Dout": {
-        "ports": [
-          "xlslice_6/Dout",
-          "c_counter_binary_6/CLK"
-        ]
-      },
-      "xlslice_7_Dout": {
-        "ports": [
-          "xlslice_7/Dout",
-          "c_counter_binary_7/CLK"
-        ]
-      },
-      "c_counter_binary_5_Q": {
-        "ports": [
-          "c_counter_binary_5/Q",
-          "Q5",
-          "CounterMux_0/count5",
-          "KSAddSubb_5/y"
-        ]
-      },
-      "c_counter_binary_6_Q": {
-        "ports": [
-          "c_counter_binary_6/Q",
-          "Q6",
-          "CounterMux_0/count6",
-          "KSAddSubb_6/y"
-        ]
-      },
-      "c_counter_binary_7_Q": {
-        "ports": [
-          "c_counter_binary_7/Q",
-          "Q7",
-          "CounterMux_0/count7",
-          "KSAddSubb_7/y"
+          "KSAddSubb_0/y",
+          "CounterMux_0/count0"
         ]
       },
       "Z_1": {
         "ports": [
           "Z",
           "mux8to1_0/a"
-        ]
-      },
-      "mux8to1_0_b": {
-        "ports": [
-          "mux8to1_0/b",
-          "c_counter_binary_0/SCLR",
-          "c_counter_binary_1/SCLR",
-          "c_counter_binary_2/SCLR",
-          "c_counter_binary_3/SCLR",
-          "c_counter_binary_4/SCLR",
-          "c_counter_binary_5/SCLR",
-          "c_counter_binary_6/SCLR",
-          "c_counter_binary_7/SCLR"
         ]
       },
       "CounterMux_0_countRef": {
@@ -1174,30 +1269,6 @@
           "sel",
           "mux8to1_0/sel",
           "CounterMux_0/sel"
-        ]
-      },
-      "c_counter_binary_1_Q": {
-        "ports": [
-          "c_counter_binary_1/Q",
-          "Q1",
-          "CounterMux_0/count1",
-          "KSAddSubb_1/y"
-        ]
-      },
-      "c_counter_binary_3_Q": {
-        "ports": [
-          "c_counter_binary_3/Q",
-          "Q3",
-          "CounterMux_0/count3",
-          "KSAddSubb_3/y"
-        ]
-      },
-      "c_counter_binary_4_Q": {
-        "ports": [
-          "c_counter_binary_4/Q",
-          "Q4",
-          "KSAddSubb_4/y",
-          "CounterMux_0/count4"
         ]
       },
       "xlconstant_0_dout": {
@@ -1309,22 +1380,134 @@
           "cout6"
         ]
       },
-      "xlslice_3_Dout": {
+      "xlslice_1_Dout": {
         "ports": [
-          "xlslice_3/Dout",
-          "c_counter_binary_3/CLK"
+          "xlslice_1/Dout",
+          "CounterUp16bit_1/Clk"
+        ]
+      },
+      "CounterUp16bit_1_Q": {
+        "ports": [
+          "CounterUp16bit_1/Q",
+          "KSAddSubb_1/y",
+          "Q1",
+          "CounterMux_0/count1"
+        ]
+      },
+      "CounterUp16bit_2_Q": {
+        "ports": [
+          "CounterUp16bit_2/Q",
+          "KSAddSubb_2/y",
+          "Q2",
+          "CounterMux_0/count2"
+        ]
+      },
+      "CounterUp16bit_3_Q": {
+        "ports": [
+          "CounterUp16bit_3/Q",
+          "KSAddSubb_3/y",
+          "Q3",
+          "CounterMux_0/count3"
+        ]
+      },
+      "CounterUp16bit_4_Q": {
+        "ports": [
+          "CounterUp16bit_4/Q",
+          "KSAddSubb_4/y",
+          "Q4",
+          "CounterMux_0/count4"
+        ]
+      },
+      "CounterUp16bit_5_Q": {
+        "ports": [
+          "CounterUp16bit_5/Q",
+          "Q5",
+          "KSAddSubb_5/y",
+          "CounterMux_0/count5"
+        ]
+      },
+      "CounterUp16bit_6_Q": {
+        "ports": [
+          "CounterUp16bit_6/Q",
+          "Q6",
+          "KSAddSubb_6/y",
+          "CounterMux_0/count6"
+        ]
+      },
+      "CounterUp16bit_7_Q": {
+        "ports": [
+          "CounterUp16bit_7/Q",
+          "KSAddSubb_7/y",
+          "Q7",
+          "CounterMux_0/count7"
+        ]
+      },
+      "mux8to1_0_b": {
+        "ports": [
+          "mux8to1_0/b",
+          "CounterUp16bit_0/SCLR",
+          "CounterUp16bit_1/SCLR",
+          "CounterUp16bit_2/SCLR",
+          "CounterUp16bit_3/SCLR",
+          "CounterUp16bit_4/SCLR",
+          "CounterUp16bit_5/SCLR",
+          "CounterUp16bit_6/SCLR",
+          "CounterUp16bit_7/SCLR"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "CounterUp16bit_0/Clk"
         ]
       },
       "xlslice_2_Dout": {
         "ports": [
           "xlslice_2/Dout",
-          "c_counter_binary_2/CLK"
+          "CounterUp16bit_2/Clk"
         ]
       },
-      "xlslice_1_Dout": {
+      "xlslice_3_Dout": {
         "ports": [
-          "xlslice_1/Dout",
-          "c_counter_binary_1/CLK"
+          "xlslice_3/Dout",
+          "CounterUp16bit_3/Clk"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "xlslice_4/Dout",
+          "CounterUp16bit_4/Clk"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "xlslice_5/Dout",
+          "CounterUp16bit_5/Clk"
+        ]
+      },
+      "xlslice_6_Dout": {
+        "ports": [
+          "xlslice_6/Dout",
+          "CounterUp16bit_6/Clk"
+        ]
+      },
+      "xlslice_7_Dout": {
+        "ports": [
+          "xlslice_7/Dout",
+          "CounterUp16bit_7/Clk"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "xlconstant_1/dout",
+          "CounterUp16bit_0/CE",
+          "CounterUp16bit_1/CE",
+          "CounterUp16bit_2/CE",
+          "CounterUp16bit_3/CE",
+          "CounterUp16bit_4/CE",
+          "CounterUp16bit_5/CE",
+          "CounterUp16bit_6/CE",
+          "CounterUp16bit_7/CE"
         ]
       }
     }

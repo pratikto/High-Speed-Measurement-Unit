@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# CounterMux, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, mux8to1
+# CounterMux, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, mux8to1
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -206,6 +206,94 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  # Create instance: CounterUp16bit_0, and set properties
+  set block_name CounterUp16bit
+  set block_cell_name CounterUp16bit_0
+  if { [catch {set CounterUp16bit_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $CounterUp16bit_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: CounterUp16bit_1, and set properties
+  set block_name CounterUp16bit
+  set block_cell_name CounterUp16bit_1
+  if { [catch {set CounterUp16bit_1 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $CounterUp16bit_1 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: CounterUp16bit_2, and set properties
+  set block_name CounterUp16bit
+  set block_cell_name CounterUp16bit_2
+  if { [catch {set CounterUp16bit_2 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $CounterUp16bit_2 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: CounterUp16bit_3, and set properties
+  set block_name CounterUp16bit
+  set block_cell_name CounterUp16bit_3
+  if { [catch {set CounterUp16bit_3 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $CounterUp16bit_3 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: CounterUp16bit_4, and set properties
+  set block_name CounterUp16bit
+  set block_cell_name CounterUp16bit_4
+  if { [catch {set CounterUp16bit_4 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $CounterUp16bit_4 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: CounterUp16bit_5, and set properties
+  set block_name CounterUp16bit
+  set block_cell_name CounterUp16bit_5
+  if { [catch {set CounterUp16bit_5 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $CounterUp16bit_5 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: CounterUp16bit_6, and set properties
+  set block_name CounterUp16bit
+  set block_cell_name CounterUp16bit_6
+  if { [catch {set CounterUp16bit_6 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $CounterUp16bit_6 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: CounterUp16bit_7, and set properties
+  set block_name CounterUp16bit
+  set block_cell_name CounterUp16bit_7
+  if { [catch {set CounterUp16bit_7 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $CounterUp16bit_7 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: KSAddSubb_0, and set properties
   set block_name KSAddSubb
   set block_cell_name KSAddSubb_0
@@ -294,62 +382,6 @@ proc create_root_design { parentCell } {
      return 1
    }
   
-  # Create instance: c_counter_binary_0, and set properties
-  set c_counter_binary_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_0 ]
-  set_property -dict [ list \
-   CONFIG.CE {false} \
-   CONFIG.SCLR {true} \
- ] $c_counter_binary_0
-
-  # Create instance: c_counter_binary_1, and set properties
-  set c_counter_binary_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_1 ]
-  set_property -dict [ list \
-   CONFIG.CE {false} \
-   CONFIG.SCLR {true} \
- ] $c_counter_binary_1
-
-  # Create instance: c_counter_binary_2, and set properties
-  set c_counter_binary_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_2 ]
-  set_property -dict [ list \
-   CONFIG.CE {false} \
-   CONFIG.SCLR {true} \
- ] $c_counter_binary_2
-
-  # Create instance: c_counter_binary_3, and set properties
-  set c_counter_binary_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_3 ]
-  set_property -dict [ list \
-   CONFIG.CE {false} \
-   CONFIG.SCLR {true} \
- ] $c_counter_binary_3
-
-  # Create instance: c_counter_binary_4, and set properties
-  set c_counter_binary_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_4 ]
-  set_property -dict [ list \
-   CONFIG.CE {true} \
-   CONFIG.SCLR {true} \
- ] $c_counter_binary_4
-
-  # Create instance: c_counter_binary_5, and set properties
-  set c_counter_binary_5 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_5 ]
-  set_property -dict [ list \
-   CONFIG.CE {false} \
-   CONFIG.SCLR {true} \
- ] $c_counter_binary_5
-
-  # Create instance: c_counter_binary_6, and set properties
-  set c_counter_binary_6 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_6 ]
-  set_property -dict [ list \
-   CONFIG.CE {false} \
-   CONFIG.SCLR {true} \
- ] $c_counter_binary_6
-
-  # Create instance: c_counter_binary_7, and set properties
-  set c_counter_binary_7 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_7 ]
-  set_property -dict [ list \
-   CONFIG.CE {false} \
-   CONFIG.SCLR {true} \
- ] $c_counter_binary_7
-
   # Create instance: mux8to1_0, and set properties
   set block_name mux8to1
   set block_cell_name mux8to1_0
@@ -366,6 +398,12 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.CONST_VAL {0b1} \
  ] $xlconstant_0
+
+  # Create instance: xlconstant_1, and set properties
+  set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
+  set_property -dict [ list \
+   CONFIG.CONST_VAL {0b0} \
+ ] $xlconstant_1
 
   # Create instance: xlslice_0, and set properties
   set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
@@ -438,6 +476,13 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net CounterMux_0_countRef [get_bd_ports CountRef] [get_bd_pins CounterMux_0/countRef] [get_bd_pins KSAddSubb_0/x] [get_bd_pins KSAddSubb_1/x] [get_bd_pins KSAddSubb_2/x] [get_bd_pins KSAddSubb_3/x] [get_bd_pins KSAddSubb_4/x] [get_bd_pins KSAddSubb_5/x] [get_bd_pins KSAddSubb_6/x] [get_bd_pins KSAddSubb_7/x]
+  connect_bd_net -net CounterUp16bit_1_Q [get_bd_ports Q1] [get_bd_pins CounterMux_0/count1] [get_bd_pins CounterUp16bit_1/Q] [get_bd_pins KSAddSubb_1/y]
+  connect_bd_net -net CounterUp16bit_2_Q [get_bd_ports Q2] [get_bd_pins CounterMux_0/count2] [get_bd_pins CounterUp16bit_2/Q] [get_bd_pins KSAddSubb_2/y]
+  connect_bd_net -net CounterUp16bit_3_Q [get_bd_ports Q3] [get_bd_pins CounterMux_0/count3] [get_bd_pins CounterUp16bit_3/Q] [get_bd_pins KSAddSubb_3/y]
+  connect_bd_net -net CounterUp16bit_4_Q [get_bd_ports Q4] [get_bd_pins CounterMux_0/count4] [get_bd_pins CounterUp16bit_4/Q] [get_bd_pins KSAddSubb_4/y]
+  connect_bd_net -net CounterUp16bit_5_Q [get_bd_ports Q5] [get_bd_pins CounterMux_0/count5] [get_bd_pins CounterUp16bit_5/Q] [get_bd_pins KSAddSubb_5/y]
+  connect_bd_net -net CounterUp16bit_6_Q [get_bd_ports Q6] [get_bd_pins CounterMux_0/count6] [get_bd_pins CounterUp16bit_6/Q] [get_bd_pins KSAddSubb_6/y]
+  connect_bd_net -net CounterUp16bit_7_Q [get_bd_ports Q7] [get_bd_pins CounterMux_0/count7] [get_bd_pins CounterUp16bit_7/Q] [get_bd_pins KSAddSubb_7/y]
   connect_bd_net -net KSAddSubb_0_cout [get_bd_ports cout0] [get_bd_pins KSAddSubb_0/cout]
   connect_bd_net -net KSAddSubb_0_sum [get_bd_ports diff0] [get_bd_pins KSAddSubb_0/sum]
   connect_bd_net -net KSAddSubb_1_cout [get_bd_ports cout1] [get_bd_pins KSAddSubb_1/cout]
@@ -454,27 +499,21 @@ proc create_root_design { parentCell } {
   connect_bd_net -net KSAddSubb_6_sum [get_bd_ports diff6] [get_bd_pins KSAddSubb_6/sum]
   connect_bd_net -net KSAddSubb_7_cout [get_bd_ports cout7] [get_bd_pins KSAddSubb_7/cout]
   connect_bd_net -net KSAddSubb_7_sum [get_bd_ports diff7] [get_bd_pins KSAddSubb_7/sum]
+  connect_bd_net -net Net [get_bd_pins CounterUp16bit_0/CE] [get_bd_pins CounterUp16bit_1/CE] [get_bd_pins CounterUp16bit_2/CE] [get_bd_pins CounterUp16bit_3/CE] [get_bd_pins CounterUp16bit_4/CE] [get_bd_pins CounterUp16bit_5/CE] [get_bd_pins CounterUp16bit_6/CE] [get_bd_pins CounterUp16bit_7/CE] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net Z_1 [get_bd_ports Z] [get_bd_pins mux8to1_0/a]
-  connect_bd_net -net c_counter_binary_0_Q [get_bd_ports Q0] [get_bd_pins CounterMux_0/count0] [get_bd_pins KSAddSubb_0/y] [get_bd_pins c_counter_binary_0/Q]
-  connect_bd_net -net c_counter_binary_1_Q [get_bd_ports Q1] [get_bd_pins CounterMux_0/count1] [get_bd_pins KSAddSubb_1/y] [get_bd_pins c_counter_binary_1/Q]
-  connect_bd_net -net c_counter_binary_2_Q [get_bd_ports Q2] [get_bd_pins CounterMux_0/count2] [get_bd_pins KSAddSubb_2/y] [get_bd_pins c_counter_binary_2/Q]
-  connect_bd_net -net c_counter_binary_3_Q [get_bd_ports Q3] [get_bd_pins CounterMux_0/count3] [get_bd_pins KSAddSubb_3/y] [get_bd_pins c_counter_binary_3/Q]
-  connect_bd_net -net c_counter_binary_4_Q [get_bd_ports Q4] [get_bd_pins CounterMux_0/count4] [get_bd_pins KSAddSubb_4/y] [get_bd_pins c_counter_binary_4/Q]
-  connect_bd_net -net c_counter_binary_5_Q [get_bd_ports Q5] [get_bd_pins CounterMux_0/count5] [get_bd_pins KSAddSubb_5/y] [get_bd_pins c_counter_binary_5/Q]
-  connect_bd_net -net c_counter_binary_6_Q [get_bd_ports Q6] [get_bd_pins CounterMux_0/count6] [get_bd_pins KSAddSubb_6/y] [get_bd_pins c_counter_binary_6/Q]
-  connect_bd_net -net c_counter_binary_7_Q [get_bd_ports Q7] [get_bd_pins CounterMux_0/count7] [get_bd_pins KSAddSubb_7/y] [get_bd_pins c_counter_binary_7/Q]
+  connect_bd_net -net c_counter_binary_0_Q [get_bd_ports Q0] [get_bd_pins CounterMux_0/count0] [get_bd_pins CounterUp16bit_0/Q] [get_bd_pins KSAddSubb_0/y]
   connect_bd_net -net clk_1 [get_bd_ports A] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din] [get_bd_pins xlslice_3/Din] [get_bd_pins xlslice_4/Din] [get_bd_pins xlslice_5/Din] [get_bd_pins xlslice_6/Din] [get_bd_pins xlslice_7/Din]
-  connect_bd_net -net mux8to1_0_b [get_bd_pins c_counter_binary_0/SCLR] [get_bd_pins c_counter_binary_1/SCLR] [get_bd_pins c_counter_binary_2/SCLR] [get_bd_pins c_counter_binary_3/SCLR] [get_bd_pins c_counter_binary_4/SCLR] [get_bd_pins c_counter_binary_5/SCLR] [get_bd_pins c_counter_binary_6/SCLR] [get_bd_pins c_counter_binary_7/SCLR] [get_bd_pins mux8to1_0/b]
+  connect_bd_net -net mux8to1_0_b [get_bd_pins CounterUp16bit_0/SCLR] [get_bd_pins CounterUp16bit_1/SCLR] [get_bd_pins CounterUp16bit_2/SCLR] [get_bd_pins CounterUp16bit_3/SCLR] [get_bd_pins CounterUp16bit_4/SCLR] [get_bd_pins CounterUp16bit_5/SCLR] [get_bd_pins CounterUp16bit_6/SCLR] [get_bd_pins CounterUp16bit_7/SCLR] [get_bd_pins mux8to1_0/b]
   connect_bd_net -net sel_1 [get_bd_ports sel] [get_bd_pins CounterMux_0/sel] [get_bd_pins mux8to1_0/sel]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins KSAddSubb_0/add] [get_bd_pins KSAddSubb_1/add] [get_bd_pins KSAddSubb_2/add] [get_bd_pins KSAddSubb_3/add] [get_bd_pins KSAddSubb_4/add] [get_bd_pins KSAddSubb_5/add] [get_bd_pins KSAddSubb_6/add] [get_bd_pins KSAddSubb_7/add] [get_bd_pins xlconstant_0/dout]
-  connect_bd_net -net xlslice_0_Dout [get_bd_pins c_counter_binary_0/CLK] [get_bd_pins xlslice_0/Dout]
-  connect_bd_net -net xlslice_1_Dout [get_bd_pins c_counter_binary_1/CLK] [get_bd_pins xlslice_1/Dout]
-  connect_bd_net -net xlslice_2_Dout [get_bd_pins c_counter_binary_2/CLK] [get_bd_pins xlslice_2/Dout]
-  connect_bd_net -net xlslice_3_Dout [get_bd_pins c_counter_binary_3/CLK] [get_bd_pins xlslice_3/Dout]
-  connect_bd_net -net xlslice_4_Dout [get_bd_pins c_counter_binary_4/CLK] [get_bd_pins xlslice_4/Dout]
-  connect_bd_net -net xlslice_5_Dout [get_bd_pins c_counter_binary_5/CLK] [get_bd_pins xlslice_5/Dout]
-  connect_bd_net -net xlslice_6_Dout [get_bd_pins c_counter_binary_6/CLK] [get_bd_pins xlslice_6/Dout]
-  connect_bd_net -net xlslice_7_Dout [get_bd_pins c_counter_binary_7/CLK] [get_bd_pins xlslice_7/Dout]
+  connect_bd_net -net xlslice_0_Dout [get_bd_pins CounterUp16bit_0/Clk] [get_bd_pins xlslice_0/Dout]
+  connect_bd_net -net xlslice_1_Dout [get_bd_pins CounterUp16bit_1/Clk] [get_bd_pins xlslice_1/Dout]
+  connect_bd_net -net xlslice_2_Dout [get_bd_pins CounterUp16bit_2/Clk] [get_bd_pins xlslice_2/Dout]
+  connect_bd_net -net xlslice_3_Dout [get_bd_pins CounterUp16bit_3/Clk] [get_bd_pins xlslice_3/Dout]
+  connect_bd_net -net xlslice_4_Dout [get_bd_pins CounterUp16bit_4/Clk] [get_bd_pins xlslice_4/Dout]
+  connect_bd_net -net xlslice_5_Dout [get_bd_pins CounterUp16bit_5/Clk] [get_bd_pins xlslice_5/Dout]
+  connect_bd_net -net xlslice_6_Dout [get_bd_pins CounterUp16bit_6/Clk] [get_bd_pins xlslice_6/Dout]
+  connect_bd_net -net xlslice_7_Dout [get_bd_pins CounterUp16bit_7/Clk] [get_bd_pins xlslice_7/Dout]
 
   # Create address segments
 
