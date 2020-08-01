@@ -37,8 +37,9 @@ port (
     x : IN std_logic_vector (15 downto 0); -- first number we want to add
     y : IN std_logic_vector (15 downto 0); -- second number we want to add 
     add     : IN std_logic; -- add 
-    sum    : OUT std_logic_vector (15 downto 0); -- the summation 
-    cout   : OUT std_logic -- the output carry 
+    cout   : OUT std_logic; -- the output carry 
+    sum    : OUT std_logic_vector (15 downto 0) -- the summation 
+
 );
 end KSAddSubb;
 
@@ -48,8 +49,8 @@ architecture Behavioral of KSAddSubb is
         x : IN std_logic_vector (15 downto 0); -- first number we want to add
         y : IN std_logic_vector (15 downto 0); -- second number we want to add 
         cin     : IN std_logic; -- essential input carry
-        sum    : OUT std_logic_vector (15 downto 0); -- the summation 
-        cout   : OUT std_logic -- the output carry 
+        cout   : OUT std_logic; -- the output carry 
+        sum    : OUT std_logic_vector (15 downto 0) -- the summation 
 );
 end component;
 signal BxorAdd : std_logic_vector (15 downto 0);
