@@ -58,8 +58,8 @@ ENTITY DAQ_KSAddSubb_7_0 IS
     x : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     y : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     add : IN STD_LOGIC;
-    sum : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-    cout : OUT STD_LOGIC
+    cout : OUT STD_LOGIC;
+    sum : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END DAQ_KSAddSubb_7_0;
 
@@ -71,8 +71,8 @@ ARCHITECTURE DAQ_KSAddSubb_7_0_arch OF DAQ_KSAddSubb_7_0 IS
       x : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       y : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       add : IN STD_LOGIC;
-      sum : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-      cout : OUT STD_LOGIC
+      cout : OUT STD_LOGIC;
+      sum : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
     );
   END COMPONENT KSAddSubb;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
@@ -83,7 +83,7 @@ BEGIN
       x => x,
       y => y,
       add => add,
-      sum => sum,
-      cout => cout
+      cout => cout,
+      sum => sum
     );
 END DAQ_KSAddSubb_7_0_arch;

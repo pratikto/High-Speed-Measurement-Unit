@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Wed Jul 29 09:34:04 2020
+// Date        : Sat Aug  1 23:53:29 2020
 // Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {C:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 //               Unit/DAQ/DAQ/ip/DAQ_KSAddSubb_7_0/DAQ_KSAddSubb_7_0_sim_netlist.v}
@@ -19,19 +19,22 @@ module DAQ_KSAddSubb_7_0
    (x,
     y,
     add,
-    sum,
-    cout);
+    cout,
+    sum);
   input [15:0]x;
   input [15:0]y;
   input add;
-  output [15:0]sum;
   output cout;
+  output [15:0]sum;
 
   wire add;
   wire cout;
   wire cout_INST_0_i_1_n_0;
   wire cout_INST_0_i_2_n_0;
   wire cout_INST_0_i_3_n_0;
+  wire cout_INST_0_i_4_n_0;
+  wire cout_INST_0_i_5_n_0;
+  wire cout_INST_0_i_6_n_0;
   wire [15:0]sum;
   wire \sum[10]_INST_0_i_1_n_0 ;
   wire \sum[10]_INST_0_i_2_n_0 ;
@@ -46,9 +49,6 @@ module DAQ_KSAddSubb_7_0
   wire \sum[12]_INST_0_i_3_n_0 ;
   wire \sum[12]_INST_0_i_4_n_0 ;
   wire \sum[12]_INST_0_i_5_n_0 ;
-  wire \sum[12]_INST_0_i_6_n_0 ;
-  wire \sum[12]_INST_0_i_7_n_0 ;
-  wire \sum[12]_INST_0_i_8_n_0 ;
   wire \sum[13]_INST_0_i_1_n_0 ;
   wire \sum[13]_INST_0_i_2_n_0 ;
   wire \sum[13]_INST_0_i_3_n_0 ;
@@ -90,42 +90,72 @@ module DAQ_KSAddSubb_7_0
   LUT5 #(
     .INIT(32'hF0F0FFF4)) 
     cout_INST_0
-       (.I0(\sum[12]_INST_0_i_4_n_0 ),
+       (.I0(cout_INST_0_i_1_n_0),
         .I1(add),
-        .I2(cout_INST_0_i_1_n_0),
-        .I3(\sum[12]_INST_0_i_5_n_0 ),
-        .I4(cout_INST_0_i_2_n_0),
+        .I2(cout_INST_0_i_2_n_0),
+        .I3(cout_INST_0_i_3_n_0),
+        .I4(cout_INST_0_i_4_n_0),
         .O(cout));
   LUT6 #(
-    .INIT(64'hDFFE0ED04FF80840)) 
+    .INIT(64'h6FF9F96FFFFFFFFF)) 
     cout_INST_0_i_1
+       (.I0(x[8]),
+        .I1(y[8]),
+        .I2(add),
+        .I3(x[9]),
+        .I4(y[9]),
+        .I5(\sum[14]_INST_0_i_3_n_0 ),
+        .O(cout_INST_0_i_1_n_0));
+  LUT6 #(
+    .INIT(64'hDFFE0ED04FF80840)) 
+    cout_INST_0_i_2
        (.I0(y[14]),
         .I1(x[14]),
         .I2(add),
         .I3(y[15]),
         .I4(x[15]),
-        .I5(cout_INST_0_i_3_n_0),
-        .O(cout_INST_0_i_1_n_0));
+        .I5(cout_INST_0_i_5_n_0),
+        .O(cout_INST_0_i_2_n_0));
+  LUT6 #(
+    .INIT(64'h71FCF3D430D471C0)) 
+    cout_INST_0_i_3
+       (.I0(cout_INST_0_i_6_n_0),
+        .I1(y[11]),
+        .I2(x[11]),
+        .I3(add),
+        .I4(y[10]),
+        .I5(x[10]),
+        .O(cout_INST_0_i_3_n_0));
   LUT6 #(
     .INIT(64'hBEFFFFEBFFEBBEFF)) 
-    cout_INST_0_i_2
+    cout_INST_0_i_4
        (.I0(\sum[14]_INST_0_i_2_n_0 ),
         .I1(x[15]),
         .I2(y[15]),
         .I3(add),
         .I4(x[14]),
         .I5(y[14]),
-        .O(cout_INST_0_i_2_n_0));
+        .O(cout_INST_0_i_4_n_0));
   (* SOFT_HLUTNM = "soft_lutpair5" *) 
   LUT5 #(
     .INIT(32'h2F08F820)) 
-    cout_INST_0_i_3
+    cout_INST_0_i_5
        (.I0(x[12]),
         .I1(y[12]),
         .I2(add),
         .I3(x[13]),
         .I4(y[13]),
-        .O(cout_INST_0_i_3_n_0));
+        .O(cout_INST_0_i_5_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT5 #(
+    .INIT(32'hD0F707DF)) 
+    cout_INST_0_i_6
+       (.I0(x[8]),
+        .I1(y[8]),
+        .I2(add),
+        .I3(x[9]),
+        .I4(y[9]),
+        .O(cout_INST_0_i_6_n_0));
   LUT2 #(
     .INIT(4'h6)) 
     \sum[0]_INST_0 
@@ -163,7 +193,7 @@ module DAQ_KSAddSubb_7_0
   LUT6 #(
     .INIT(64'h8200002800288200)) 
     \sum[10]_INST_0_i_3 
-       (.I0(\sum[12]_INST_0_i_7_n_0 ),
+       (.I0(\sum[12]_INST_0_i_5_n_0 ),
         .I1(x[2]),
         .I2(y[2]),
         .I3(add),
@@ -234,8 +264,8 @@ module DAQ_KSAddSubb_7_0
         .I1(\sum[12]_INST_0_i_2_n_0 ),
         .I2(add),
         .I3(\sum[12]_INST_0_i_3_n_0 ),
-        .I4(\sum[12]_INST_0_i_4_n_0 ),
-        .I5(\sum[12]_INST_0_i_5_n_0 ),
+        .I4(cout_INST_0_i_1_n_0),
+        .I5(cout_INST_0_i_3_n_0),
         .O(sum[12]));
   (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
@@ -248,7 +278,7 @@ module DAQ_KSAddSubb_7_0
   LUT6 #(
     .INIT(64'h8E030C2BCF2B8E3F)) 
     \sum[12]_INST_0_i_2 
-       (.I0(\sum[12]_INST_0_i_6_n_0 ),
+       (.I0(\sum[12]_INST_0_i_4_n_0 ),
         .I1(y[7]),
         .I2(x[7]),
         .I3(add),
@@ -263,58 +293,28 @@ module DAQ_KSAddSubb_7_0
         .I2(add),
         .I3(x[7]),
         .I4(y[7]),
-        .I5(\sum[12]_INST_0_i_7_n_0 ),
+        .I5(\sum[12]_INST_0_i_5_n_0 ),
         .O(\sum[12]_INST_0_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'h6FF9F96FFFFFFFFF)) 
-    \sum[12]_INST_0_i_4 
-       (.I0(x[8]),
-        .I1(y[8]),
-        .I2(add),
-        .I3(x[9]),
-        .I4(y[9]),
-        .I5(\sum[14]_INST_0_i_3_n_0 ),
-        .O(\sum[12]_INST_0_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h71FCF3D430D471C0)) 
-    \sum[12]_INST_0_i_5 
-       (.I0(\sum[12]_INST_0_i_8_n_0 ),
-        .I1(y[11]),
-        .I2(x[11]),
-        .I3(add),
-        .I4(y[10]),
-        .I5(x[10]),
-        .O(\sum[12]_INST_0_i_5_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT5 #(
     .INIT(32'hD0F707DF)) 
-    \sum[12]_INST_0_i_6 
+    \sum[12]_INST_0_i_4 
        (.I0(x[4]),
         .I1(y[4]),
         .I2(add),
         .I3(x[5]),
         .I4(y[5]),
-        .O(\sum[12]_INST_0_i_6_n_0 ));
+        .O(\sum[12]_INST_0_i_4_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT5 #(
     .INIT(32'h90060690)) 
-    \sum[12]_INST_0_i_7 
+    \sum[12]_INST_0_i_5 
        (.I0(y[5]),
         .I1(x[5]),
         .I2(add),
         .I3(y[4]),
         .I4(x[4]),
-        .O(\sum[12]_INST_0_i_7_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT5 #(
-    .INIT(32'hD0F707DF)) 
-    \sum[12]_INST_0_i_8 
-       (.I0(x[8]),
-        .I1(y[8]),
-        .I2(add),
-        .I3(x[9]),
-        .I4(y[9]),
-        .O(\sum[12]_INST_0_i_8_n_0 ));
+        .O(\sum[12]_INST_0_i_5_n_0 ));
   LUT6 #(
     .INIT(64'h5999999959995999)) 
     \sum[13]_INST_0 

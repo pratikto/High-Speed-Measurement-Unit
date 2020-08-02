@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCE657423C5641438",
+      "boundary_crc": "0xA604258CAAEE7CAD",
       "device": "xc7z020clg400-1",
       "name": "DAQ",
       "synth_flow_mode": "Hierarchical",
@@ -15,16 +15,7 @@
       "xlslice_6": "",
       "xlslice_7": "",
       "mux8to1_0": "",
-      "CounterMux_0": "",
       "xlconstant_0": "",
-      "KSAddSubb_0": "",
-      "KSAddSubb_1": "",
-      "KSAddSubb_2": "",
-      "KSAddSubb_3": "",
-      "KSAddSubb_4": "",
-      "KSAddSubb_5": "",
-      "KSAddSubb_6": "",
-      "KSAddSubb_7": "",
       "xlslice_3": "",
       "xlslice_2": "",
       "xlslice_1": "",
@@ -36,7 +27,63 @@
       "CounterUp16bit_4": "",
       "CounterUp16bit_5": "",
       "CounterUp16bit_6": "",
-      "CounterUp16bit_7": ""
+      "CounterUp16bit_7": "",
+      "xlconcat_0": "",
+      "KSAddSubb_0": "",
+      "KSAddSubb_1": "",
+      "KSAddSubb_2": "",
+      "KSAddSubb_3": "",
+      "KSAddSubb_4": "",
+      "KSAddSubb_5": "",
+      "KSAddSubb_6": "",
+      "KSAddSubb_7": "",
+      "xlconcat_1": "",
+      "xlconcat_2": "",
+      "xlconcat_3": "",
+      "xlconcat_4": "",
+      "xlconcat_5": "",
+      "xlconcat_6": "",
+      "xlconcat_7": "",
+      "KSAddSubb_8": "",
+      "xlconcat_8": "",
+      "KSAddSubb_9": "",
+      "xlconcat_9": "",
+      "KSAddSubb_10": "",
+      "xlconcat_10": "",
+      "KSAddSubb_11": "",
+      "xlconcat_11": "",
+      "xlconcat_12": "",
+      "KSAddSubb_12": "",
+      "KSAddSubb_13": "",
+      "xlconcat_13": "",
+      "xlconcat_14": "",
+      "KSAddSubb_14": "",
+      "KSAddSubb_15": "",
+      "xlconcat_15": "",
+      "KSAddSubb_16": "",
+      "xlconcat_16": "",
+      "KSAddSubb_17": "",
+      "xlconcat_17": "",
+      "KSAddSubb_18": "",
+      "xlconcat_18": "",
+      "KSAddSubb_19": "",
+      "xlconcat_19": "",
+      "KSAddSubb_20": "",
+      "xlconcat_20": "",
+      "KSAddSubb_21": "",
+      "xlconcat_21": "",
+      "xlconcat_22": "",
+      "KSAddSubb_22": "",
+      "KSAddSubb_23": "",
+      "xlconcat_23": "",
+      "KSAddSubb_24": "",
+      "xlconcat_24": "",
+      "KSAddSubb_25": "",
+      "xlconcat_25": "",
+      "xlconcat_26": "",
+      "KSAddSubb_26": "",
+      "xlconcat_27": "",
+      "KSAddSubb_27": ""
     },
     "ports": {
       "Q0": {
@@ -46,8 +93,8 @@
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
-            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-            "value_src": "ip_prop"
+            "value": "undef",
+            "value_src": "default"
           }
         }
       },
@@ -58,8 +105,8 @@
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
-            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-            "value_src": "ip_prop"
+            "value": "undef",
+            "value_src": "default"
           }
         }
       },
@@ -70,8 +117,8 @@
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
-            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-            "value_src": "ip_prop"
+            "value": "undef",
+            "value_src": "default"
           }
         }
       },
@@ -82,8 +129,8 @@
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
-            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-            "value_src": "ip_prop"
+            "value": "undef",
+            "value_src": "default"
           }
         }
       },
@@ -106,8 +153,8 @@
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
-            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-            "value_src": "ip_prop"
+            "value": "undef",
+            "value_src": "default"
           }
         }
       },
@@ -118,8 +165,8 @@
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
-            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-            "value_src": "ip_prop"
+            "value": "undef",
+            "value_src": "default"
           }
         }
       },
@@ -130,8 +177,8 @@
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
-            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-            "value_src": "ip_prop"
+            "value": "undef",
+            "value_src": "default"
           }
         }
       },
@@ -142,8 +189,8 @@
         "right": "0",
         "parameters": {
           "LAYERED_METADATA": {
-            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-            "value_src": "ip_prop"
+            "value": "undef",
+            "value_src": "default"
           }
         }
       },
@@ -162,198 +209,458 @@
           }
         }
       },
-      "CountRef": {
-        "type": "data",
-        "direction": "O",
-        "left": "15",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "diff0": {
-        "type": "data",
-        "direction": "O",
-        "left": "15",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "diff1": {
-        "type": "data",
-        "direction": "O",
-        "left": "15",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "diff2": {
-        "type": "data",
-        "direction": "O",
-        "left": "15",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "diff3": {
-        "type": "data",
-        "direction": "O",
-        "left": "15",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "diff4": {
-        "type": "data",
-        "direction": "O",
-        "left": "15",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "diff5": {
-        "type": "data",
-        "direction": "O",
-        "left": "15",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "diff6": {
-        "type": "data",
-        "direction": "O",
-        "left": "15",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "cout0": {
-        "type": "data",
-        "direction": "O",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "cout1": {
-        "type": "data",
-        "direction": "O",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "cout2": {
-        "type": "data",
-        "direction": "O",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "cout3": {
-        "type": "data",
-        "direction": "O",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "cout4": {
-        "type": "data",
-        "direction": "O",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "cout5": {
-        "type": "data",
-        "direction": "O",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "cout6": {
-        "type": "data",
-        "direction": "O",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "cout7": {
-        "type": "data",
-        "direction": "O",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
-      "diff7": {
-        "type": "data",
-        "direction": "O",
-        "left": "15",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
-      },
       "A": {
         "direction": "I",
         "left": "7",
         "right": "0"
+      },
+      "diff_1_2": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_1_3": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_1_4": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_1_5": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_1_6": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_1_7": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_2_3": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_2_4": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_2_5": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_2_6": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_2_7": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_3_4": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_3_5": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_3_6": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_3_7": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_4_5": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_4_6": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_4_7": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_5_6": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_5_7": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_6_7": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_0_1": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_0_2": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_0_3": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_0_4": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_0_5": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_0_6": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "diff_0_7": {
+        "type": "data",
+        "direction": "O",
+        "left": "16",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PortWidth": {
+            "value": "17",
+            "value_src": "ip_prop"
+          }
+        }
       }
     },
     "components": {
@@ -474,431 +781,12 @@
           }
         }
       },
-      "CounterMux_0": {
-        "vlnv": "xilinx.com:module_ref:CounterMux:1.0",
-        "xci_name": "DAQ_CounterMux_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "CounterMux",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "count0": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "count1": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "count2": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "count3": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "count4": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "count5": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "count6": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "count7": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "sel": {
-            "direction": "I",
-            "left": "2",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "undef",
-                "value_src": "default_prop"
-              }
-            }
-          },
-          "countRef": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          }
-        }
-      },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "xci_name": "DAQ_xlconstant_0_0",
         "parameters": {
           "CONST_VAL": {
             "value": "0b1"
-          }
-        }
-      },
-      "KSAddSubb_0": {
-        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
-        "xci_name": "DAQ_KSAddSubb_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "KSAddSubb",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "x": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "y": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "add": {
-            "direction": "I"
-          },
-          "sum": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "cout": {
-            "direction": "O"
-          }
-        }
-      },
-      "KSAddSubb_1": {
-        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
-        "xci_name": "DAQ_KSAddSubb_1_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "KSAddSubb",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "x": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "y": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "add": {
-            "direction": "I"
-          },
-          "sum": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "cout": {
-            "direction": "O"
-          }
-        }
-      },
-      "KSAddSubb_2": {
-        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
-        "xci_name": "DAQ_KSAddSubb_2_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "KSAddSubb",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "x": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "y": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "add": {
-            "direction": "I"
-          },
-          "sum": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "cout": {
-            "direction": "O"
-          }
-        }
-      },
-      "KSAddSubb_3": {
-        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
-        "xci_name": "DAQ_KSAddSubb_3_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "KSAddSubb",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "x": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "y": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "add": {
-            "direction": "I"
-          },
-          "sum": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "cout": {
-            "direction": "O"
-          }
-        }
-      },
-      "KSAddSubb_4": {
-        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
-        "xci_name": "DAQ_KSAddSubb_4_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "KSAddSubb",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "x": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "y": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "add": {
-            "direction": "I"
-          },
-          "sum": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "cout": {
-            "direction": "O"
-          }
-        }
-      },
-      "KSAddSubb_5": {
-        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
-        "xci_name": "DAQ_KSAddSubb_5_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "KSAddSubb",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "x": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "y": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "add": {
-            "direction": "I"
-          },
-          "sum": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "cout": {
-            "direction": "O"
-          }
-        }
-      },
-      "KSAddSubb_6": {
-        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
-        "xci_name": "DAQ_KSAddSubb_6_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "KSAddSubb",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "x": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "y": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "add": {
-            "direction": "I"
-          },
-          "sum": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "cout": {
-            "direction": "O"
-          }
-        }
-      },
-      "KSAddSubb_7": {
-        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
-        "xci_name": "DAQ_KSAddSubb_7_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "KSAddSubb",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "x": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "y": {
-            "direction": "I",
-            "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
-          },
-          "add": {
-            "direction": "I"
-          },
-          "sum": {
-            "direction": "O",
-            "left": "15",
-            "right": "0"
-          },
-          "cout": {
-            "direction": "O"
           }
         }
       },
@@ -987,13 +875,7 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
+            "right": "0"
           }
         }
       },
@@ -1019,13 +901,7 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
+            "right": "0"
           }
         }
       },
@@ -1051,13 +927,7 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
+            "right": "0"
           }
         }
       },
@@ -1083,13 +953,7 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
+            "right": "0"
           }
         }
       },
@@ -1115,13 +979,7 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
+            "right": "0"
           }
         }
       },
@@ -1147,13 +1005,7 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
+            "right": "0"
           }
         }
       },
@@ -1179,13 +1031,7 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
+            "right": "0"
           }
         }
       },
@@ -1211,13 +1057,1239 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0",
-            "parameters": {
-              "LAYERED_METADATA": {
-                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}} DATA_WIDTH 16}",
-                "value_src": "ip_prop"
-              }
-            }
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_0_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_0": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_1": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_2": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_3": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_4": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_4_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_5": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_5_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_6": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_6_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_7": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_7_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_1": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_0_1",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_2": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_1_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_3": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_2_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_4": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_3_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_5": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_4_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_6": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_5_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_7": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_6_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_8": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_7_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_8": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_7_1",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_9": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_7_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_9": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_7_2",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_10": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_7_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_10": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_7_3",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_11": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_7_5",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_11": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_7_4",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_12": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_7_5",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_12": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_7_6",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_13": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_12_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_13": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_12_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_14": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_13_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_14": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_13_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_15": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_13_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_15": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_13_1",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_16": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_13_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_16": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_13_2",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_17": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_13_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_17": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_13_3",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_18": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_17_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_18": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_17_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_19": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_18_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_19": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_18_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_20": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_18_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_20": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_18_1",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_21": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_18_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_21": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_18_2",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_22": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_21_1",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_22": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_21_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "KSAddSubb_23": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_22_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_23": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_22_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_24": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_22_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_24": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_22_1",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_25": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_22_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_25": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_22_2",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconcat_26": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_25_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_26": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_25_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "xlconcat_27": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "DAQ_xlconcat_26_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "KSAddSubb_27": {
+        "vlnv": "xilinx.com:module_ref:KSAddSubb:1.0",
+        "xci_name": "DAQ_KSAddSubb_26_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "KSAddSubb",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "x": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "y": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "add": {
+            "direction": "I"
+          },
+          "cout": {
+            "direction": "O"
+          },
+          "sum": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
           }
         }
       }
@@ -1236,210 +2308,22 @@
           "xlslice_1/Din"
         ]
       },
-      "c_counter_binary_0_Q": {
-        "ports": [
-          "CounterUp16bit_0/Q",
-          "Q0",
-          "KSAddSubb_0/y",
-          "CounterMux_0/count0"
-        ]
-      },
       "Z_1": {
         "ports": [
           "Z",
           "mux8to1_0/a"
         ]
       },
-      "CounterMux_0_countRef": {
-        "ports": [
-          "CounterMux_0/countRef",
-          "CountRef",
-          "KSAddSubb_4/x",
-          "KSAddSubb_3/x",
-          "KSAddSubb_2/x",
-          "KSAddSubb_1/x",
-          "KSAddSubb_0/x",
-          "KSAddSubb_5/x",
-          "KSAddSubb_6/x",
-          "KSAddSubb_7/x"
-        ]
-      },
       "sel_1": {
         "ports": [
           "sel",
-          "mux8to1_0/sel",
-          "CounterMux_0/sel"
-        ]
-      },
-      "xlconstant_0_dout": {
-        "ports": [
-          "xlconstant_0/dout",
-          "KSAddSubb_6/add",
-          "KSAddSubb_7/add",
-          "KSAddSubb_5/add",
-          "KSAddSubb_4/add",
-          "KSAddSubb_3/add",
-          "KSAddSubb_2/add",
-          "KSAddSubb_1/add",
-          "KSAddSubb_0/add"
-        ]
-      },
-      "KSAddSubb_0_sum": {
-        "ports": [
-          "KSAddSubb_0/sum",
-          "diff0"
-        ]
-      },
-      "KSAddSubb_1_sum": {
-        "ports": [
-          "KSAddSubb_1/sum",
-          "diff1"
-        ]
-      },
-      "KSAddSubb_2_sum": {
-        "ports": [
-          "KSAddSubb_2/sum",
-          "diff2"
-        ]
-      },
-      "KSAddSubb_3_sum": {
-        "ports": [
-          "KSAddSubb_3/sum",
-          "diff3"
-        ]
-      },
-      "KSAddSubb_4_sum": {
-        "ports": [
-          "KSAddSubb_4/sum",
-          "diff4"
-        ]
-      },
-      "KSAddSubb_5_sum": {
-        "ports": [
-          "KSAddSubb_5/sum",
-          "diff5"
-        ]
-      },
-      "KSAddSubb_0_cout": {
-        "ports": [
-          "KSAddSubb_0/cout",
-          "cout0"
-        ]
-      },
-      "KSAddSubb_1_cout": {
-        "ports": [
-          "KSAddSubb_1/cout",
-          "cout1"
-        ]
-      },
-      "KSAddSubb_2_cout": {
-        "ports": [
-          "KSAddSubb_2/cout",
-          "cout2"
-        ]
-      },
-      "KSAddSubb_3_cout": {
-        "ports": [
-          "KSAddSubb_3/cout",
-          "cout3"
-        ]
-      },
-      "KSAddSubb_4_cout": {
-        "ports": [
-          "KSAddSubb_4/cout",
-          "cout4"
-        ]
-      },
-      "KSAddSubb_5_cout": {
-        "ports": [
-          "KSAddSubb_5/cout",
-          "cout5"
-        ]
-      },
-      "KSAddSubb_7_cout": {
-        "ports": [
-          "KSAddSubb_7/cout",
-          "cout7"
-        ]
-      },
-      "KSAddSubb_7_sum": {
-        "ports": [
-          "KSAddSubb_7/sum",
-          "diff7"
-        ]
-      },
-      "KSAddSubb_6_sum": {
-        "ports": [
-          "KSAddSubb_6/sum",
-          "diff6"
-        ]
-      },
-      "KSAddSubb_6_cout": {
-        "ports": [
-          "KSAddSubb_6/cout",
-          "cout6"
+          "mux8to1_0/sel"
         ]
       },
       "xlslice_1_Dout": {
         "ports": [
           "xlslice_1/Dout",
           "CounterUp16bit_1/Clk"
-        ]
-      },
-      "CounterUp16bit_1_Q": {
-        "ports": [
-          "CounterUp16bit_1/Q",
-          "KSAddSubb_1/y",
-          "Q1",
-          "CounterMux_0/count1"
-        ]
-      },
-      "CounterUp16bit_2_Q": {
-        "ports": [
-          "CounterUp16bit_2/Q",
-          "KSAddSubb_2/y",
-          "Q2",
-          "CounterMux_0/count2"
-        ]
-      },
-      "CounterUp16bit_3_Q": {
-        "ports": [
-          "CounterUp16bit_3/Q",
-          "KSAddSubb_3/y",
-          "Q3",
-          "CounterMux_0/count3"
-        ]
-      },
-      "CounterUp16bit_4_Q": {
-        "ports": [
-          "CounterUp16bit_4/Q",
-          "KSAddSubb_4/y",
-          "Q4",
-          "CounterMux_0/count4"
-        ]
-      },
-      "CounterUp16bit_5_Q": {
-        "ports": [
-          "CounterUp16bit_5/Q",
-          "Q5",
-          "KSAddSubb_5/y",
-          "CounterMux_0/count5"
-        ]
-      },
-      "CounterUp16bit_6_Q": {
-        "ports": [
-          "CounterUp16bit_6/Q",
-          "Q6",
-          "KSAddSubb_6/y",
-          "CounterMux_0/count6"
-        ]
-      },
-      "CounterUp16bit_7_Q": {
-        "ports": [
-          "CounterUp16bit_7/Q",
-          "KSAddSubb_7/y",
-          "Q7",
-          "CounterMux_0/count7"
         ]
       },
       "mux8to1_0_b": {
@@ -1508,6 +2392,647 @@
           "CounterUp16bit_5/CE",
           "CounterUp16bit_6/CE",
           "CounterUp16bit_7/CE"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "KSAddSubb_0/add",
+          "KSAddSubb_1/add",
+          "KSAddSubb_2/add",
+          "KSAddSubb_3/add",
+          "KSAddSubb_4/add",
+          "KSAddSubb_5/add",
+          "KSAddSubb_6/add",
+          "KSAddSubb_7/add",
+          "KSAddSubb_12/add",
+          "KSAddSubb_10/add",
+          "KSAddSubb_9/add",
+          "KSAddSubb_8/add",
+          "KSAddSubb_13/add",
+          "KSAddSubb_14/add",
+          "KSAddSubb_15/add",
+          "KSAddSubb_16/add",
+          "KSAddSubb_17/add",
+          "KSAddSubb_11/add",
+          "KSAddSubb_21/add",
+          "KSAddSubb_20/add",
+          "KSAddSubb_19/add",
+          "KSAddSubb_18/add",
+          "KSAddSubb_25/add",
+          "KSAddSubb_24/add",
+          "KSAddSubb_23/add",
+          "KSAddSubb_22/add",
+          "KSAddSubb_26/add",
+          "KSAddSubb_27/add"
+        ]
+      },
+      "CounterUp16bit_0_Q": {
+        "ports": [
+          "CounterUp16bit_0/Q",
+          "Q0",
+          "KSAddSubb_0/x",
+          "KSAddSubb_1/x",
+          "KSAddSubb_2/x",
+          "KSAddSubb_3/x",
+          "KSAddSubb_4/x",
+          "KSAddSubb_5/x",
+          "KSAddSubb_6/x"
+        ]
+      },
+      "CounterUp16bit_1_Q": {
+        "ports": [
+          "CounterUp16bit_1/Q",
+          "Q1",
+          "KSAddSubb_0/y",
+          "KSAddSubb_12/x",
+          "KSAddSubb_11/x",
+          "KSAddSubb_10/x",
+          "KSAddSubb_9/x",
+          "KSAddSubb_8/x",
+          "KSAddSubb_7/x"
+        ]
+      },
+      "CounterUp16bit_2_Q": {
+        "ports": [
+          "CounterUp16bit_2/Q",
+          "Q2",
+          "KSAddSubb_1/y",
+          "KSAddSubb_7/y",
+          "KSAddSubb_13/x",
+          "KSAddSubb_16/x",
+          "KSAddSubb_15/x",
+          "KSAddSubb_14/x",
+          "KSAddSubb_17/x"
+        ]
+      },
+      "CounterUp16bit_3_Q": {
+        "ports": [
+          "CounterUp16bit_3/Q",
+          "Q3",
+          "KSAddSubb_2/y",
+          "KSAddSubb_8/y",
+          "KSAddSubb_13/y",
+          "KSAddSubb_18/x",
+          "KSAddSubb_19/x",
+          "KSAddSubb_20/x",
+          "KSAddSubb_21/x"
+        ]
+      },
+      "CounterUp16bit_4_Q": {
+        "ports": [
+          "CounterUp16bit_4/Q",
+          "Q4",
+          "KSAddSubb_3/y",
+          "KSAddSubb_9/y",
+          "KSAddSubb_14/y",
+          "KSAddSubb_18/y",
+          "KSAddSubb_24/x",
+          "KSAddSubb_23/x",
+          "KSAddSubb_22/x"
+        ]
+      },
+      "CounterUp16bit_5_Q": {
+        "ports": [
+          "CounterUp16bit_5/Q",
+          "Q5",
+          "KSAddSubb_4/y",
+          "KSAddSubb_10/y",
+          "KSAddSubb_15/y",
+          "KSAddSubb_19/y",
+          "KSAddSubb_22/y",
+          "KSAddSubb_26/x",
+          "KSAddSubb_25/x"
+        ]
+      },
+      "CounterUp16bit_6_Q": {
+        "ports": [
+          "CounterUp16bit_6/Q",
+          "Q6",
+          "KSAddSubb_5/y",
+          "KSAddSubb_11/y",
+          "KSAddSubb_16/y",
+          "KSAddSubb_20/y",
+          "KSAddSubb_23/y",
+          "KSAddSubb_25/y",
+          "KSAddSubb_27/x"
+        ]
+      },
+      "CounterUp16bit_7_Q": {
+        "ports": [
+          "CounterUp16bit_7/Q",
+          "Q7",
+          "KSAddSubb_6/y",
+          "KSAddSubb_12/y",
+          "KSAddSubb_17/y",
+          "KSAddSubb_21/y",
+          "KSAddSubb_24/y",
+          "KSAddSubb_26/y",
+          "KSAddSubb_27/y"
+        ]
+      },
+      "KSAddSubb_0_cout": {
+        "ports": [
+          "KSAddSubb_0/cout",
+          "xlconcat_0/In0"
+        ]
+      },
+      "KSAddSubb_0_sum": {
+        "ports": [
+          "KSAddSubb_0/sum",
+          "xlconcat_0/In1"
+        ]
+      },
+      "KSAddSubb_1_cout": {
+        "ports": [
+          "KSAddSubb_1/cout",
+          "xlconcat_1/In0"
+        ]
+      },
+      "KSAddSubb_1_sum": {
+        "ports": [
+          "KSAddSubb_1/sum",
+          "xlconcat_1/In1"
+        ]
+      },
+      "KSAddSubb_2_cout": {
+        "ports": [
+          "KSAddSubb_2/cout",
+          "xlconcat_2/In0"
+        ]
+      },
+      "KSAddSubb_2_sum": {
+        "ports": [
+          "KSAddSubb_2/sum",
+          "xlconcat_2/In1"
+        ]
+      },
+      "KSAddSubb_3_cout": {
+        "ports": [
+          "KSAddSubb_3/cout",
+          "xlconcat_3/In0"
+        ]
+      },
+      "KSAddSubb_3_sum": {
+        "ports": [
+          "KSAddSubb_3/sum",
+          "xlconcat_3/In1"
+        ]
+      },
+      "KSAddSubb_4_cout": {
+        "ports": [
+          "KSAddSubb_4/cout",
+          "xlconcat_4/In0"
+        ]
+      },
+      "KSAddSubb_4_sum": {
+        "ports": [
+          "KSAddSubb_4/sum",
+          "xlconcat_4/In1"
+        ]
+      },
+      "KSAddSubb_5_cout": {
+        "ports": [
+          "KSAddSubb_5/cout",
+          "xlconcat_5/In0"
+        ]
+      },
+      "KSAddSubb_5_sum": {
+        "ports": [
+          "KSAddSubb_5/sum",
+          "xlconcat_5/In1"
+        ]
+      },
+      "KSAddSubb_6_cout": {
+        "ports": [
+          "KSAddSubb_6/cout",
+          "xlconcat_6/In0"
+        ]
+      },
+      "KSAddSubb_6_sum": {
+        "ports": [
+          "KSAddSubb_6/sum",
+          "xlconcat_6/In1"
+        ]
+      },
+      "KSAddSubb_7_cout": {
+        "ports": [
+          "KSAddSubb_7/cout",
+          "xlconcat_7/In0"
+        ]
+      },
+      "KSAddSubb_7_sum": {
+        "ports": [
+          "KSAddSubb_7/sum",
+          "xlconcat_7/In1"
+        ]
+      },
+      "xlconcat_7_dout": {
+        "ports": [
+          "xlconcat_7/dout",
+          "diff_1_2"
+        ]
+      },
+      "KSAddSubb_8_cout": {
+        "ports": [
+          "KSAddSubb_8/cout",
+          "xlconcat_8/In0"
+        ]
+      },
+      "KSAddSubb_8_sum": {
+        "ports": [
+          "KSAddSubb_8/sum",
+          "xlconcat_8/In1"
+        ]
+      },
+      "KSAddSubb_9_cout": {
+        "ports": [
+          "KSAddSubb_9/cout",
+          "xlconcat_9/In0"
+        ]
+      },
+      "KSAddSubb_9_sum": {
+        "ports": [
+          "KSAddSubb_9/sum",
+          "xlconcat_9/In1"
+        ]
+      },
+      "KSAddSubb_10_cout": {
+        "ports": [
+          "KSAddSubb_10/cout",
+          "xlconcat_10/In0"
+        ]
+      },
+      "KSAddSubb_10_sum": {
+        "ports": [
+          "KSAddSubb_10/sum",
+          "xlconcat_10/In1"
+        ]
+      },
+      "KSAddSubb_11_cout": {
+        "ports": [
+          "KSAddSubb_11/cout",
+          "xlconcat_11/In0"
+        ]
+      },
+      "KSAddSubb_11_sum": {
+        "ports": [
+          "KSAddSubb_11/sum",
+          "xlconcat_11/In1"
+        ]
+      },
+      "KSAddSubb_12_cout": {
+        "ports": [
+          "KSAddSubb_12/cout",
+          "xlconcat_12/In0"
+        ]
+      },
+      "KSAddSubb_12_sum": {
+        "ports": [
+          "KSAddSubb_12/sum",
+          "xlconcat_12/In1"
+        ]
+      },
+      "xlconcat_8_dout": {
+        "ports": [
+          "xlconcat_8/dout",
+          "diff_1_3"
+        ]
+      },
+      "xlconcat_9_dout": {
+        "ports": [
+          "xlconcat_9/dout",
+          "diff_1_4"
+        ]
+      },
+      "xlconcat_10_dout": {
+        "ports": [
+          "xlconcat_10/dout",
+          "diff_1_5"
+        ]
+      },
+      "xlconcat_11_dout": {
+        "ports": [
+          "xlconcat_11/dout",
+          "diff_1_6"
+        ]
+      },
+      "xlconcat_12_dout": {
+        "ports": [
+          "xlconcat_12/dout",
+          "diff_1_7"
+        ]
+      },
+      "KSAddSubb_13_cout": {
+        "ports": [
+          "KSAddSubb_13/cout",
+          "xlconcat_13/In0"
+        ]
+      },
+      "KSAddSubb_13_sum": {
+        "ports": [
+          "KSAddSubb_13/sum",
+          "xlconcat_13/In1"
+        ]
+      },
+      "xlconcat_13_dout": {
+        "ports": [
+          "xlconcat_13/dout",
+          "diff_2_3"
+        ]
+      },
+      "KSAddSubb_14_cout": {
+        "ports": [
+          "KSAddSubb_14/cout",
+          "xlconcat_14/In0"
+        ]
+      },
+      "KSAddSubb_14_sum": {
+        "ports": [
+          "KSAddSubb_14/sum",
+          "xlconcat_14/In1"
+        ]
+      },
+      "KSAddSubb_15_cout": {
+        "ports": [
+          "KSAddSubb_15/cout",
+          "xlconcat_15/In0"
+        ]
+      },
+      "KSAddSubb_15_sum": {
+        "ports": [
+          "KSAddSubb_15/sum",
+          "xlconcat_15/In1"
+        ]
+      },
+      "KSAddSubb_16_cout": {
+        "ports": [
+          "KSAddSubb_16/cout",
+          "xlconcat_16/In0"
+        ]
+      },
+      "KSAddSubb_16_sum": {
+        "ports": [
+          "KSAddSubb_16/sum",
+          "xlconcat_16/In1"
+        ]
+      },
+      "KSAddSubb_17_cout": {
+        "ports": [
+          "KSAddSubb_17/cout",
+          "xlconcat_17/In0"
+        ]
+      },
+      "KSAddSubb_17_sum": {
+        "ports": [
+          "KSAddSubb_17/sum",
+          "xlconcat_17/In1"
+        ]
+      },
+      "xlconcat_14_dout": {
+        "ports": [
+          "xlconcat_14/dout",
+          "diff_2_4"
+        ]
+      },
+      "xlconcat_15_dout": {
+        "ports": [
+          "xlconcat_15/dout",
+          "diff_2_5"
+        ]
+      },
+      "xlconcat_16_dout": {
+        "ports": [
+          "xlconcat_16/dout",
+          "diff_2_6"
+        ]
+      },
+      "xlconcat_17_dout": {
+        "ports": [
+          "xlconcat_17/dout",
+          "diff_2_7"
+        ]
+      },
+      "KSAddSubb_18_cout": {
+        "ports": [
+          "KSAddSubb_18/cout",
+          "xlconcat_18/In0"
+        ]
+      },
+      "KSAddSubb_18_sum": {
+        "ports": [
+          "KSAddSubb_18/sum",
+          "xlconcat_18/In1"
+        ]
+      },
+      "xlconcat_18_dout": {
+        "ports": [
+          "xlconcat_18/dout",
+          "diff_3_4"
+        ]
+      },
+      "KSAddSubb_19_cout": {
+        "ports": [
+          "KSAddSubb_19/cout",
+          "xlconcat_19/In0"
+        ]
+      },
+      "KSAddSubb_19_sum": {
+        "ports": [
+          "KSAddSubb_19/sum",
+          "xlconcat_19/In1"
+        ]
+      },
+      "KSAddSubb_20_cout": {
+        "ports": [
+          "KSAddSubb_20/cout",
+          "xlconcat_20/In0"
+        ]
+      },
+      "KSAddSubb_20_sum": {
+        "ports": [
+          "KSAddSubb_20/sum",
+          "xlconcat_20/In1"
+        ]
+      },
+      "KSAddSubb_21_cout": {
+        "ports": [
+          "KSAddSubb_21/cout",
+          "xlconcat_21/In0"
+        ]
+      },
+      "KSAddSubb_21_sum": {
+        "ports": [
+          "KSAddSubb_21/sum",
+          "xlconcat_21/In1"
+        ]
+      },
+      "xlconcat_19_dout": {
+        "ports": [
+          "xlconcat_19/dout",
+          "diff_3_5"
+        ]
+      },
+      "xlconcat_20_dout": {
+        "ports": [
+          "xlconcat_20/dout",
+          "diff_3_6"
+        ]
+      },
+      "xlconcat_21_dout": {
+        "ports": [
+          "xlconcat_21/dout",
+          "diff_3_7"
+        ]
+      },
+      "KSAddSubb_22_cout": {
+        "ports": [
+          "KSAddSubb_22/cout",
+          "xlconcat_22/In0"
+        ]
+      },
+      "KSAddSubb_22_sum": {
+        "ports": [
+          "KSAddSubb_22/sum",
+          "xlconcat_22/In1"
+        ]
+      },
+      "xlconcat_22_dout": {
+        "ports": [
+          "xlconcat_22/dout",
+          "diff_4_5"
+        ]
+      },
+      "KSAddSubb_23_cout": {
+        "ports": [
+          "KSAddSubb_23/cout",
+          "xlconcat_23/In0"
+        ]
+      },
+      "KSAddSubb_23_sum": {
+        "ports": [
+          "KSAddSubb_23/sum",
+          "xlconcat_23/In1"
+        ]
+      },
+      "KSAddSubb_24_cout": {
+        "ports": [
+          "KSAddSubb_24/cout",
+          "xlconcat_24/In0"
+        ]
+      },
+      "KSAddSubb_24_sum": {
+        "ports": [
+          "KSAddSubb_24/sum",
+          "xlconcat_24/In1"
+        ]
+      },
+      "KSAddSubb_25_cout": {
+        "ports": [
+          "KSAddSubb_25/cout",
+          "xlconcat_25/In0"
+        ]
+      },
+      "KSAddSubb_25_sum": {
+        "ports": [
+          "KSAddSubb_25/sum",
+          "xlconcat_25/In1"
+        ]
+      },
+      "xlconcat_23_dout": {
+        "ports": [
+          "xlconcat_23/dout",
+          "diff_4_6"
+        ]
+      },
+      "xlconcat_24_dout": {
+        "ports": [
+          "xlconcat_24/dout",
+          "diff_4_7"
+        ]
+      },
+      "xlconcat_25_dout": {
+        "ports": [
+          "xlconcat_25/dout",
+          "diff_5_6"
+        ]
+      },
+      "KSAddSubb_26_cout": {
+        "ports": [
+          "KSAddSubb_26/cout",
+          "xlconcat_26/In0"
+        ]
+      },
+      "KSAddSubb_26_sum": {
+        "ports": [
+          "KSAddSubb_26/sum",
+          "xlconcat_26/In1"
+        ]
+      },
+      "xlconcat_26_dout": {
+        "ports": [
+          "xlconcat_26/dout",
+          "diff_5_7"
+        ]
+      },
+      "KSAddSubb_27_cout": {
+        "ports": [
+          "KSAddSubb_27/cout",
+          "xlconcat_27/In0"
+        ]
+      },
+      "KSAddSubb_27_sum": {
+        "ports": [
+          "KSAddSubb_27/sum",
+          "xlconcat_27/In1"
+        ]
+      },
+      "xlconcat_27_dout": {
+        "ports": [
+          "xlconcat_27/dout",
+          "diff_6_7"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "diff_0_1"
+        ]
+      },
+      "xlconcat_1_dout": {
+        "ports": [
+          "xlconcat_1/dout",
+          "diff_0_2"
+        ]
+      },
+      "xlconcat_2_dout": {
+        "ports": [
+          "xlconcat_2/dout",
+          "diff_0_3"
+        ]
+      },
+      "xlconcat_3_dout": {
+        "ports": [
+          "xlconcat_3/dout",
+          "diff_0_4"
+        ]
+      },
+      "xlconcat_4_dout": {
+        "ports": [
+          "xlconcat_4/dout",
+          "diff_0_5"
+        ]
+      },
+      "xlconcat_5_dout": {
+        "ports": [
+          "xlconcat_5/dout",
+          "diff_0_6"
+        ]
+      },
+      "xlconcat_6_dout": {
+        "ports": [
+          "xlconcat_6/dout",
+          "diff_0_7"
         ]
       }
     }
