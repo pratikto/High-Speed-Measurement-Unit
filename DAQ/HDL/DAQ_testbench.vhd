@@ -38,42 +38,55 @@ end DAQ_testbench;
 architecture Behavioral of DAQ_testbench is
 component DAQ_wrapper
     port(
-    CountRef : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q3 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    sel : in STD_LOGIC_VECTOR ( 2 downto 0 );
     Q4 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q5 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q6 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q7 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Z : in STD_LOGIC_VECTOR ( 7 downto 0 );
     A : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    cout0 : out STD_LOGIC;
-    cout1 : out STD_LOGIC;
-    cout2 : out STD_LOGIC;
-    cout3 : out STD_LOGIC;
-    cout4 : out STD_LOGIC;
-    cout5 : out STD_LOGIC;
-    cout6 : out STD_LOGIC;
-    cout7 : out STD_LOGIC;
-    diff0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    diff1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    diff2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    diff3 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    diff4 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    diff5 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    diff6 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    diff7 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    sel : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    diff_1_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_1_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_1_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_1_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_1_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_1_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_2_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_2_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_2_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_2_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_2_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_3_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_3_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_3_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_3_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_4_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_4_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_4_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_5_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_5_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_6_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_1 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    SCLR : in STD_LOGIC
     );
 end component;
 
 
 --  Input signal definition
     signal Z        : STD_LOGIC_VECTOR ( 7 downto 0 );    
-    signal A      : STD_LOGIC_VECTOR ( 7 downto 0 );    
+    signal A        : STD_LOGIC_VECTOR ( 7 downto 0 );    
     signal sel      : STD_LOGIC_VECTOR ( 2 downto 0 );
+    signal SCLR     : STD_LOGIC;
     
 --  Output signal definition
     signal Q0       : STD_LOGIC_VECTOR ( 15 downto 0);
@@ -83,24 +96,36 @@ end component;
     signal Q4       : STD_LOGIC_VECTOR ( 15 downto 0);
     signal Q5       : STD_LOGIC_VECTOR ( 15 downto 0);
     signal Q6       : STD_LOGIC_VECTOR ( 15 downto 0);
-    signal Q7       : STD_LOGIC_VECTOR ( 15 downto 0);    
-	signal diff0    : STD_LOGIC_VECTOR ( 15 downto 0);
-    signal diff1    : STD_LOGIC_VECTOR ( 15 downto 0);
-    signal diff2    : STD_LOGIC_VECTOR ( 15 downto 0);
-    signal diff3    : STD_LOGIC_VECTOR ( 15 downto 0);    
-    signal diff4    : STD_LOGIC_VECTOR ( 15 downto 0);
-    signal diff5    : STD_LOGIC_VECTOR ( 15 downto 0);
-    signal diff6    : STD_LOGIC_VECTOR ( 15 downto 0);
-    signal diff7    : STD_LOGIC_VECTOR ( 15 downto 0);    
-	signal cout0    : STD_LOGIC;
-    signal cout1    : STD_LOGIC;
-    signal cout2    : STD_LOGIC;
-    signal cout3    : STD_LOGIC;    
-    signal cout4    : STD_LOGIC;
-    signal cout5    : STD_LOGIC;
-    signal cout6    : STD_LOGIC;
-    signal cout7    : STD_LOGIC;
-    signal CountRef : STD_LOGIC_VECTOR ( 15 downto 0);
+    signal Q7       : STD_LOGIC_VECTOR ( 15 downto 0);  
+    signal diff_0_1 : STD_LOGIC_VECTOR ( 16 downto 0 );  
+    signal diff_0_2 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_0_3 : STD_LOGIC_VECTOR ( 16 downto 0 );
+	signal diff_0_4 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_0_5 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_0_6 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_0_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_1_2 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_1_3 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_1_4 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_1_5 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_1_6 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_1_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_2_3 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_2_4 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_2_5 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_2_6 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_2_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_3_4 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_3_5 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_3_6 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_3_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_4_5 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_4_6 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_4_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_5_6 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_5_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal diff_6_7 : STD_LOGIC_VECTOR ( 16 downto 0 );	
+
     
 --  Constant definition
     constant Aclk : time := 1ps;
@@ -115,77 +140,114 @@ begin
         Q5 => Q5,
         Q6 => Q6,
         Q7 => Q7,        
-		cout0 => cout0,
-        cout1 => cout1,
-        cout2 => cout2,
-        cout3 => cout3,        
-        cout4 => cout4,
-        cout5 => cout5,
-        cout6 => cout6,
-        cout7 => cout7,        
-		diff0 => diff0,
-        diff1 => diff1,
-        diff2 => diff2,
-        diff3 => diff3,        
-        diff4 => diff4,
-        diff5 => diff5,
-        diff6 => diff6,
-        diff7 => diff7,
         Z => Z,
         A => A,
         sel => sel,
-        CountRef => CountRef 
+        SCLR => SCLR,
+		diff_0_1 => diff_0_1,
+		diff_0_2 => diff_0_2,
+		diff_0_3 => diff_0_3,
+		diff_0_4 => diff_0_4,
+		diff_0_5 => diff_0_5,
+		diff_0_6 => diff_0_6,
+		diff_0_7 => diff_0_7,
+		diff_1_2 => diff_1_2,
+		diff_1_3 => diff_1_3,
+		diff_1_4 => diff_1_4,
+		diff_1_5 => diff_1_5,
+		diff_1_6 => diff_1_6,
+		diff_1_7 => diff_1_7,
+		diff_2_3 => diff_2_3,
+		diff_2_4 => diff_2_4,
+		diff_2_5 => diff_2_5,
+		diff_2_6 => diff_2_6,
+		diff_2_7 => diff_2_7,
+		diff_3_4 => diff_3_4,
+		diff_3_5 => diff_3_5,
+		diff_3_6 => diff_3_6,
+		diff_3_7 => diff_3_7,
+		diff_4_5 => diff_4_5,
+		diff_4_6 => diff_4_6,
+		diff_4_7 => diff_4_7,
+		diff_5_6 => diff_5_6,
+		diff_5_7 => diff_5_7,
+		diff_6_7 => diff_6_7		
     );
     
     sel <= "000";
---    Z   <= "00000000";
+    
+    SCLR_stimulus : process
+    begin
+        SCLR <= '1';
+        wait for Aclk/2;
+        SCLR <= '0';
+        wait;
+    end process;
     
     z_stimulus : process
     begin
         Z <= "00000000";
-        wait for Aclk*36000;        
-        Z <= "00000001";
+        wait for Aclk*36000;
+        if sel = "000" then        
+            Z <= "00000001";
+        elsif sel ="001" then
+            Z <= "00000010";
+        elsif sel ="010" then
+            Z <= "00000010";
+        elsif sel ="011" then
+            Z <= "00000100";
+        elsif sel ="011" then
+            Z <= "00001000";
+        elsif sel ="100" then
+            Z <= "00010000";
+        elsif sel ="101" then
+            Z <= "00100000";
+        elsif sel ="110" then
+            Z <= "01000000";
+        else
+            Z <= "10000000";
+        end if;
         wait for Aclk*1;          
     end process;
     
     clk0_stimulus : process
     begin
         A(0) <= '0';
-        wait for Aclk;        
+        wait for Aclk*2;        
         A(0) <= '1';
-        wait for Aclk;          
+        wait for Aclk*2;          
     end process;
   
     clk1_stimulus : process
     begin
         A(1) <= '0';
-        wait for Aclk*2;        
+        wait for Aclk*4;        
         A(1) <= '1';
-        wait for Aclk*2;          
+        wait for Aclk*4;          
     end process;  
     
     clk2_stimulus : process
     begin
         A(2) <= '0';
-        wait for Aclk*4;        
+        wait for Aclk*8;        
         A(2) <= '1';
-        wait for Aclk*4;          
+        wait for Aclk*8;          
     end process;  
     
     clk3_stimulus : process
     begin
         A(3) <= '0';
-        wait for Aclk*8;        
+        wait for Aclk*16;        
         A(3) <= '1';
-        wait for Aclk*8;          
+        wait for Aclk*16;          
     end process;  
     
     clk4_stimulus : process
     begin
         A(4) <= '0';
-        wait for Aclk*16;        
+        wait for Aclk;        
         A(4) <= '1';
-        wait for Aclk*16;          
+        wait for Aclk;          
     end process;  
     
     clk5_stimulus : process

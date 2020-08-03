@@ -32,20 +32,20 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="zybo-z7-20"/>
-    <Option Name="WTXSimLaunchSim" Val="18"/>
+    <Option Name="WTXSimLaunchSim" Val="33"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="13"/>
-    <Option Name="WTModelSimExportSim" Val="13"/>
-    <Option Name="WTQuestaExportSim" Val="13"/>
-    <Option Name="WTIesExportSim" Val="13"/>
-    <Option Name="WTVcsExportSim" Val="13"/>
-    <Option Name="WTRivieraExportSim" Val="13"/>
-    <Option Name="WTActivehdlExportSim" Val="13"/>
+    <Option Name="WTXSimExportSim" Val="24"/>
+    <Option Name="WTModelSimExportSim" Val="24"/>
+    <Option Name="WTQuestaExportSim" Val="24"/>
+    <Option Name="WTIesExportSim" Val="24"/>
+    <Option Name="WTVcsExportSim" Val="24"/>
+    <Option Name="WTRivieraExportSim" Val="24"/>
+    <Option Name="WTActivehdlExportSim" Val="24"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -62,12 +62,6 @@
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
       <File Path="$PPRDIR/DAQ/HDL/mux8to1.vhd">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/DAQ/HDL/CounterMux.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -103,41 +97,97 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/DAQ/DAQ/DAQ.bd">
+      <File Path="$PPRDIR/DAQ/HDL/AorB.vhd">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/DAQ/DAQ.bd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/DAQ/DAQ/DAQ.bd"/>
+          <Attr Name="ImportTime" Val="1596424645"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_1_0/DAQ_KSAddSubb_1_0.xci">
-          <Proxy FileSetName="DAQ_KSAddSubb_1_0"/>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_17_0/DAQ_KSAddSubb_17_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_17_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_0_0/DAQ_KSAddSubb_0_0.xci">
-          <Proxy FileSetName="DAQ_KSAddSubb_0_0"/>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_7_2/DAQ_KSAddSubb_7_2.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_7_2"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_2_0/DAQ_KSAddSubb_2_0.xci">
-          <Proxy FileSetName="DAQ_KSAddSubb_2_0"/>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_12_0/DAQ_KSAddSubb_12_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_12_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_mux8to1_0_0/DAQ_mux8to1_0_0.xci">
-          <Proxy FileSetName="DAQ_mux8to1_0_0"/>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_5_0/DAQ_KSAddSubb_5_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_5_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterMux_0_0/DAQ_CounterMux_0_0.xci">
-          <Proxy FileSetName="DAQ_CounterMux_0_0"/>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_13_0/DAQ_KSAddSubb_13_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_13_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_1_0/DAQ_CounterUp16bit_1_0.xci">
-          <Proxy FileSetName="DAQ_CounterUp16bit_1_0"/>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_6_0/DAQ_KSAddSubb_6_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_6_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_2_2/DAQ_CounterUp16bit_2_2.xci">
-          <Proxy FileSetName="DAQ_CounterUp16bit_2_2"/>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_2_1/DAQ_CounterUp16bit_2_1.xci">
+          <Proxy FileSetName="DAQ_CounterUp16bit_2_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_7_6/DAQ_KSAddSubb_7_6.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_7_6"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_0_0/DAQ_CounterUp16bit_0_0.xci">
+          <Proxy FileSetName="DAQ_CounterUp16bit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_18_0/DAQ_KSAddSubb_18_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_18_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_18_1/DAQ_KSAddSubb_18_1.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_18_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_4_0/DAQ_CounterUp16bit_4_0.xci">
           <Proxy FileSetName="DAQ_CounterUp16bit_4_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_13_3/DAQ_KSAddSubb_13_3.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_13_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_2_2/DAQ_CounterUp16bit_2_2.xci">
+          <Proxy FileSetName="DAQ_CounterUp16bit_2_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_18_2/DAQ_KSAddSubb_18_2.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_18_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_7_0/DAQ_KSAddSubb_7_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_7_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_mux8to1_0_0/DAQ_mux8to1_0_0.xci">
+          <Proxy FileSetName="DAQ_mux8to1_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_2_0/DAQ_KSAddSubb_2_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_2_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_5_0/DAQ_CounterUp16bit_5_0.xci">
           <Proxy FileSetName="DAQ_CounterUp16bit_5_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_2_1/DAQ_CounterUp16bit_2_1.xci">
-          <Proxy FileSetName="DAQ_CounterUp16bit_2_1"/>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_1_0/DAQ_KSAddSubb_1_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_7_3/DAQ_KSAddSubb_7_3.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_7_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_7_5/DAQ_KSAddSubb_7_5.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_7_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_0_0/DAQ_KSAddSubb_0_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_13_1/DAQ_KSAddSubb_13_1.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_13_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_13_2/DAQ_KSAddSubb_13_2.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_13_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_4_0/DAQ_KSAddSubb_4_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_4_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_6_0/DAQ_CounterUp16bit_6_0.xci">
           <Proxy FileSetName="DAQ_CounterUp16bit_6_0"/>
@@ -145,26 +195,38 @@
         <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_0_1/DAQ_CounterUp16bit_0_1.xci">
           <Proxy FileSetName="DAQ_CounterUp16bit_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_7_0/DAQ_KSAddSubb_7_0.xci">
-          <Proxy FileSetName="DAQ_KSAddSubb_7_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_0_0/DAQ_CounterUp16bit_0_0.xci">
-          <Proxy FileSetName="DAQ_CounterUp16bit_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_6_0/DAQ_KSAddSubb_6_0.xci">
-          <Proxy FileSetName="DAQ_KSAddSubb_6_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_4_0/DAQ_KSAddSubb_4_0.xci">
-          <Proxy FileSetName="DAQ_KSAddSubb_4_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_5_0/DAQ_KSAddSubb_5_0.xci">
-          <Proxy FileSetName="DAQ_KSAddSubb_5_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_3_0/DAQ_KSAddSubb_3_0.xci">
           <Proxy FileSetName="DAQ_KSAddSubb_3_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_7_4/DAQ_KSAddSubb_7_4.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_7_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_CounterUp16bit_1_0/DAQ_CounterUp16bit_1_0.xci">
+          <Proxy FileSetName="DAQ_CounterUp16bit_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_25_0/DAQ_KSAddSubb_25_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_25_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_AorB_0_0/DAQ_AorB_0_0.xci">
+          <Proxy FileSetName="DAQ_AorB_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_22_0/DAQ_KSAddSubb_22_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_22_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_22_2/DAQ_KSAddSubb_22_2.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_22_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_21_1/DAQ_KSAddSubb_21_1.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_21_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_22_1/DAQ_KSAddSubb_22_1.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_22_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DAQ.bd" FileRelPathName="ip/DAQ_KSAddSubb_26_0/DAQ_KSAddSubb_26_0.xci">
+          <Proxy FileSetName="DAQ_KSAddSubb_26_0"/>
+        </CompFileExtendedInfo>
       </File>
-      <File Path="$PPRDIR/DAQ/DAQ/hdl/DAQ_wrapper.vhd">
+      <File Path="$PSRCDIR/sources_1/bd/DAQ/hdl/DAQ_wrapper.vhd">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -206,6 +268,7 @@
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SelectedSimModel" Val="rtl"/>
         <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="xsim.simulate.runtime" Val="100ns"/>
       </Config>
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
@@ -217,12 +280,6 @@
     <FileSet Name="DAQ_mux8to1_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_mux8to1_0_0">
       <Config>
         <Option Name="TopModule" Val="DAQ_mux8to1_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="DAQ_CounterMux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_CounterMux_0_0">
-      <Config>
-        <Option Name="TopModule" Val="DAQ_CounterMux_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -322,6 +379,132 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_7_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_7_2">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_7_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_7_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_7_3">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_7_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_7_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_7_4">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_7_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_7_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_7_5">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_7_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_7_6" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_7_6">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_7_6"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_12_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_12_0">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_12_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_13_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_13_0">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_13_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_13_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_13_1">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_13_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_13_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_13_2">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_13_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_13_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_13_3">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_13_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_17_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_17_0">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_17_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_18_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_18_0">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_18_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_18_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_18_1">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_18_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_18_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_18_2">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_18_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_21_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_21_1">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_21_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_22_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_22_0">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_22_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_22_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_22_1">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_22_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_22_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_22_2">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_22_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_25_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_25_0">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_25_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_KSAddSubb_26_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_KSAddSubb_26_0">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_KSAddSubb_26_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DAQ_AorB_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DAQ_AorB_0_0">
+      <Config>
+        <Option Name="TopModule" Val="DAQ_AorB_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -354,17 +537,9 @@
     </Run>
     <Run Id="DAQ_mux8to1_0_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_mux8to1_0_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_mux8to1_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_mux8to1_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="DAQ_CounterMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_CounterMux_0_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterMux_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_CounterMux_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -374,7 +549,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_0_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_0_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -384,7 +561,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_1_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_1_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -394,7 +573,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_2_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_2_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_2_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -404,7 +585,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_3_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_3_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_3_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -414,7 +597,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_4_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_4_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_4_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_4_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -424,7 +609,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_5_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_5_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_5_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_5_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -434,7 +621,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_6_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_6_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_6_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_6_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -444,7 +633,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_7_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_7_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_7_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -454,7 +645,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_0_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_CounterUp16bit_0_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_CounterUp16bit_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -464,7 +657,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_0_1_synth_1" Type="Ft3:Synth" SrcSet="DAQ_CounterUp16bit_0_1" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_CounterUp16bit_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -474,7 +669,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_1_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_CounterUp16bit_1_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_CounterUp16bit_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -484,7 +681,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_2_1_synth_1" Type="Ft3:Synth" SrcSet="DAQ_CounterUp16bit_2_1" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_2_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_CounterUp16bit_2_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -494,7 +693,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_2_2_synth_1" Type="Ft3:Synth" SrcSet="DAQ_CounterUp16bit_2_2" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_2_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_CounterUp16bit_2_2_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -504,7 +705,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_4_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_CounterUp16bit_4_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_4_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_CounterUp16bit_4_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -514,7 +717,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_5_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_CounterUp16bit_5_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_5_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_CounterUp16bit_5_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -524,7 +729,261 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_6_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_CounterUp16bit_6_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_6_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_CounterUp16bit_6_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_2_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_7_2" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_7_2_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_3_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_7_3" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_7_3_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_4_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_7_4" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_7_4_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_5_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_7_5" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_5" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_7_5_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_6_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_7_6" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_6" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_7_6_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_12_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_12_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_12_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_12_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_13_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_13_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_13_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_13_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_13_1_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_13_1" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_13_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_13_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_13_2_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_13_2" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_13_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_13_2_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_13_3_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_13_3" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_13_3" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_13_3_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_17_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_17_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_17_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_17_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_18_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_18_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_18_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_18_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_18_1_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_18_1" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_18_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_18_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_18_2_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_18_2" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_18_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_18_2_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_21_1_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_21_1" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_21_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_21_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_22_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_22_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_22_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_22_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_22_1_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_22_1" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_22_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_22_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_22_2_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_22_2" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_22_2" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_22_2_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_25_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_25_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_25_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_25_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_26_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_KSAddSubb_26_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_26_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_KSAddSubb_26_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_AorB_0_0_synth_1" Type="Ft3:Synth" SrcSet="DAQ_AorB_0_0" Part="xc7z020clg400-1" ConstrsSet="DAQ_AorB_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DAQ_AorB_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -552,24 +1011,9 @@
     </Run>
     <Run Id="DAQ_mux8to1_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_mux8to1_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_mux8to1_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="DAQ_CounterMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterMux_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_CounterMux_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -586,7 +1030,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -603,7 +1049,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -620,7 +1068,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -637,7 +1087,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_3_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_3_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -654,7 +1106,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_4_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_4_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_4_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -671,7 +1125,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_5_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_5_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_5_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -688,7 +1144,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_6_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_6_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_6_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -705,7 +1163,9 @@
     </Run>
     <Run Id="DAQ_KSAddSubb_7_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_7_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -722,7 +1182,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_CounterUp16bit_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -739,7 +1201,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_CounterUp16bit_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -756,7 +1220,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_CounterUp16bit_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -773,7 +1239,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_2_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_2_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_CounterUp16bit_2_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -790,7 +1258,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_2_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_2_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_CounterUp16bit_2_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -807,7 +1277,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_4_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_4_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_CounterUp16bit_4_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -824,7 +1296,9 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_5_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_5_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_CounterUp16bit_5_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -841,7 +1315,408 @@
     </Run>
     <Run Id="DAQ_CounterUp16bit_6_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_CounterUp16bit_6_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_CounterUp16bit_6_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_7_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_7_3_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_4_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_7_4_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_5_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_5" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_7_5_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_7_6_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_7_6" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_7_6_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_12_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_12_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_12_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_13_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_13_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_13_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_13_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_13_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_13_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_13_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_13_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_13_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_13_3_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_13_3" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_13_3_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_17_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_17_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_17_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_18_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_18_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_18_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_18_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_18_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_18_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_18_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_18_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_18_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_21_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_21_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_21_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_22_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_22_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_22_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_22_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_22_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_22_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_22_2_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_22_2" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_22_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_25_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_25_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_25_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_KSAddSubb_26_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_KSAddSubb_26_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_KSAddSubb_26_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DAQ_AorB_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="DAQ_AorB_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DAQ_AorB_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

@@ -57,7 +57,7 @@ ENTITY DAQ_CounterUp16bit_4_0 IS
   PORT (
     CE : IN STD_LOGIC;
     Clk : IN STD_LOGIC;
-    SCLR : IN STD_LOGIC;
+    Clr : IN STD_LOGIC;
     Q : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
 END DAQ_CounterUp16bit_4_0;
@@ -69,7 +69,7 @@ ARCHITECTURE DAQ_CounterUp16bit_4_0_arch OF DAQ_CounterUp16bit_4_0 IS
     PORT (
       CE : IN STD_LOGIC;
       Clk : IN STD_LOGIC;
-      SCLR : IN STD_LOGIC;
+      Clr : IN STD_LOGIC;
       Q : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
     );
   END COMPONENT CounterUp16bit;
@@ -84,7 +84,7 @@ BEGIN
     PORT MAP (
       CE => CE,
       Clk => Clk,
-      SCLR => SCLR,
+      Clr => Clr,
       Q => Q
     );
 END DAQ_CounterUp16bit_4_0_arch;

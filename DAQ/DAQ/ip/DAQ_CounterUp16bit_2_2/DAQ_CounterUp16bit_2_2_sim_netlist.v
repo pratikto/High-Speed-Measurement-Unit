@@ -1,9 +1,9 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Wed Jul 29 12:26:54 2020
+// Date        : Sun Aug  2 12:40:30 2020
 // Host        : CNB406-TT081 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {c:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
+// Command     : write_verilog -force -mode funcsim {C:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 //               Unit/DAQ/DAQ/ip/DAQ_CounterUp16bit_2_2/DAQ_CounterUp16bit_2_2_sim_netlist.v}
 // Design      : DAQ_CounterUp16bit_2_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
@@ -18,40 +18,40 @@
 module DAQ_CounterUp16bit_2_2
    (CE,
     Clk,
-    SCLR,
+    Clr,
     Q);
   input CE;
   (* x_interface_info = "xilinx.com:signal:clock:1.0 Clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME Clk, FREQ_HZ 100000000, PHASE 0.000, INSERT_VIP 0" *) input Clk;
-  input SCLR;
+  input Clr;
   output [15:0]Q;
 
   wire CE;
   wire Clk;
+  wire Clr;
   wire [15:0]Q;
-  wire SCLR;
 
   DAQ_CounterUp16bit_2_2_CounterUp16bit U0
        (.CE(CE),
         .Clk(Clk),
-        .Q(Q),
-        .SCLR(SCLR));
+        .Clr(Clr),
+        .Q(Q));
 endmodule
 
 (* ORIG_REF_NAME = "CounterUp16bit" *) 
 module DAQ_CounterUp16bit_2_2_CounterUp16bit
    (Q,
     Clk,
-    SCLR,
+    Clr,
     CE);
   output [15:0]Q;
   input Clk;
-  input SCLR;
+  input Clr;
   input CE;
 
   wire CE;
   wire Clk;
+  wire Clr;
   wire [15:0]Q;
-  wire SCLR;
   wire sel;
   wire \temp[11]_i_2_n_0 ;
   wire \temp[11]_i_3_n_0 ;
@@ -300,19 +300,19 @@ module DAQ_CounterUp16bit_2_2_CounterUp16bit
   FDCE \temp_reg[0] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[3]_i_1_n_7 ),
         .Q(Q[0]));
   FDCE \temp_reg[10] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[11]_i_1_n_5 ),
         .Q(Q[10]));
   FDCE \temp_reg[11] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[11]_i_1_n_4 ),
         .Q(Q[11]));
   CARRY4 \temp_reg[11]_i_1 
@@ -325,25 +325,25 @@ module DAQ_CounterUp16bit_2_2_CounterUp16bit
   FDCE \temp_reg[12] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[15]_i_2_n_7 ),
         .Q(Q[12]));
   FDCE \temp_reg[13] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[15]_i_2_n_6 ),
         .Q(Q[13]));
   FDCE \temp_reg[14] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[15]_i_2_n_5 ),
         .Q(Q[14]));
   FDCE \temp_reg[15] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[15]_i_2_n_4 ),
         .Q(Q[15]));
   CARRY4 \temp_reg[15]_i_2 
@@ -356,19 +356,19 @@ module DAQ_CounterUp16bit_2_2_CounterUp16bit
   FDCE \temp_reg[1] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[3]_i_1_n_6 ),
         .Q(Q[1]));
   FDCE \temp_reg[2] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[3]_i_1_n_5 ),
         .Q(Q[2]));
   FDCE \temp_reg[3] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[3]_i_1_n_4 ),
         .Q(Q[3]));
   CARRY4 \temp_reg[3]_i_1 
@@ -381,25 +381,25 @@ module DAQ_CounterUp16bit_2_2_CounterUp16bit
   FDCE \temp_reg[4] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[7]_i_1_n_7 ),
         .Q(Q[4]));
   FDCE \temp_reg[5] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[7]_i_1_n_6 ),
         .Q(Q[5]));
   FDCE \temp_reg[6] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[7]_i_1_n_5 ),
         .Q(Q[6]));
   FDCE \temp_reg[7] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[7]_i_1_n_4 ),
         .Q(Q[7]));
   CARRY4 \temp_reg[7]_i_1 
@@ -412,13 +412,13 @@ module DAQ_CounterUp16bit_2_2_CounterUp16bit
   FDCE \temp_reg[8] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[11]_i_1_n_7 ),
         .Q(Q[8]));
   FDCE \temp_reg[9] 
        (.C(Clk),
         .CE(sel),
-        .CLR(SCLR),
+        .CLR(Clr),
         .D(\temp_reg[11]_i_1_n_6 ),
         .Q(Q[9]));
 endmodule

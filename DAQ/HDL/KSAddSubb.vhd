@@ -52,6 +52,9 @@ architecture Behavioral of KSAddSubb is
         cout   : OUT std_logic -- the output carry 
 );
 end component;
+
+signal cout_buff : std_logic;
+
 signal BxorAdd : std_logic_vector (15 downto 0);
 begin
     KSA1 : KSA port map(
@@ -59,10 +62,11 @@ begin
         y => BxorAdd,
         cin => add,
         sum => sum,
-        cout => cout
+        cout =>cout_buff
     );
-
-
+    
+    cout <= not cout_buff;
+    
     looping : for i in 0 to 15 generate
         BxorAdd(i) <= y(i) xor add;
     end generate;
