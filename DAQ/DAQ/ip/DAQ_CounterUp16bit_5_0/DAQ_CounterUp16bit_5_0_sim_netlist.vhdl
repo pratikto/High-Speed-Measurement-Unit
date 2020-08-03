@@ -1,9 +1,9 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Wed Jul 29 12:26:54 2020
+-- Date        : Sun Aug  2 12:42:27 2020
 -- Host        : CNB406-TT081 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {c:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
+-- Command     : write_vhdl -force -mode funcsim {C:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 --               Unit/DAQ/DAQ/ip/DAQ_CounterUp16bit_5_0/DAQ_CounterUp16bit_5_0_sim_netlist.vhdl}
 -- Design      : DAQ_CounterUp16bit_5_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
@@ -18,7 +18,7 @@ entity DAQ_CounterUp16bit_5_0_CounterUp16bit is
   port (
     Q : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Clk : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
+    Clr : in STD_LOGIC;
     CE : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -343,7 +343,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[3]_i_1_n_7\,
       Q => \^q\(0)
     );
@@ -351,7 +351,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[11]_i_1_n_5\,
       Q => \^q\(10)
     );
@@ -359,7 +359,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[11]_i_1_n_4\,
       Q => \^q\(11)
     );
@@ -385,7 +385,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[15]_i_2_n_7\,
       Q => \^q\(12)
     );
@@ -393,7 +393,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[15]_i_2_n_6\,
       Q => \^q\(13)
     );
@@ -401,7 +401,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[15]_i_2_n_5\,
       Q => \^q\(14)
     );
@@ -409,7 +409,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[15]_i_2_n_4\,
       Q => \^q\(15)
     );
@@ -435,7 +435,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[3]_i_1_n_6\,
       Q => \^q\(1)
     );
@@ -443,7 +443,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[3]_i_1_n_5\,
       Q => \^q\(2)
     );
@@ -451,7 +451,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[3]_i_1_n_4\,
       Q => \^q\(3)
     );
@@ -478,7 +478,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[7]_i_1_n_7\,
       Q => \^q\(4)
     );
@@ -486,7 +486,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[7]_i_1_n_6\,
       Q => \^q\(5)
     );
@@ -494,7 +494,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[7]_i_1_n_5\,
       Q => \^q\(6)
     );
@@ -502,7 +502,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[7]_i_1_n_4\,
       Q => \^q\(7)
     );
@@ -528,7 +528,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[11]_i_1_n_7\,
       Q => \^q\(8)
     );
@@ -536,7 +536,7 @@ begin
      port map (
       C => Clk,
       CE => sel,
-      CLR => SCLR,
+      CLR => Clr,
       D => \temp_reg[11]_i_1_n_6\,
       Q => \^q\(9)
     );
@@ -549,7 +549,7 @@ entity DAQ_CounterUp16bit_5_0 is
   port (
     CE : in STD_LOGIC;
     Clk : in STD_LOGIC;
-    SCLR : in STD_LOGIC;
+    Clr : in STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
@@ -574,7 +574,7 @@ U0: entity work.DAQ_CounterUp16bit_5_0_CounterUp16bit
      port map (
       CE => CE,
       Clk => Clk,
-      Q(15 downto 0) => Q(15 downto 0),
-      SCLR => SCLR
+      Clr => Clr,
+      Q(15 downto 0) => Q(15 downto 0)
     );
 end STRUCTURE;

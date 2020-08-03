@@ -10,228 +10,238 @@
    "Neat view_Layers":"",
    "Neat view_Layout":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace portBus Q0 -pg 1 -lvl 3 -x 520 -y 100 -defaultsOSRD -top
-preplace portBus Q1 -pg 1 -lvl 3 -x 550 -y 100 -defaultsOSRD -top
-preplace portBus Q2 -pg 1 -lvl 3 -x 580 -y 100 -defaultsOSRD -top
-preplace portBus Q3 -pg 1 -lvl 3 -x 610 -y 100 -defaultsOSRD -top
-preplace portBus sel -pg 1 -lvl 0 -x 0 -y 1360 -defaultsOSRD
-preplace portBus Q4 -pg 1 -lvl 3 -x 640 -y 100 -defaultsOSRD -top
-preplace portBus Q5 -pg 1 -lvl 3 -x 670 -y 100 -defaultsOSRD -top
-preplace portBus Q6 -pg 1 -lvl 3 -x 700 -y 100 -defaultsOSRD -top
-preplace portBus Q7 -pg 1 -lvl 3 -x 730 -y 100 -defaultsOSRD -top
-preplace portBus Z -pg 1 -lvl 0 -x 0 -y 1330 -defaultsOSRD
+preplace port SCLR -pg 1 -lvl 0 -x 0 -y 1450 -defaultsOSRD
+preplace port cout_0_1 -pg 1 -lvl 7 -x 1520 -y 170 -defaultsOSRD
+preplace port cout_0_2 -pg 1 -lvl 7 -x 1520 -y 290 -defaultsOSRD
+preplace port cout_0_3 -pg 1 -lvl 7 -x 1520 -y 470 -defaultsOSRD
+preplace portBus Q0 -pg 1 -lvl 4 -x 700 -y 90 -defaultsOSRD -top
+preplace portBus Q1 -pg 1 -lvl 4 -x 730 -y 90 -defaultsOSRD -top
+preplace portBus Q2 -pg 1 -lvl 4 -x 760 -y 90 -defaultsOSRD -top
+preplace portBus Q3 -pg 1 -lvl 4 -x 790 -y 90 -defaultsOSRD -top
+preplace portBus sel -pg 1 -lvl 0 -x 0 -y 1400 -defaultsOSRD
+preplace portBus Q4 -pg 1 -lvl 4 -x 820 -y 90 -defaultsOSRD -top
+preplace portBus Q5 -pg 1 -lvl 4 -x 850 -y 90 -defaultsOSRD -top
+preplace portBus Q6 -pg 1 -lvl 4 -x 880 -y 90 -defaultsOSRD -top
+preplace portBus Q7 -pg 1 -lvl 4 -x 910 -y 90 -defaultsOSRD -top
+preplace portBus Z -pg 1 -lvl 0 -x 0 -y 1370 -defaultsOSRD
 preplace portBus A -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
-preplace portBus diff_1_2 -pg 1 -lvl 6 -x 1290 -y 1210 -defaultsOSRD
-preplace portBus diff_1_3 -pg 1 -lvl 6 -x 1290 -y 1350 -defaultsOSRD
-preplace portBus diff_1_4 -pg 1 -lvl 6 -x 1290 -y 1490 -defaultsOSRD
-preplace portBus diff_1_5 -pg 1 -lvl 6 -x 1290 -y 1630 -defaultsOSRD
-preplace portBus diff_1_6 -pg 1 -lvl 6 -x 1290 -y 1770 -defaultsOSRD
-preplace portBus diff_1_7 -pg 1 -lvl 6 -x 1290 -y 1910 -defaultsOSRD
-preplace portBus diff_2_3 -pg 1 -lvl 6 -x 1290 -y 2050 -defaultsOSRD
-preplace portBus diff_2_4 -pg 1 -lvl 6 -x 1290 -y 2190 -defaultsOSRD
-preplace portBus diff_2_5 -pg 1 -lvl 6 -x 1290 -y 2330 -defaultsOSRD
-preplace portBus diff_2_6 -pg 1 -lvl 6 -x 1290 -y 2470 -defaultsOSRD
-preplace portBus diff_2_7 -pg 1 -lvl 6 -x 1290 -y 2610 -defaultsOSRD
-preplace portBus diff_3_4 -pg 1 -lvl 6 -x 1290 -y 2750 -defaultsOSRD
-preplace portBus diff_3_5 -pg 1 -lvl 6 -x 1290 -y 2890 -defaultsOSRD
-preplace portBus diff_3_6 -pg 1 -lvl 6 -x 1290 -y 3030 -defaultsOSRD
-preplace portBus diff_3_7 -pg 1 -lvl 6 -x 1290 -y 3170 -defaultsOSRD
-preplace portBus diff_4_5 -pg 1 -lvl 6 -x 1290 -y 3310 -defaultsOSRD
-preplace portBus diff_4_6 -pg 1 -lvl 6 -x 1290 -y 3450 -defaultsOSRD
-preplace portBus diff_4_7 -pg 1 -lvl 6 -x 1290 -y 3590 -defaultsOSRD
-preplace portBus diff_5_6 -pg 1 -lvl 6 -x 1290 -y 3730 -defaultsOSRD
-preplace portBus diff_5_7 -pg 1 -lvl 6 -x 1290 -y 3870 -defaultsOSRD
-preplace portBus diff_6_7 -pg 1 -lvl 6 -x 1290 -y 4010 -defaultsOSRD
-preplace portBus diff_0_1 -pg 1 -lvl 6 -x 1290 -y 230 -defaultsOSRD
-preplace portBus diff_0_2 -pg 1 -lvl 6 -x 1290 -y 370 -defaultsOSRD
-preplace portBus diff_0_3 -pg 1 -lvl 6 -x 1290 -y 510 -defaultsOSRD
-preplace portBus diff_0_4 -pg 1 -lvl 6 -x 1290 -y 650 -defaultsOSRD
-preplace portBus diff_0_5 -pg 1 -lvl 6 -x 1290 -y 790 -defaultsOSRD
-preplace portBus diff_0_6 -pg 1 -lvl 6 -x 1290 -y 930 -defaultsOSRD
-preplace portBus diff_0_7 -pg 1 -lvl 6 -x 1290 -y 1070 -defaultsOSRD
-preplace inst xlslice_0 -pg 1 -lvl 1 -x 120 -y 330 -defaultsOSRD
-preplace inst xlslice_4 -pg 1 -lvl 1 -x 120 -y 890 -defaultsOSRD
-preplace inst xlslice_5 -pg 1 -lvl 1 -x 120 -y 1030 -defaultsOSRD
-preplace inst xlslice_6 -pg 1 -lvl 1 -x 120 -y 1130 -defaultsOSRD
-preplace inst xlslice_7 -pg 1 -lvl 1 -x 120 -y 1230 -defaultsOSRD
-preplace inst mux8to1_0 -pg 1 -lvl 1 -x 120 -y 1340 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 2 -x 350 -y 210 -defaultsOSRD
-preplace inst xlslice_3 -pg 1 -lvl 1 -x 120 -y 750 -defaultsOSRD
-preplace inst xlslice_2 -pg 1 -lvl 1 -x 120 -y 610 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 1 -x 120 -y 470 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 1 -x 120 -y 1450 -defaultsOSRD
-preplace inst CounterUp16bit_0 -pg 1 -lvl 2 -x 350 -y 330 -defaultsOSRD
-preplace inst CounterUp16bit_1 -pg 1 -lvl 2 -x 350 -y 470 -defaultsOSRD
-preplace inst CounterUp16bit_2 -pg 1 -lvl 2 -x 350 -y 610 -defaultsOSRD
-preplace inst CounterUp16bit_3 -pg 1 -lvl 2 -x 350 -y 750 -defaultsOSRD
-preplace inst CounterUp16bit_4 -pg 1 -lvl 2 -x 350 -y 890 -defaultsOSRD
-preplace inst CounterUp16bit_5 -pg 1 -lvl 2 -x 350 -y 1030 -defaultsOSRD
-preplace inst CounterUp16bit_6 -pg 1 -lvl 2 -x 350 -y 1170 -defaultsOSRD
-preplace inst CounterUp16bit_7 -pg 1 -lvl 2 -x 350 -y 1310 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 5 -x 1170 -y 230 -defaultsOSRD
-preplace inst KSAddSubb_0 -pg 1 -lvl 4 -x 950 -y 230 -defaultsOSRD
-preplace inst KSAddSubb_1 -pg 1 -lvl 4 -x 950 -y 370 -defaultsOSRD
-preplace inst KSAddSubb_2 -pg 1 -lvl 4 -x 950 -y 510 -defaultsOSRD
-preplace inst KSAddSubb_3 -pg 1 -lvl 4 -x 950 -y 650 -defaultsOSRD
-preplace inst KSAddSubb_4 -pg 1 -lvl 4 -x 950 -y 790 -defaultsOSRD
-preplace inst KSAddSubb_5 -pg 1 -lvl 4 -x 950 -y 930 -defaultsOSRD
-preplace inst KSAddSubb_6 -pg 1 -lvl 4 -x 950 -y 1070 -defaultsOSRD
-preplace inst KSAddSubb_7 -pg 1 -lvl 4 -x 950 -y 1210 -defaultsOSRD
-preplace inst xlconcat_1 -pg 1 -lvl 5 -x 1170 -y 370 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_2 -pg 1 -lvl 5 -x 1170 -y 510 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_3 -pg 1 -lvl 5 -x 1170 -y 650 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_4 -pg 1 -lvl 5 -x 1170 -y 790 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_5 -pg 1 -lvl 5 -x 1170 -y 930 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_6 -pg 1 -lvl 5 -x 1170 -y 1070 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_7 -pg 1 -lvl 5 -x 1170 -y 1210 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_8 -pg 1 -lvl 4 -x 950 -y 1350 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_8 -pg 1 -lvl 5 -x 1170 -y 1350 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_9 -pg 1 -lvl 4 -x 950 -y 1490 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_9 -pg 1 -lvl 5 -x 1170 -y 1490 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_10 -pg 1 -lvl 4 -x 950 -y 1630 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_10 -pg 1 -lvl 5 -x 1170 -y 1630 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_11 -pg 1 -lvl 4 -x 950 -y 1770 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_11 -pg 1 -lvl 5 -x 1170 -y 1770 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_12 -pg 1 -lvl 5 -x 1170 -y 1910 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_12 -pg 1 -lvl 4 -x 950 -y 1910 -defaultsOSRD -resize 180 116
-preplace inst KSAddSubb_13 -pg 1 -lvl 4 -x 950 -y 2050 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_13 -pg 1 -lvl 5 -x 1170 -y 2050 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_14 -pg 1 -lvl 5 -x 1170 -y 2190 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_14 -pg 1 -lvl 4 -x 950 -y 2190 -defaultsOSRD -resize 180 116
-preplace inst KSAddSubb_15 -pg 1 -lvl 4 -x 950 -y 2330 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_15 -pg 1 -lvl 5 -x 1170 -y 2330 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_16 -pg 1 -lvl 4 -x 950 -y 2470 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_16 -pg 1 -lvl 5 -x 1170 -y 2470 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_17 -pg 1 -lvl 4 -x 950 -y 2610 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_17 -pg 1 -lvl 5 -x 1170 -y 2610 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_18 -pg 1 -lvl 4 -x 950 -y 2750 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_18 -pg 1 -lvl 5 -x 1170 -y 2750 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_19 -pg 1 -lvl 4 -x 950 -y 2890 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_19 -pg 1 -lvl 5 -x 1170 -y 2890 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_20 -pg 1 -lvl 4 -x 950 -y 3030 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_20 -pg 1 -lvl 5 -x 1170 -y 3030 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_21 -pg 1 -lvl 4 -x 950 -y 3170 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_21 -pg 1 -lvl 5 -x 1170 -y 3170 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_22 -pg 1 -lvl 5 -x 1170 -y 3310 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_22 -pg 1 -lvl 4 -x 950 -y 3310 -defaultsOSRD -resize 180 116
-preplace inst KSAddSubb_23 -pg 1 -lvl 4 -x 950 -y 3450 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_23 -pg 1 -lvl 5 -x 1170 -y 3450 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_24 -pg 1 -lvl 4 -x 950 -y 3590 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_24 -pg 1 -lvl 5 -x 1170 -y 3590 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_25 -pg 1 -lvl 4 -x 950 -y 3730 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_25 -pg 1 -lvl 5 -x 1170 -y 3730 -defaultsOSRD -resize 160 96
-preplace inst xlconcat_26 -pg 1 -lvl 5 -x 1170 -y 3870 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_26 -pg 1 -lvl 4 -x 950 -y 3870 -defaultsOSRD -resize 180 116
-preplace inst xlconcat_27 -pg 1 -lvl 5 -x 1170 -y 4010 -defaultsOSRD -resize 160 96
-preplace inst KSAddSubb_27 -pg 1 -lvl 4 -x 950 -y 4010 -defaultsOSRD -resize 180 116
-preplace netloc clk_1 1 0 1 20 330n
-preplace netloc Z_1 1 0 1 NJ 1330
-preplace netloc sel_1 1 0 1 20 1350n
-preplace netloc xlslice_1_Dout 1 1 1 N 470
-preplace netloc mux8to1_0_b 1 1 1 240 350n
-preplace netloc xlslice_0_Dout 1 1 1 N 330
-preplace netloc xlslice_2_Dout 1 1 1 N 610
-preplace netloc xlslice_3_Dout 1 1 1 N 750
-preplace netloc xlslice_4_Dout 1 1 1 N 890
-preplace netloc xlslice_5_Dout 1 1 1 N 1030
-preplace netloc xlslice_6_Dout 1 1 1 250 1130n
-preplace netloc xlslice_7_Dout 1 1 1 220 1230n
-preplace netloc Net 1 1 1 230 310n
-preplace netloc xlconstant_0_dout 1 2 2 450 220 760
-preplace netloc CounterUp16bit_0_Q 1 2 2 460 210 840
-preplace netloc CounterUp16bit_1_Q 1 2 2 470 230 830
-preplace netloc CounterUp16bit_2_Q 1 2 2 480 370 820
-preplace netloc CounterUp16bit_3_Q 1 2 2 490 510 810
-preplace netloc CounterUp16bit_4_Q 1 2 2 N 890 770
-preplace netloc CounterUp16bit_5_Q 1 2 2 N 1030 780
-preplace netloc CounterUp16bit_6_Q 1 2 2 N 1170 790
-preplace netloc CounterUp16bit_7_Q 1 2 2 N 1310 800
-preplace netloc KSAddSubb_0_cout 1 4 1 N 220
-preplace netloc KSAddSubb_0_sum 1 4 1 N 240
-preplace netloc KSAddSubb_1_cout 1 4 1 N 360
-preplace netloc KSAddSubb_1_sum 1 4 1 N 380
-preplace netloc KSAddSubb_2_cout 1 4 1 N 500
-preplace netloc KSAddSubb_2_sum 1 4 1 N 520
-preplace netloc KSAddSubb_3_cout 1 4 1 N 640
-preplace netloc KSAddSubb_3_sum 1 4 1 N 660
-preplace netloc KSAddSubb_4_cout 1 4 1 N 780
-preplace netloc KSAddSubb_4_sum 1 4 1 N 800
-preplace netloc KSAddSubb_5_cout 1 4 1 N 920
-preplace netloc KSAddSubb_5_sum 1 4 1 N 940
-preplace netloc KSAddSubb_6_cout 1 4 1 N 1060
-preplace netloc KSAddSubb_6_sum 1 4 1 N 1080
-preplace netloc KSAddSubb_7_cout 1 4 1 N 1200
-preplace netloc KSAddSubb_7_sum 1 4 1 N 1220
-preplace netloc xlconcat_7_dout 1 5 1 N 1210
-preplace netloc KSAddSubb_8_cout 1 4 1 N 1340
-preplace netloc KSAddSubb_8_sum 1 4 1 N 1360
-preplace netloc KSAddSubb_9_cout 1 4 1 N 1480
-preplace netloc KSAddSubb_9_sum 1 4 1 N 1500
-preplace netloc KSAddSubb_10_cout 1 4 1 N 1620
-preplace netloc KSAddSubb_10_sum 1 4 1 N 1640
-preplace netloc KSAddSubb_11_cout 1 4 1 N 1760
-preplace netloc KSAddSubb_11_sum 1 4 1 N 1780
-preplace netloc KSAddSubb_12_cout 1 4 1 N 1900
-preplace netloc KSAddSubb_12_sum 1 4 1 N 1920
-preplace netloc xlconcat_8_dout 1 5 1 N 1350
-preplace netloc xlconcat_9_dout 1 5 1 N 1490
-preplace netloc xlconcat_10_dout 1 5 1 N 1630
-preplace netloc xlconcat_11_dout 1 5 1 N 1770
-preplace netloc xlconcat_12_dout 1 5 1 N 1910
-preplace netloc KSAddSubb_13_cout 1 4 1 N 2040
-preplace netloc KSAddSubb_13_sum 1 4 1 N 2060
-preplace netloc xlconcat_13_dout 1 5 1 N 2050
-preplace netloc KSAddSubb_14_cout 1 4 1 N 2180
-preplace netloc KSAddSubb_14_sum 1 4 1 N 2200
-preplace netloc KSAddSubb_15_cout 1 4 1 N 2320
-preplace netloc KSAddSubb_15_sum 1 4 1 N 2340
-preplace netloc KSAddSubb_16_cout 1 4 1 N 2460
-preplace netloc KSAddSubb_16_sum 1 4 1 N 2480
-preplace netloc KSAddSubb_17_cout 1 4 1 N 2600
-preplace netloc KSAddSubb_17_sum 1 4 1 N 2620
-preplace netloc xlconcat_14_dout 1 5 1 N 2190
-preplace netloc xlconcat_15_dout 1 5 1 N 2330
-preplace netloc xlconcat_16_dout 1 5 1 N 2470
-preplace netloc xlconcat_17_dout 1 5 1 N 2610
-preplace netloc KSAddSubb_18_cout 1 4 1 N 2740
-preplace netloc KSAddSubb_18_sum 1 4 1 N 2760
-preplace netloc xlconcat_18_dout 1 5 1 N 2750
-preplace netloc KSAddSubb_19_cout 1 4 1 N 2880
-preplace netloc KSAddSubb_19_sum 1 4 1 N 2900
-preplace netloc KSAddSubb_20_cout 1 4 1 N 3020
-preplace netloc KSAddSubb_20_sum 1 4 1 N 3040
-preplace netloc KSAddSubb_21_cout 1 4 1 N 3160
-preplace netloc KSAddSubb_21_sum 1 4 1 N 3180
-preplace netloc xlconcat_19_dout 1 5 1 N 2890
-preplace netloc xlconcat_20_dout 1 5 1 N 3030
-preplace netloc xlconcat_21_dout 1 5 1 N 3170
-preplace netloc KSAddSubb_22_cout 1 4 1 N 3300
-preplace netloc KSAddSubb_22_sum 1 4 1 N 3320
-preplace netloc xlconcat_22_dout 1 5 1 N 3310
-preplace netloc KSAddSubb_23_cout 1 4 1 N 3440
-preplace netloc KSAddSubb_23_sum 1 4 1 N 3460
-preplace netloc KSAddSubb_24_cout 1 4 1 N 3580
-preplace netloc KSAddSubb_24_sum 1 4 1 N 3600
-preplace netloc KSAddSubb_25_cout 1 4 1 N 3720
-preplace netloc KSAddSubb_25_sum 1 4 1 N 3740
-preplace netloc xlconcat_23_dout 1 5 1 N 3450
-preplace netloc xlconcat_24_dout 1 5 1 N 3590
-preplace netloc xlconcat_25_dout 1 5 1 N 3730
-preplace netloc KSAddSubb_26_cout 1 4 1 N 3860
-preplace netloc KSAddSubb_26_sum 1 4 1 N 3880
-preplace netloc xlconcat_26_dout 1 5 1 N 3870
-preplace netloc KSAddSubb_27_cout 1 4 1 N 4000
-preplace netloc KSAddSubb_27_sum 1 4 1 N 4020
-preplace netloc xlconcat_27_dout 1 5 1 N 4010
-preplace netloc xlconcat_0_dout 1 5 1 N 230
-preplace netloc xlconcat_1_dout 1 5 1 N 370
-preplace netloc xlconcat_2_dout 1 5 1 N 510
-preplace netloc xlconcat_3_dout 1 5 1 N 650
-preplace netloc xlconcat_4_dout 1 5 1 N 790
-preplace netloc xlconcat_5_dout 1 5 1 N 930
-preplace netloc xlconcat_6_dout 1 5 1 N 1070
-levelinfo -pg 1 0 120 350 580 950 1170 1290
-pagesize -pg 1 -db -bbox -sgen -100 0 1430 4090
+preplace portBus diff_1_2 -pg 1 -lvl 7 -x 1520 -y 1210 -defaultsOSRD
+preplace portBus diff_1_3 -pg 1 -lvl 7 -x 1520 -y 1350 -defaultsOSRD
+preplace portBus diff_1_4 -pg 1 -lvl 7 -x 1520 -y 1490 -defaultsOSRD
+preplace portBus diff_1_5 -pg 1 -lvl 7 -x 1520 -y 1630 -defaultsOSRD
+preplace portBus diff_1_6 -pg 1 -lvl 7 -x 1520 -y 1770 -defaultsOSRD
+preplace portBus diff_1_7 -pg 1 -lvl 7 -x 1520 -y 1910 -defaultsOSRD
+preplace portBus diff_2_3 -pg 1 -lvl 7 -x 1520 -y 2050 -defaultsOSRD
+preplace portBus diff_2_4 -pg 1 -lvl 7 -x 1520 -y 2190 -defaultsOSRD
+preplace portBus diff_2_5 -pg 1 -lvl 7 -x 1520 -y 2330 -defaultsOSRD
+preplace portBus diff_2_6 -pg 1 -lvl 7 -x 1520 -y 2470 -defaultsOSRD
+preplace portBus diff_2_7 -pg 1 -lvl 7 -x 1520 -y 2610 -defaultsOSRD
+preplace portBus diff_3_4 -pg 1 -lvl 7 -x 1520 -y 2750 -defaultsOSRD
+preplace portBus diff_3_5 -pg 1 -lvl 7 -x 1520 -y 2890 -defaultsOSRD
+preplace portBus diff_3_6 -pg 1 -lvl 7 -x 1520 -y 3030 -defaultsOSRD
+preplace portBus diff_3_7 -pg 1 -lvl 7 -x 1520 -y 3170 -defaultsOSRD
+preplace portBus diff_4_5 -pg 1 -lvl 7 -x 1520 -y 3310 -defaultsOSRD
+preplace portBus diff_4_6 -pg 1 -lvl 7 -x 1520 -y 3450 -defaultsOSRD
+preplace portBus diff_4_7 -pg 1 -lvl 7 -x 1520 -y 3590 -defaultsOSRD
+preplace portBus diff_5_6 -pg 1 -lvl 7 -x 1520 -y 3730 -defaultsOSRD
+preplace portBus diff_5_7 -pg 1 -lvl 7 -x 1520 -y 3870 -defaultsOSRD
+preplace portBus diff_6_7 -pg 1 -lvl 7 -x 1520 -y 4010 -defaultsOSRD
+preplace portBus diff_0_1 -pg 1 -lvl 7 -x 1520 -y 240 -defaultsOSRD
+preplace portBus diff_0_2 -pg 1 -lvl 7 -x 1520 -y 390 -defaultsOSRD
+preplace portBus diff_0_3 -pg 1 -lvl 7 -x 1520 -y 540 -defaultsOSRD
+preplace portBus diff_0_4 -pg 1 -lvl 7 -x 1520 -y 660 -defaultsOSRD
+preplace portBus diff_0_5 -pg 1 -lvl 7 -x 1520 -y 790 -defaultsOSRD
+preplace portBus diff_0_6 -pg 1 -lvl 7 -x 1520 -y 930 -defaultsOSRD
+preplace portBus diff_0_7 -pg 1 -lvl 7 -x 1520 -y 1070 -defaultsOSRD
+preplace portBus sum_0_1 -pg 1 -lvl 7 -x 1520 -y 200 -defaultsOSRD
+preplace portBus sum_0_2 -pg 1 -lvl 7 -x 1520 -y 320 -defaultsOSRD
+preplace portBus sum_0_3 -pg 1 -lvl 7 -x 1520 -y 440 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -x 300 -y 330 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 2 -x 300 -y 890 -defaultsOSRD
+preplace inst xlslice_5 -pg 1 -lvl 2 -x 300 -y 1030 -defaultsOSRD
+preplace inst xlslice_6 -pg 1 -lvl 2 -x 300 -y 1130 -defaultsOSRD
+preplace inst xlslice_7 -pg 1 -lvl 2 -x 300 -y 1230 -defaultsOSRD
+preplace inst mux8to1_0 -pg 1 -lvl 1 -x 110 -y 1380 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 530 -y 210 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 2 -x 300 -y 750 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 2 -x 300 -y 610 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -x 300 -y 470 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -x 300 -y 1330 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -x 1380 -y 240 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 6 -x 1380 -y 390 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_2 -pg 1 -lvl 6 -x 1380 -y 540 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_3 -pg 1 -lvl 6 -x 1380 -y 660 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_4 -pg 1 -lvl 6 -x 1380 -y 790 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_5 -pg 1 -lvl 6 -x 1380 -y 930 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_6 -pg 1 -lvl 6 -x 1380 -y 1070 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_7 -pg 1 -lvl 6 -x 1380 -y 1210 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_8 -pg 1 -lvl 6 -x 1380 -y 1350 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_9 -pg 1 -lvl 6 -x 1380 -y 1490 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_10 -pg 1 -lvl 6 -x 1380 -y 1630 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_11 -pg 1 -lvl 6 -x 1380 -y 1770 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_12 -pg 1 -lvl 6 -x 1380 -y 1910 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_13 -pg 1 -lvl 6 -x 1380 -y 2050 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_14 -pg 1 -lvl 6 -x 1380 -y 2190 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_15 -pg 1 -lvl 6 -x 1380 -y 2330 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_16 -pg 1 -lvl 6 -x 1380 -y 2470 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_17 -pg 1 -lvl 6 -x 1380 -y 2610 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_18 -pg 1 -lvl 6 -x 1380 -y 2750 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_19 -pg 1 -lvl 6 -x 1380 -y 2890 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_20 -pg 1 -lvl 6 -x 1380 -y 3030 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_21 -pg 1 -lvl 6 -x 1380 -y 3170 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_22 -pg 1 -lvl 6 -x 1380 -y 3310 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_23 -pg 1 -lvl 6 -x 1380 -y 3450 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_24 -pg 1 -lvl 6 -x 1380 -y 3590 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_25 -pg 1 -lvl 6 -x 1380 -y 3730 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_26 -pg 1 -lvl 6 -x 1380 -y 3870 -defaultsOSRD -resize 160 96
+preplace inst xlconcat_27 -pg 1 -lvl 6 -x 1380 -y 4010 -defaultsOSRD -resize 160 96
+preplace inst CounterUp16bit_0 -pg 1 -lvl 3 -x 530 -y 330 -defaultsOSRD
+preplace inst CounterUp16bit_1 -pg 1 -lvl 3 -x 530 -y 470 -defaultsOSRD
+preplace inst CounterUp16bit_2 -pg 1 -lvl 3 -x 530 -y 610 -defaultsOSRD
+preplace inst CounterUp16bit_3 -pg 1 -lvl 3 -x 530 -y 750 -defaultsOSRD
+preplace inst CounterUp16bit_4 -pg 1 -lvl 3 -x 530 -y 890 -defaultsOSRD
+preplace inst CounterUp16bit_5 -pg 1 -lvl 3 -x 530 -y 1030 -defaultsOSRD
+preplace inst CounterUp16bit_6 -pg 1 -lvl 3 -x 530 -y 1170 -defaultsOSRD
+preplace inst CounterUp16bit_7 -pg 1 -lvl 3 -x 530 -y 1310 -defaultsOSRD
+preplace inst AorB_0 -pg 1 -lvl 2 -x 300 -y 1440 -defaultsOSRD
+preplace inst KSAddSubb_0 -pg 1 -lvl 5 -x 1140 -y 230 -defaultsOSRD
+preplace inst KSAddSubb_13 -pg 1 -lvl 5 -x 1140 -y 2050 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_14 -pg 1 -lvl 5 -x 1140 -y 2190 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_15 -pg 1 -lvl 5 -x 1140 -y 2330 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_16 -pg 1 -lvl 5 -x 1140 -y 2470 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_17 -pg 1 -lvl 5 -x 1140 -y 2610 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_18 -pg 1 -lvl 5 -x 1140 -y 2750 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_19 -pg 1 -lvl 5 -x 1140 -y 2890 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_20 -pg 1 -lvl 5 -x 1140 -y 3030 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_21 -pg 1 -lvl 5 -x 1140 -y 3170 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_1 -pg 1 -lvl 5 -x 1140 -y 370 -defaultsOSRD
+preplace inst KSAddSubb_22 -pg 1 -lvl 5 -x 1140 -y 3310 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_23 -pg 1 -lvl 5 -x 1140 -y 3450 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_24 -pg 1 -lvl 5 -x 1140 -y 3590 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_25 -pg 1 -lvl 5 -x 1140 -y 3730 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_26 -pg 1 -lvl 5 -x 1140 -y 3870 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_27 -pg 1 -lvl 5 -x 1140 -y 4010 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_2 -pg 1 -lvl 5 -x 1140 -y 510 -defaultsOSRD
+preplace inst KSAddSubb_3 -pg 1 -lvl 5 -x 1140 -y 650 -defaultsOSRD
+preplace inst KSAddSubb_4 -pg 1 -lvl 5 -x 1140 -y 790 -defaultsOSRD
+preplace inst KSAddSubb_5 -pg 1 -lvl 5 -x 1140 -y 930 -defaultsOSRD
+preplace inst KSAddSubb_6 -pg 1 -lvl 5 -x 1140 -y 1070 -defaultsOSRD
+preplace inst KSAddSubb_7 -pg 1 -lvl 5 -x 1140 -y 1210 -defaultsOSRD
+preplace inst KSAddSubb_8 -pg 1 -lvl 5 -x 1140 -y 1350 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_9 -pg 1 -lvl 5 -x 1140 -y 1490 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_10 -pg 1 -lvl 5 -x 1140 -y 1630 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_11 -pg 1 -lvl 5 -x 1140 -y 1770 -defaultsOSRD -resize 180 116
+preplace inst KSAddSubb_12 -pg 1 -lvl 5 -x 1140 -y 1910 -defaultsOSRD -resize 180 116
+preplace netloc clk_1 1 0 2 N 330 200
+preplace netloc Z_1 1 0 1 NJ 1370
+preplace netloc sel_1 1 0 1 20 1390n
+preplace netloc xlslice_1_Dout 1 2 1 N 470
+preplace netloc mux8to1_0_b 1 1 1 200 1380n
+preplace netloc xlslice_0_Dout 1 2 1 N 330
+preplace netloc xlslice_2_Dout 1 2 1 N 610
+preplace netloc xlslice_3_Dout 1 2 1 N 750
+preplace netloc xlslice_4_Dout 1 2 1 N 890
+preplace netloc xlslice_5_Dout 1 2 1 N 1030
+preplace netloc xlslice_6_Dout 1 2 1 420 1130n
+preplace netloc xlslice_7_Dout 1 2 1 400 1230n
+preplace netloc Net 1 2 1 410 310n
+preplace netloc xlconstant_0_dout 1 3 2 N 210 940
+preplace netloc CounterUp16bit_0_Q 1 3 2 630 220 1020
+preplace netloc CounterUp16bit_1_Q 1 3 2 640 230 1010
+preplace netloc CounterUp16bit_2_Q 1 3 2 650 370 1000
+preplace netloc CounterUp16bit_3_Q 1 3 2 660 510 990
+preplace netloc CounterUp16bit_4_Q 1 3 2 N 890 950
+preplace netloc CounterUp16bit_5_Q 1 3 2 N 1030 960
+preplace netloc CounterUp16bit_6_Q 1 3 2 N 1170 970
+preplace netloc CounterUp16bit_7_Q 1 3 2 N 1310 980
+preplace netloc xlconcat_7_dout 1 6 1 N 1210
+preplace netloc xlconcat_8_dout 1 6 1 N 1350
+preplace netloc xlconcat_9_dout 1 6 1 N 1490
+preplace netloc xlconcat_10_dout 1 6 1 N 1630
+preplace netloc xlconcat_11_dout 1 6 1 N 1770
+preplace netloc xlconcat_12_dout 1 6 1 N 1910
+preplace netloc xlconcat_13_dout 1 6 1 N 2050
+preplace netloc xlconcat_14_dout 1 6 1 N 2190
+preplace netloc xlconcat_15_dout 1 6 1 N 2330
+preplace netloc xlconcat_16_dout 1 6 1 N 2470
+preplace netloc xlconcat_17_dout 1 6 1 N 2610
+preplace netloc xlconcat_18_dout 1 6 1 N 2750
+preplace netloc xlconcat_19_dout 1 6 1 N 2890
+preplace netloc xlconcat_20_dout 1 6 1 N 3030
+preplace netloc xlconcat_21_dout 1 6 1 N 3170
+preplace netloc xlconcat_22_dout 1 6 1 N 3310
+preplace netloc xlconcat_23_dout 1 6 1 N 3450
+preplace netloc xlconcat_24_dout 1 6 1 N 3590
+preplace netloc xlconcat_25_dout 1 6 1 N 3730
+preplace netloc xlconcat_26_dout 1 6 1 N 3870
+preplace netloc xlconcat_27_dout 1 6 1 N 4010
+preplace netloc xlconcat_0_dout 1 6 1 N 240
+preplace netloc xlconcat_1_dout 1 6 1 N 390
+preplace netloc xlconcat_2_dout 1 6 1 N 540
+preplace netloc xlconcat_3_dout 1 6 1 N 660
+preplace netloc xlconcat_4_dout 1 6 1 N 790
+preplace netloc xlconcat_5_dout 1 6 1 N 930
+preplace netloc xlconcat_6_dout 1 6 1 N 1070
+preplace netloc Net1 1 2 1 430 350n
+preplace netloc SCLR_1 1 0 2 NJ 1450 N
+preplace netloc KSAddSubb_0_sum 1 5 2 1260 170 1480
+preplace netloc KSAddSubb_0_cout 1 5 2 1250 160 1490
+preplace netloc KSAddSubb_1_sum 1 5 2 1260 320 N
+preplace netloc KSAddSubb_1_cout 1 5 2 1250 310 1490
+preplace netloc KSAddSubb_2_sum 1 5 2 1250 460 1480
+preplace netloc KSAddSubb_2_cout 1 5 2 1260 470 N
+preplace netloc KSAddSubb_3_sum 1 5 1 1250 640n
+preplace netloc KSAddSubb_3_cout 1 5 1 1260 660n
+preplace netloc KSAddSubb_4_sum 1 5 1 N 780
+preplace netloc KSAddSubb_4_cout 1 5 1 N 800
+preplace netloc KSAddSubb_5_sum 1 5 1 N 920
+preplace netloc KSAddSubb_5_cout 1 5 1 N 940
+preplace netloc KSAddSubb_6_sum 1 5 1 N 1060
+preplace netloc KSAddSubb_6_cout 1 5 1 N 1080
+preplace netloc KSAddSubb_7_sum 1 5 1 N 1200
+preplace netloc KSAddSubb_7_cout 1 5 1 N 1220
+preplace netloc KSAddSubb_8_sum 1 5 1 N 1340
+preplace netloc KSAddSubb_8_cout 1 5 1 N 1360
+preplace netloc KSAddSubb_9_sum 1 5 1 N 1480
+preplace netloc KSAddSubb_9_cout 1 5 1 N 1500
+preplace netloc KSAddSubb_10_sum 1 5 1 N 1620
+preplace netloc KSAddSubb_10_cout 1 5 1 N 1640
+preplace netloc KSAddSubb_11_sum 1 5 1 N 1760
+preplace netloc KSAddSubb_11_cout 1 5 1 N 1780
+preplace netloc KSAddSubb_12_sum 1 5 1 N 1900
+preplace netloc KSAddSubb_12_cout 1 5 1 N 1920
+preplace netloc KSAddSubb_13_sum 1 5 1 N 2040
+preplace netloc KSAddSubb_13_cout 1 5 1 N 2060
+preplace netloc KSAddSubb_14_sum 1 5 1 N 2180
+preplace netloc KSAddSubb_14_cout 1 5 1 N 2200
+preplace netloc KSAddSubb_15_sum 1 5 1 N 2320
+preplace netloc KSAddSubb_15_cout 1 5 1 N 2340
+preplace netloc KSAddSubb_16_sum 1 5 1 N 2460
+preplace netloc KSAddSubb_16_cout 1 5 1 N 2480
+preplace netloc KSAddSubb_17_sum 1 5 1 N 2600
+preplace netloc KSAddSubb_17_cout 1 5 1 N 2620
+preplace netloc KSAddSubb_18_sum 1 5 1 N 2740
+preplace netloc KSAddSubb_18_cout 1 5 1 N 2760
+preplace netloc KSAddSubb_19_sum 1 5 1 N 2880
+preplace netloc KSAddSubb_19_cout 1 5 1 N 2900
+preplace netloc KSAddSubb_20_sum 1 5 1 N 3020
+preplace netloc KSAddSubb_20_cout 1 5 1 N 3040
+preplace netloc KSAddSubb_21_sum 1 5 1 N 3160
+preplace netloc KSAddSubb_21_cout 1 5 1 N 3180
+preplace netloc KSAddSubb_22_sum 1 5 1 N 3300
+preplace netloc KSAddSubb_22_cout 1 5 1 N 3320
+preplace netloc KSAddSubb_23_sum 1 5 1 N 3440
+preplace netloc KSAddSubb_23_cout 1 5 1 N 3460
+preplace netloc KSAddSubb_24_sum 1 5 1 N 3580
+preplace netloc KSAddSubb_24_cout 1 5 1 N 3600
+preplace netloc KSAddSubb_25_sum 1 5 1 N 3720
+preplace netloc KSAddSubb_25_cout 1 5 1 N 3740
+preplace netloc KSAddSubb_26_sum 1 5 1 N 3860
+preplace netloc KSAddSubb_26_cout 1 5 1 N 3880
+preplace netloc KSAddSubb_27_sum 1 5 1 N 4000
+preplace netloc KSAddSubb_27_cout 1 5 1 N 4020
+levelinfo -pg 1 0 110 300 530 760 1140 1380 1520
+pagesize -pg 1 -db -bbox -sgen -100 -10 1660 4090
 ",
    "Neat view_Layout_Default":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -333,8 +343,8 @@ preplace netloc Net 1 1 1 220 120n
 levelinfo -pg 1 -20 120 350 600 890 1020
 pagesize -pg 1 -db -bbox -sgen -120 0 1170 1510
 ",
-   "Neat view_ScaleFactor":"1.24814",
-   "Neat view_TopLeft":"1013,552",
+   "Neat view_ScaleFactor":"2.03315",
+   "Neat view_TopLeft":"1080,435",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
 preplace port cout0 -pg 1 -lvl 5 -x 1080 -y 120 -defaultsOSRD

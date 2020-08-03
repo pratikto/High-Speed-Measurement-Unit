@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Sat Aug  1 23:45:55 2020
+--Date        : Mon Aug  3 09:32:56 2020
 --Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 --Command     : generate_target DAQ_wrapper.bd
 --Design      : DAQ_wrapper
@@ -22,7 +22,11 @@ entity DAQ_wrapper is
     Q5 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q6 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q7 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    SCLR : in STD_LOGIC;
     Z : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    cout_0_1 : out STD_LOGIC;
+    cout_0_2 : out STD_LOGIC;
+    cout_0_3 : out STD_LOGIC;
     diff_0_1 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -51,7 +55,10 @@ entity DAQ_wrapper is
     diff_5_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_5_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_6_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    sel : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    sel : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    sum_0_1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    sum_0_2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    sum_0_3 : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
 end DAQ_wrapper;
 
@@ -96,7 +103,14 @@ architecture STRUCTURE of DAQ_wrapper is
     diff_0_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 )
+    diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    SCLR : in STD_LOGIC;
+    sum_0_1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    cout_0_1 : out STD_LOGIC;
+    sum_0_2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    cout_0_2 : out STD_LOGIC;
+    sum_0_3 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    cout_0_3 : out STD_LOGIC
   );
   end component DAQ;
 begin
@@ -111,7 +125,11 @@ DAQ_i: component DAQ
       Q5(15 downto 0) => Q5(15 downto 0),
       Q6(15 downto 0) => Q6(15 downto 0),
       Q7(15 downto 0) => Q7(15 downto 0),
+      SCLR => SCLR,
       Z(7 downto 0) => Z(7 downto 0),
+      cout_0_1 => cout_0_1,
+      cout_0_2 => cout_0_2,
+      cout_0_3 => cout_0_3,
       diff_0_1(16 downto 0) => diff_0_1(16 downto 0),
       diff_0_2(16 downto 0) => diff_0_2(16 downto 0),
       diff_0_3(16 downto 0) => diff_0_3(16 downto 0),
@@ -140,6 +158,9 @@ DAQ_i: component DAQ
       diff_5_6(16 downto 0) => diff_5_6(16 downto 0),
       diff_5_7(16 downto 0) => diff_5_7(16 downto 0),
       diff_6_7(16 downto 0) => diff_6_7(16 downto 0),
-      sel(2 downto 0) => sel(2 downto 0)
+      sel(2 downto 0) => sel(2 downto 0),
+      sum_0_1(15 downto 0) => sum_0_1(15 downto 0),
+      sum_0_2(15 downto 0) => sum_0_2(15 downto 0),
+      sum_0_3(15 downto 0) => sum_0_3(15 downto 0)
     );
 end STRUCTURE;
