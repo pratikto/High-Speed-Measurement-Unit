@@ -67,8 +67,26 @@ begin
     
     cout <= not cout_buff;
     
-    looping : for i in 0 to 15 generate
-        BxorAdd(i) <= y(i) xor add;
-    end generate;
+    BxorAdd(0) <= y(0) xor add;
+    BxorAdd(1) <= y(1) xor add;
+    BxorAdd(2) <= y(2) xor add;
+    BxorAdd(3) <= y(3) xor add;
+    BxorAdd(4) <= y(4) xor add;
+    BxorAdd(5) <= y(5) xor add;
+    BxorAdd(6) <= y(6) xor add;
+    BxorAdd(7) <= y(7) xor add;
+    BxorAdd(8) <= y(8) xor add;
+    BxorAdd(9) <= y(9) xor add;
+    BxorAdd(10) <= y(10) xor add;
+    BxorAdd(11) <= y(11) xor add;
+    BxorAdd(12) <= y(12) xor add;
+    BxorAdd(13) <= y(13) xor add;
+    BxorAdd(14) <= y(14) xor add;
+    BxorAdd(15) <= y(15) xor add;
+    
+    
+--    looping : for i in 0 to 15 generate
+--        BxorAdd(i) <= y(i) xor add;
+--    end generate;
 
 end Behavioral;

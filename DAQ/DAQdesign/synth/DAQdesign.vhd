@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Sun Aug 23 21:59:14 2020
+--Date        : Mon Aug 24 12:36:53 2020
 --Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 --Command     : generate_target DAQdesign.bd
 --Design      : DAQdesign
@@ -97,13 +97,6 @@ architecture STRUCTURE of DAQdesign is
     Dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component DAQdesign_xlslice_7_0;
-  component DAQdesign_mux8to1_0_0 is
-  port (
-    a : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    sel : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    b : out STD_LOGIC
-  );
-  end component DAQdesign_mux8to1_0_0;
   component DAQdesign_xlconstant_0_0 is
   port (
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
@@ -328,6 +321,13 @@ architecture STRUCTURE of DAQdesign is
     dout : out STD_LOGIC_VECTOR ( 16 downto 0 )
   );
   end component DAQdesign_xlconcat_27_0;
+  component DAQdesign_mux8to1_0_0 is
+  port (
+    a : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    sel : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    b : out STD_LOGIC
+  );
+  end component DAQdesign_mux8to1_0_0;
   component DAQdesign_CounterUp16bit_0_0 is
   port (
     CE : in STD_LOGIC;
@@ -408,6 +408,33 @@ architecture STRUCTURE of DAQdesign is
     cout : out STD_LOGIC
   );
   end component DAQdesign_KSAddSubb_0_0;
+  component DAQdesign_KSAddSubb_10_0 is
+  port (
+    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    add : in STD_LOGIC;
+    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    cout : out STD_LOGIC
+  );
+  end component DAQdesign_KSAddSubb_10_0;
+  component DAQdesign_KSAddSubb_11_0 is
+  port (
+    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    add : in STD_LOGIC;
+    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    cout : out STD_LOGIC
+  );
+  end component DAQdesign_KSAddSubb_11_0;
+  component DAQdesign_KSAddSubb_12_0 is
+  port (
+    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    add : in STD_LOGIC;
+    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    cout : out STD_LOGIC
+  );
+  end component DAQdesign_KSAddSubb_12_0;
   component DAQdesign_KSAddSubb_13_0 is
   port (
     x : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -471,6 +498,15 @@ architecture STRUCTURE of DAQdesign is
     cout : out STD_LOGIC
   );
   end component DAQdesign_KSAddSubb_19_0;
+  component DAQdesign_KSAddSubb_1_0 is
+  port (
+    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    add : in STD_LOGIC;
+    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    cout : out STD_LOGIC
+  );
+  end component DAQdesign_KSAddSubb_1_0;
   component DAQdesign_KSAddSubb_20_0 is
   port (
     x : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -489,15 +525,6 @@ architecture STRUCTURE of DAQdesign is
     cout : out STD_LOGIC
   );
   end component DAQdesign_KSAddSubb_21_0;
-  component DAQdesign_KSAddSubb_1_0 is
-  port (
-    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    add : in STD_LOGIC;
-    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    cout : out STD_LOGIC
-  );
-  end component DAQdesign_KSAddSubb_1_0;
   component DAQdesign_KSAddSubb_22_0 is
   port (
     x : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -624,33 +651,6 @@ architecture STRUCTURE of DAQdesign is
     cout : out STD_LOGIC
   );
   end component DAQdesign_KSAddSubb_9_0;
-  component DAQdesign_KSAddSubb_10_0 is
-  port (
-    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    add : in STD_LOGIC;
-    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    cout : out STD_LOGIC
-  );
-  end component DAQdesign_KSAddSubb_10_0;
-  component DAQdesign_KSAddSubb_11_0 is
-  port (
-    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    add : in STD_LOGIC;
-    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    cout : out STD_LOGIC
-  );
-  end component DAQdesign_KSAddSubb_11_0;
-  component DAQdesign_KSAddSubb_12_0 is
-  port (
-    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    add : in STD_LOGIC;
-    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    cout : out STD_LOGIC
-  );
-  end component DAQdesign_KSAddSubb_12_0;
   signal CounterUp16bit_0_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal CounterUp16bit_1_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal CounterUp16bit_2_Q : STD_LOGIC_VECTOR ( 15 downto 0 );

@@ -839,7 +839,7 @@ proc create_root_design { parentCell } {
   # Create instance: xlconstant_1, and set properties
   set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
   set_property -dict [ list \
-   CONFIG.CONST_VAL {0b0} \
+   CONFIG.CONST_VAL {0b1} \
  ] $xlconstant_1
 
   # Create instance: xlslice_0, and set properties

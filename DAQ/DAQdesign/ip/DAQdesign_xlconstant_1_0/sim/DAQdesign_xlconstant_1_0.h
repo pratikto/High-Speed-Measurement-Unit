@@ -57,7 +57,7 @@
 #include "systemc.h"
 class DAQdesign_xlconstant_1_0 : public sc_module {
   public:
-xlconstant_v1_1_7<1,0b0> mod;
+xlconstant_v1_1_7<1,0b1> mod;
   sc_out< sc_bv<1> > dout;
 DAQdesign_xlconstant_1_0 (sc_core::sc_module_name name);
   };

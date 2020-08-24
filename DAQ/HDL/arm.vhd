@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 07/29/2020 11:26:19 AM
+-- Create Date: 08/07/2020 05:51:11 PM
 -- Design Name: 
--- Module Name: CounterUp16bit - Behavioral
+-- Module Name: arm - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -33,30 +33,40 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity CounterUp16bit is
-   port( 
+entity arm is
+    Port ( arm_in : in STD_LOGIC;
+           Zref : in STD_LOGIC;
+           cycle : in STD_LOGIC_VECTOR (3 downto 0);
+           arm_out : out STD_LOGIC);
+end arm;
+
+architecture Behavioral of arm is
+    component CounterUp16bit is port( 
         CE: in std_logic;
         Clk: in std_logic;
  	    Clr: in std_logic;
  	    Q: out std_logic_vector(15 downto 0)
-    );
-end CounterUp16bit;
-
-architecture Behavioral of CounterUp16bit is
-   signal temp: std_logic_vector(15 downto 0);
+        );
+    end component;
+    
+    signal arm_in_buff  : STD_LOGIC;
+    signal Q_buff       : std_logic_vector(15 downto 0);
 begin
-    process(Clk,Clr,CE)
+    counter : component CounterUp16bit port map(
+        CE =>'1',
+        Clk => Zref,
+        Clr => arm_in_buff,
+        Q => Q_buff
+    );
+    arm_in_buff <= not arm_in;
+    
+    process (Q_buff, arm_in)
     begin
-        if Clr = '1' then
-            temp <= "0000000000000000";
-        elsif(rising_edge(Clk) and CE = '1') then
-           if temp = "1111111111111111" then
-                temp<="0000000000000000";
-           else
-                temp <= temp + 1;
-           end if;
+        if Q_buff >= cycle then
+            arm_out <= '1';
+        else
+            arm_out <= '0';
         end if;
     end process;
-   Q <= temp;
-
+        
 end Behavioral;

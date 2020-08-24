@@ -36,7 +36,7 @@ entity DAQ_testbench is
 end DAQ_testbench;
 
 architecture Behavioral of DAQ_testbench is
-component DAQ_wrapper
+component DAQdesign_wrapper
     port(
     A : in STD_LOGIC_VECTOR ( 7 downto 0 );
     Q0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -143,7 +143,7 @@ end component;
     constant Aclk : time := 1ps;
 
 begin
-    UUT : DAQ_wrapper port map(
+    UUT : DAQdesign_wrapper port map(
         Q0 => Q0,
         Q1 => Q1,
         Q2 => Q2,
@@ -196,8 +196,10 @@ begin
     
     SCLR_stimulus : process
     begin
+        SCLR <= '0';
+        wait for Aclk;
         SCLR <= '1';
-        wait for Aclk/2;
+        wait for Aclk;
         SCLR <= '0';
         wait;
     end process;

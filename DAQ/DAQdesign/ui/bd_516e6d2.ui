@@ -1,14 +1,14 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.762958",
-   "Default View_TopLeft":"607,-75",
+   "Default View_ScaleFactor":"0.664194",
+   "Default View_TopLeft":"-101,1185",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
 preplace port SCLR -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
-preplace port cout_0_1 -pg 1 -lvl 7 -x 1590 -y 310 -defaultsOSRD
-preplace port cout_0_2 -pg 1 -lvl 7 -x 1590 -y 490 -defaultsOSRD
-preplace port cout_0_3 -pg 1 -lvl 7 -x 1590 -y 630 -defaultsOSRD
+preplace port cout_0_1 -pg 1 -lvl 7 -x 1620 -y 310 -defaultsOSRD
+preplace port cout_0_2 -pg 1 -lvl 7 -x 1620 -y 490 -defaultsOSRD
+preplace port cout_0_3 -pg 1 -lvl 7 -x 1620 -y 630 -defaultsOSRD
 preplace portBus Q0 -pg 1 -lvl 4 -x 720 -y 0 -defaultsOSRD -top
 preplace portBus Q1 -pg 1 -lvl 4 -x 750 -y 0 -defaultsOSRD -top
 preplace portBus Q2 -pg 1 -lvl 4 -x 780 -y 0 -defaultsOSRD -top
@@ -20,76 +20,76 @@ preplace portBus Q6 -pg 1 -lvl 4 -x 900 -y 0 -defaultsOSRD -top
 preplace portBus Q7 -pg 1 -lvl 4 -x 930 -y 0 -defaultsOSRD -top
 preplace portBus Z -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
 preplace portBus A -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
-preplace portBus diff_1_2 -pg 1 -lvl 7 -x 1590 -y 1250 -defaultsOSRD
-preplace portBus diff_1_3 -pg 1 -lvl 7 -x 1590 -y 1390 -defaultsOSRD
-preplace portBus diff_1_4 -pg 1 -lvl 7 -x 1590 -y 1530 -defaultsOSRD
-preplace portBus diff_1_5 -pg 1 -lvl 7 -x 1590 -y 1670 -defaultsOSRD
-preplace portBus diff_1_6 -pg 1 -lvl 7 -x 1590 -y 1810 -defaultsOSRD
-preplace portBus diff_1_7 -pg 1 -lvl 7 -x 1590 -y 1950 -defaultsOSRD
-preplace portBus diff_2_3 -pg 1 -lvl 7 -x 1590 -y 2090 -defaultsOSRD
-preplace portBus diff_2_4 -pg 1 -lvl 7 -x 1590 -y 2230 -defaultsOSRD
-preplace portBus diff_2_5 -pg 1 -lvl 7 -x 1590 -y 2370 -defaultsOSRD
-preplace portBus diff_2_6 -pg 1 -lvl 7 -x 1590 -y 2510 -defaultsOSRD
-preplace portBus diff_2_7 -pg 1 -lvl 7 -x 1590 -y 2650 -defaultsOSRD
-preplace portBus diff_3_4 -pg 1 -lvl 7 -x 1590 -y 2790 -defaultsOSRD
-preplace portBus diff_3_5 -pg 1 -lvl 7 -x 1590 -y 2930 -defaultsOSRD
-preplace portBus diff_3_6 -pg 1 -lvl 7 -x 1590 -y 3070 -defaultsOSRD
-preplace portBus diff_3_7 -pg 1 -lvl 7 -x 1590 -y 3210 -defaultsOSRD
-preplace portBus diff_4_5 -pg 1 -lvl 7 -x 1590 -y 3350 -defaultsOSRD
-preplace portBus diff_4_6 -pg 1 -lvl 7 -x 1590 -y 3490 -defaultsOSRD
-preplace portBus diff_4_7 -pg 1 -lvl 7 -x 1590 -y 3630 -defaultsOSRD
-preplace portBus diff_5_6 -pg 1 -lvl 7 -x 1590 -y 3770 -defaultsOSRD
-preplace portBus diff_5_7 -pg 1 -lvl 7 -x 1590 -y 3910 -defaultsOSRD
-preplace portBus diff_6_7 -pg 1 -lvl 7 -x 1590 -y 4050 -defaultsOSRD
-preplace portBus diff_0_1 -pg 1 -lvl 7 -x 1590 -y 280 -defaultsOSRD
-preplace portBus diff_0_2 -pg 1 -lvl 7 -x 1590 -y 410 -defaultsOSRD
-preplace portBus diff_0_3 -pg 1 -lvl 7 -x 1590 -y 560 -defaultsOSRD
-preplace portBus diff_0_4 -pg 1 -lvl 7 -x 1590 -y 700 -defaultsOSRD
-preplace portBus diff_0_5 -pg 1 -lvl 7 -x 1590 -y 840 -defaultsOSRD
-preplace portBus diff_0_6 -pg 1 -lvl 7 -x 1590 -y 970 -defaultsOSRD
-preplace portBus diff_0_7 -pg 1 -lvl 7 -x 1590 -y 1110 -defaultsOSRD
-preplace portBus sum_0_1 -pg 1 -lvl 7 -x 1590 -y 210 -defaultsOSRD
-preplace portBus sum_0_2 -pg 1 -lvl 7 -x 1590 -y 350 -defaultsOSRD
-preplace portBus sum_0_3 -pg 1 -lvl 7 -x 1590 -y 530 -defaultsOSRD
+preplace portBus diff_1_2 -pg 1 -lvl 7 -x 1620 -y 1250 -defaultsOSRD
+preplace portBus diff_1_3 -pg 1 -lvl 7 -x 1620 -y 1390 -defaultsOSRD
+preplace portBus diff_1_4 -pg 1 -lvl 7 -x 1620 -y 1530 -defaultsOSRD
+preplace portBus diff_1_5 -pg 1 -lvl 7 -x 1620 -y 1670 -defaultsOSRD
+preplace portBus diff_1_6 -pg 1 -lvl 7 -x 1620 -y 1810 -defaultsOSRD
+preplace portBus diff_1_7 -pg 1 -lvl 7 -x 1620 -y 1950 -defaultsOSRD
+preplace portBus diff_2_3 -pg 1 -lvl 7 -x 1620 -y 2090 -defaultsOSRD
+preplace portBus diff_2_4 -pg 1 -lvl 7 -x 1620 -y 2230 -defaultsOSRD
+preplace portBus diff_2_5 -pg 1 -lvl 7 -x 1620 -y 2370 -defaultsOSRD
+preplace portBus diff_2_6 -pg 1 -lvl 7 -x 1620 -y 2510 -defaultsOSRD
+preplace portBus diff_2_7 -pg 1 -lvl 7 -x 1620 -y 2650 -defaultsOSRD
+preplace portBus diff_3_4 -pg 1 -lvl 7 -x 1620 -y 2790 -defaultsOSRD
+preplace portBus diff_3_5 -pg 1 -lvl 7 -x 1620 -y 2930 -defaultsOSRD
+preplace portBus diff_3_6 -pg 1 -lvl 7 -x 1620 -y 3070 -defaultsOSRD
+preplace portBus diff_3_7 -pg 1 -lvl 7 -x 1620 -y 3210 -defaultsOSRD
+preplace portBus diff_4_5 -pg 1 -lvl 7 -x 1620 -y 3350 -defaultsOSRD
+preplace portBus diff_4_6 -pg 1 -lvl 7 -x 1620 -y 3490 -defaultsOSRD
+preplace portBus diff_4_7 -pg 1 -lvl 7 -x 1620 -y 3630 -defaultsOSRD
+preplace portBus diff_5_6 -pg 1 -lvl 7 -x 1620 -y 3770 -defaultsOSRD
+preplace portBus diff_5_7 -pg 1 -lvl 7 -x 1620 -y 3910 -defaultsOSRD
+preplace portBus diff_6_7 -pg 1 -lvl 7 -x 1620 -y 4050 -defaultsOSRD
+preplace portBus diff_0_1 -pg 1 -lvl 7 -x 1620 -y 280 -defaultsOSRD
+preplace portBus diff_0_2 -pg 1 -lvl 7 -x 1620 -y 410 -defaultsOSRD
+preplace portBus diff_0_3 -pg 1 -lvl 7 -x 1620 -y 560 -defaultsOSRD
+preplace portBus diff_0_4 -pg 1 -lvl 7 -x 1620 -y 700 -defaultsOSRD
+preplace portBus diff_0_5 -pg 1 -lvl 7 -x 1620 -y 840 -defaultsOSRD
+preplace portBus diff_0_6 -pg 1 -lvl 7 -x 1620 -y 970 -defaultsOSRD
+preplace portBus diff_0_7 -pg 1 -lvl 7 -x 1620 -y 1110 -defaultsOSRD
+preplace portBus sum_0_1 -pg 1 -lvl 7 -x 1620 -y 210 -defaultsOSRD
+preplace portBus sum_0_2 -pg 1 -lvl 7 -x 1620 -y 350 -defaultsOSRD
+preplace portBus sum_0_3 -pg 1 -lvl 7 -x 1620 -y 530 -defaultsOSRD
 preplace inst xlslice_0 -pg 1 -lvl 3 -x 440 -y 270 -defaultsOSRD
 preplace inst xlslice_4 -pg 1 -lvl 3 -x 440 -y 830 -defaultsOSRD
 preplace inst xlslice_5 -pg 1 -lvl 3 -x 440 -y 970 -defaultsOSRD
 preplace inst xlslice_6 -pg 1 -lvl 3 -x 440 -y 1110 -defaultsOSRD
 preplace inst xlslice_7 -pg 1 -lvl 3 -x 440 -y 1250 -defaultsOSRD
-preplace inst mux8to1_0 -pg 1 -lvl 1 -x 110 -y 550 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 4 -x 660 -y 1370 -defaultsOSRD
 preplace inst xlslice_3 -pg 1 -lvl 3 -x 440 -y 690 -defaultsOSRD
 preplace inst xlslice_2 -pg 1 -lvl 3 -x 440 -y 550 -defaultsOSRD
 preplace inst xlslice_1 -pg 1 -lvl 3 -x 440 -y 410 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 3 -x 440 -y 1350 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 6 -x 1410 -y 280 -defaultsOSRD
-preplace inst xlconcat_1 -pg 1 -lvl 6 -x 1410 -y 410 -defaultsOSRD
-preplace inst xlconcat_2 -pg 1 -lvl 6 -x 1410 -y 550 -defaultsOSRD
-preplace inst xlconcat_3 -pg 1 -lvl 6 -x 1410 -y 700 -defaultsOSRD
-preplace inst xlconcat_4 -pg 1 -lvl 6 -x 1410 -y 840 -defaultsOSRD
-preplace inst xlconcat_5 -pg 1 -lvl 6 -x 1410 -y 970 -defaultsOSRD
-preplace inst xlconcat_6 -pg 1 -lvl 6 -x 1410 -y 1110 -defaultsOSRD
-preplace inst xlconcat_7 -pg 1 -lvl 6 -x 1410 -y 1250 -defaultsOSRD
-preplace inst xlconcat_8 -pg 1 -lvl 6 -x 1410 -y 1390 -defaultsOSRD
-preplace inst xlconcat_9 -pg 1 -lvl 6 -x 1410 -y 1530 -defaultsOSRD
-preplace inst xlconcat_10 -pg 1 -lvl 6 -x 1410 -y 1670 -defaultsOSRD
-preplace inst xlconcat_11 -pg 1 -lvl 6 -x 1410 -y 1810 -defaultsOSRD
-preplace inst xlconcat_12 -pg 1 -lvl 6 -x 1410 -y 1950 -defaultsOSRD
-preplace inst xlconcat_13 -pg 1 -lvl 6 -x 1410 -y 2090 -defaultsOSRD
-preplace inst xlconcat_14 -pg 1 -lvl 6 -x 1410 -y 2230 -defaultsOSRD
-preplace inst xlconcat_15 -pg 1 -lvl 6 -x 1410 -y 2370 -defaultsOSRD
-preplace inst xlconcat_16 -pg 1 -lvl 6 -x 1410 -y 2510 -defaultsOSRD
-preplace inst xlconcat_17 -pg 1 -lvl 6 -x 1410 -y 2650 -defaultsOSRD
-preplace inst xlconcat_18 -pg 1 -lvl 6 -x 1410 -y 2790 -defaultsOSRD
-preplace inst xlconcat_19 -pg 1 -lvl 6 -x 1410 -y 2930 -defaultsOSRD
-preplace inst xlconcat_20 -pg 1 -lvl 6 -x 1410 -y 3070 -defaultsOSRD
-preplace inst xlconcat_21 -pg 1 -lvl 6 -x 1410 -y 3210 -defaultsOSRD
-preplace inst xlconcat_22 -pg 1 -lvl 6 -x 1410 -y 3350 -defaultsOSRD
-preplace inst xlconcat_23 -pg 1 -lvl 6 -x 1410 -y 3490 -defaultsOSRD
-preplace inst xlconcat_24 -pg 1 -lvl 6 -x 1410 -y 3630 -defaultsOSRD
-preplace inst xlconcat_25 -pg 1 -lvl 6 -x 1410 -y 3770 -defaultsOSRD
-preplace inst xlconcat_26 -pg 1 -lvl 6 -x 1410 -y 3910 -defaultsOSRD
-preplace inst xlconcat_27 -pg 1 -lvl 6 -x 1410 -y 4050 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -x 1430 -y 280 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 6 -x 1430 -y 410 -defaultsOSRD
+preplace inst xlconcat_2 -pg 1 -lvl 6 -x 1430 -y 550 -defaultsOSRD
+preplace inst xlconcat_3 -pg 1 -lvl 6 -x 1430 -y 700 -defaultsOSRD
+preplace inst xlconcat_4 -pg 1 -lvl 6 -x 1430 -y 840 -defaultsOSRD
+preplace inst xlconcat_5 -pg 1 -lvl 6 -x 1430 -y 970 -defaultsOSRD
+preplace inst xlconcat_6 -pg 1 -lvl 6 -x 1430 -y 1110 -defaultsOSRD
+preplace inst xlconcat_7 -pg 1 -lvl 6 -x 1430 -y 1250 -defaultsOSRD
+preplace inst xlconcat_8 -pg 1 -lvl 6 -x 1430 -y 1390 -defaultsOSRD
+preplace inst xlconcat_9 -pg 1 -lvl 6 -x 1430 -y 1530 -defaultsOSRD
+preplace inst xlconcat_10 -pg 1 -lvl 6 -x 1430 -y 1670 -defaultsOSRD
+preplace inst xlconcat_11 -pg 1 -lvl 6 -x 1430 -y 1810 -defaultsOSRD
+preplace inst xlconcat_12 -pg 1 -lvl 6 -x 1430 -y 1950 -defaultsOSRD
+preplace inst xlconcat_13 -pg 1 -lvl 6 -x 1430 -y 2090 -defaultsOSRD
+preplace inst xlconcat_14 -pg 1 -lvl 6 -x 1430 -y 2230 -defaultsOSRD
+preplace inst xlconcat_15 -pg 1 -lvl 6 -x 1430 -y 2370 -defaultsOSRD
+preplace inst xlconcat_16 -pg 1 -lvl 6 -x 1430 -y 2510 -defaultsOSRD
+preplace inst xlconcat_17 -pg 1 -lvl 6 -x 1430 -y 2650 -defaultsOSRD
+preplace inst xlconcat_18 -pg 1 -lvl 6 -x 1430 -y 2790 -defaultsOSRD
+preplace inst xlconcat_19 -pg 1 -lvl 6 -x 1430 -y 2930 -defaultsOSRD
+preplace inst xlconcat_20 -pg 1 -lvl 6 -x 1430 -y 3070 -defaultsOSRD
+preplace inst xlconcat_21 -pg 1 -lvl 6 -x 1430 -y 3210 -defaultsOSRD
+preplace inst xlconcat_22 -pg 1 -lvl 6 -x 1430 -y 3350 -defaultsOSRD
+preplace inst xlconcat_23 -pg 1 -lvl 6 -x 1430 -y 3490 -defaultsOSRD
+preplace inst xlconcat_24 -pg 1 -lvl 6 -x 1430 -y 3630 -defaultsOSRD
+preplace inst xlconcat_25 -pg 1 -lvl 6 -x 1430 -y 3770 -defaultsOSRD
+preplace inst xlconcat_26 -pg 1 -lvl 6 -x 1430 -y 3910 -defaultsOSRD
+preplace inst xlconcat_27 -pg 1 -lvl 6 -x 1430 -y 4050 -defaultsOSRD
+preplace inst mux8to1_0 -pg 1 -lvl 1 -x 110 -y 550 -defaultsOSRD
 preplace inst CounterUp16bit_0 -pg 1 -lvl 4 -x 660 -y 270 -defaultsOSRD
 preplace inst CounterUp16bit_1 -pg 1 -lvl 4 -x 660 -y 410 -defaultsOSRD
 preplace inst CounterUp16bit_2 -pg 1 -lvl 4 -x 660 -y 550 -defaultsOSRD
@@ -99,34 +99,34 @@ preplace inst CounterUp16bit_5 -pg 1 -lvl 4 -x 660 -y 970 -defaultsOSRD
 preplace inst CounterUp16bit_6 -pg 1 -lvl 4 -x 660 -y 1110 -defaultsOSRD
 preplace inst CounterUp16bit_7 -pg 1 -lvl 4 -x 660 -y 1250 -defaultsOSRD
 preplace inst AorB_0 -pg 1 -lvl 2 -x 270 -y 610 -defaultsOSRD
-preplace inst KSAddSubb_0 -pg 1 -lvl 5 -x 1150 -y 270 -defaultsOSRD
-preplace inst KSAddSubb_13 -pg 1 -lvl 5 -x 1150 -y 2090 -defaultsOSRD
-preplace inst KSAddSubb_14 -pg 1 -lvl 5 -x 1150 -y 2230 -defaultsOSRD
-preplace inst KSAddSubb_15 -pg 1 -lvl 5 -x 1150 -y 2370 -defaultsOSRD
-preplace inst KSAddSubb_16 -pg 1 -lvl 5 -x 1150 -y 2510 -defaultsOSRD
-preplace inst KSAddSubb_17 -pg 1 -lvl 5 -x 1150 -y 2650 -defaultsOSRD
-preplace inst KSAddSubb_18 -pg 1 -lvl 5 -x 1150 -y 2790 -defaultsOSRD
-preplace inst KSAddSubb_19 -pg 1 -lvl 5 -x 1150 -y 2930 -defaultsOSRD
-preplace inst KSAddSubb_20 -pg 1 -lvl 5 -x 1150 -y 3070 -defaultsOSRD
-preplace inst KSAddSubb_21 -pg 1 -lvl 5 -x 1150 -y 3210 -defaultsOSRD
-preplace inst KSAddSubb_1 -pg 1 -lvl 5 -x 1150 -y 410 -defaultsOSRD
-preplace inst KSAddSubb_22 -pg 1 -lvl 5 -x 1150 -y 3350 -defaultsOSRD
-preplace inst KSAddSubb_23 -pg 1 -lvl 5 -x 1150 -y 3490 -defaultsOSRD
-preplace inst KSAddSubb_24 -pg 1 -lvl 5 -x 1150 -y 3630 -defaultsOSRD
-preplace inst KSAddSubb_25 -pg 1 -lvl 5 -x 1150 -y 3770 -defaultsOSRD
-preplace inst KSAddSubb_26 -pg 1 -lvl 5 -x 1150 -y 3910 -defaultsOSRD
-preplace inst KSAddSubb_27 -pg 1 -lvl 5 -x 1150 -y 4050 -defaultsOSRD
-preplace inst KSAddSubb_2 -pg 1 -lvl 5 -x 1150 -y 550 -defaultsOSRD
-preplace inst KSAddSubb_3 -pg 1 -lvl 5 -x 1150 -y 690 -defaultsOSRD
-preplace inst KSAddSubb_4 -pg 1 -lvl 5 -x 1150 -y 830 -defaultsOSRD
-preplace inst KSAddSubb_5 -pg 1 -lvl 5 -x 1150 -y 970 -defaultsOSRD
-preplace inst KSAddSubb_6 -pg 1 -lvl 5 -x 1150 -y 1110 -defaultsOSRD
-preplace inst KSAddSubb_7 -pg 1 -lvl 5 -x 1150 -y 1250 -defaultsOSRD
-preplace inst KSAddSubb_8 -pg 1 -lvl 5 -x 1150 -y 1390 -defaultsOSRD
-preplace inst KSAddSubb_9 -pg 1 -lvl 5 -x 1150 -y 1530 -defaultsOSRD
-preplace inst KSAddSubb_10 -pg 1 -lvl 5 -x 1150 -y 1670 -defaultsOSRD
-preplace inst KSAddSubb_11 -pg 1 -lvl 5 -x 1150 -y 1810 -defaultsOSRD
-preplace inst KSAddSubb_12 -pg 1 -lvl 5 -x 1150 -y 1950 -defaultsOSRD
+preplace inst KSAddSubb_0 -pg 1 -lvl 5 -x 1160 -y 270 -defaultsOSRD
+preplace inst KSAddSubb_10 -pg 1 -lvl 5 -x 1160 -y 1670 -defaultsOSRD
+preplace inst KSAddSubb_11 -pg 1 -lvl 5 -x 1160 -y 1810 -defaultsOSRD
+preplace inst KSAddSubb_12 -pg 1 -lvl 5 -x 1160 -y 1950 -defaultsOSRD
+preplace inst KSAddSubb_13 -pg 1 -lvl 5 -x 1160 -y 2090 -defaultsOSRD
+preplace inst KSAddSubb_14 -pg 1 -lvl 5 -x 1160 -y 2230 -defaultsOSRD
+preplace inst KSAddSubb_15 -pg 1 -lvl 5 -x 1160 -y 2370 -defaultsOSRD
+preplace inst KSAddSubb_16 -pg 1 -lvl 5 -x 1160 -y 2510 -defaultsOSRD
+preplace inst KSAddSubb_17 -pg 1 -lvl 5 -x 1160 -y 2650 -defaultsOSRD
+preplace inst KSAddSubb_18 -pg 1 -lvl 5 -x 1160 -y 2790 -defaultsOSRD
+preplace inst KSAddSubb_19 -pg 1 -lvl 5 -x 1160 -y 2930 -defaultsOSRD
+preplace inst KSAddSubb_1 -pg 1 -lvl 5 -x 1160 -y 410 -defaultsOSRD
+preplace inst KSAddSubb_20 -pg 1 -lvl 5 -x 1160 -y 3070 -defaultsOSRD
+preplace inst KSAddSubb_21 -pg 1 -lvl 5 -x 1160 -y 3210 -defaultsOSRD
+preplace inst KSAddSubb_22 -pg 1 -lvl 5 -x 1160 -y 3350 -defaultsOSRD
+preplace inst KSAddSubb_23 -pg 1 -lvl 5 -x 1160 -y 3490 -defaultsOSRD
+preplace inst KSAddSubb_24 -pg 1 -lvl 5 -x 1160 -y 3630 -defaultsOSRD
+preplace inst KSAddSubb_25 -pg 1 -lvl 5 -x 1160 -y 3770 -defaultsOSRD
+preplace inst KSAddSubb_26 -pg 1 -lvl 5 -x 1160 -y 3910 -defaultsOSRD
+preplace inst KSAddSubb_27 -pg 1 -lvl 5 -x 1160 -y 4050 -defaultsOSRD
+preplace inst KSAddSubb_2 -pg 1 -lvl 5 -x 1160 -y 550 -defaultsOSRD
+preplace inst KSAddSubb_3 -pg 1 -lvl 5 -x 1160 -y 690 -defaultsOSRD
+preplace inst KSAddSubb_4 -pg 1 -lvl 5 -x 1160 -y 830 -defaultsOSRD
+preplace inst KSAddSubb_5 -pg 1 -lvl 5 -x 1160 -y 970 -defaultsOSRD
+preplace inst KSAddSubb_6 -pg 1 -lvl 5 -x 1160 -y 1110 -defaultsOSRD
+preplace inst KSAddSubb_7 -pg 1 -lvl 5 -x 1160 -y 1250 -defaultsOSRD
+preplace inst KSAddSubb_8 -pg 1 -lvl 5 -x 1160 -y 1390 -defaultsOSRD
+preplace inst KSAddSubb_9 -pg 1 -lvl 5 -x 1160 -y 1530 -defaultsOSRD
 preplace netloc clk_1 1 0 3 NJ 270 N 270 340
 preplace netloc Z_1 1 0 1 NJ 540
 preplace netloc sel_1 1 0 1 20J 560n
@@ -172,23 +172,23 @@ preplace netloc xlconcat_26_dout 1 6 1 NJ 3910
 preplace netloc xlconcat_27_dout 1 6 1 NJ 4050
 preplace netloc xlconcat_0_dout 1 6 1 NJ 280
 preplace netloc xlconcat_1_dout 1 6 1 NJ 410
-preplace netloc xlconcat_2_dout 1 6 1 1510J 550n
+preplace netloc xlconcat_2_dout 1 6 1 1530J 550n
 preplace netloc xlconcat_3_dout 1 6 1 NJ 700
 preplace netloc xlconcat_4_dout 1 6 1 NJ 840
 preplace netloc xlconcat_5_dout 1 6 1 NJ 970
 preplace netloc xlconcat_6_dout 1 6 1 NJ 1110
 preplace netloc Net1 1 2 2 N 610 550
 preplace netloc SCLR_1 1 0 2 NJ 620 N
-preplace netloc KSAddSubb_0_sum 1 5 2 1290 170 1570J
-preplace netloc KSAddSubb_0_cout 1 5 2 1300 190 1560J
-preplace netloc KSAddSubb_1_sum 1 5 2 1270 200 1540J
-preplace netloc KSAddSubb_1_cout 1 5 2 1260 180 1550J
-preplace netloc KSAddSubb_2_sum 1 5 2 1280 210 1530J
-preplace netloc KSAddSubb_2_cout 1 5 2 1300 480 1520J
-preplace netloc KSAddSubb_3_sum 1 5 1 1280 680n
-preplace netloc KSAddSubb_3_cout 1 5 1 1280 700n
-preplace netloc KSAddSubb_4_sum 1 5 1 1280 820n
-preplace netloc KSAddSubb_4_cout 1 5 1 1280 840n
+preplace netloc KSAddSubb_0_sum 1 5 2 1300 170 1590J
+preplace netloc KSAddSubb_0_cout 1 5 2 1310 190 1580J
+preplace netloc KSAddSubb_1_sum 1 5 2 1280 200 1560J
+preplace netloc KSAddSubb_1_cout 1 5 2 1270 180 1570J
+preplace netloc KSAddSubb_2_sum 1 5 2 1290 210 1550J
+preplace netloc KSAddSubb_2_cout 1 5 2 1310 480 1540J
+preplace netloc KSAddSubb_3_sum 1 5 1 1290 680n
+preplace netloc KSAddSubb_3_cout 1 5 1 1290 700n
+preplace netloc KSAddSubb_4_sum 1 5 1 1290 820n
+preplace netloc KSAddSubb_4_cout 1 5 1 1290 840n
 preplace netloc KSAddSubb_5_sum 1 5 1 N 960
 preplace netloc KSAddSubb_5_cout 1 5 1 N 980
 preplace netloc KSAddSubb_6_sum 1 5 1 N 1100
@@ -235,8 +235,8 @@ preplace netloc KSAddSubb_26_sum 1 5 1 N 3900
 preplace netloc KSAddSubb_26_cout 1 5 1 N 3920
 preplace netloc KSAddSubb_27_sum 1 5 1 N 4040
 preplace netloc KSAddSubb_27_cout 1 5 1 N 4060
-levelinfo -pg 1 0 110 270 440 660 1150 1410 1590
-pagesize -pg 1 -db -bbox -sgen -100 -100 1730 4130
+levelinfo -pg 1 0 110 270 440 660 1160 1430 1620
+pagesize -pg 1 -db -bbox -sgen -100 -100 1760 4130
 "
 }
-
+0
