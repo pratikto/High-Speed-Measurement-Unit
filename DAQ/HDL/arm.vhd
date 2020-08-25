@@ -36,7 +36,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity arm is
     Port ( arm_in : in STD_LOGIC;
            Zref : in STD_LOGIC;
-           cycle : in STD_LOGIC_VECTOR (3 downto 0);
+           cycle : in STD_LOGIC_VECTOR (15 downto 0);
            arm_out : out STD_LOGIC);
 end arm;
 

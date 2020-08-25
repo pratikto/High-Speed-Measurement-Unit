@@ -51,7 +51,7 @@ begin
             temp <= "0000000000000000";
         elsif(rising_edge(Clk) and CE = '1') then
            if temp = "1111111111111111" then
-                temp<="0000000000000000";
+                temp<="0000000000000001";
            else
                 temp <= temp + 1;
            end if;
