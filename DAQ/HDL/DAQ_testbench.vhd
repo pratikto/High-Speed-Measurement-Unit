@@ -180,9 +180,11 @@ begin
     ARM_stimulus : process
     begin
         ARM <= '0';
-        wait for Aclk*1024;
+        wait for 20000 ps;
         ARM <= '1';
-        wait for Aclk*1024;
+        wait for 60000 ps;
+        ARM <= '0';
+        wait for 20000 ps;
     end process;    
     
     z_stimulus : process
