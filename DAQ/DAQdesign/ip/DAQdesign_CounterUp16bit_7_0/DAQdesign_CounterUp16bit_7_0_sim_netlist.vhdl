@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Sun Aug 23 22:18:13 2020
+-- Date        : Tue Aug 25 18:49:52 2020
 -- Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim {c:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 --               Unit/DAQ/DAQdesign/ip/DAQdesign_CounterUp16bit_7_0/DAQdesign_CounterUp16bit_7_0_sim_netlist.vhdl}
@@ -17,9 +17,9 @@ use UNISIM.VCOMPONENTS.ALL;
 entity DAQdesign_CounterUp16bit_7_0_CounterUp16bit is
   port (
     Q : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    CE : in STD_LOGIC;
     Clk : in STD_LOGIC;
-    Clr : in STD_LOGIC;
-    CE : in STD_LOGIC
+    Clr : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of DAQdesign_CounterUp16bit_7_0_CounterUp16bit : entity is "CounterUp16bit";
@@ -27,12 +27,11 @@ end DAQdesign_CounterUp16bit_7_0_CounterUp16bit;
 
 architecture STRUCTURE of DAQdesign_CounterUp16bit_7_0_CounterUp16bit is
   signal \^q\ : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal sel : STD_LOGIC;
   signal \temp[11]_i_2_n_0\ : STD_LOGIC;
   signal \temp[11]_i_3_n_0\ : STD_LOGIC;
   signal \temp[11]_i_4_n_0\ : STD_LOGIC;
   signal \temp[11]_i_5_n_0\ : STD_LOGIC;
-  signal \temp[15]_i_10_n_0\ : STD_LOGIC;
+  signal \temp[15]_i_2_n_0\ : STD_LOGIC;
   signal \temp[15]_i_3_n_0\ : STD_LOGIC;
   signal \temp[15]_i_4_n_0\ : STD_LOGIC;
   signal \temp[15]_i_5_n_0\ : STD_LOGIC;
@@ -57,13 +56,13 @@ architecture STRUCTURE of DAQdesign_CounterUp16bit_7_0_CounterUp16bit is
   signal \temp_reg[11]_i_1_n_5\ : STD_LOGIC;
   signal \temp_reg[11]_i_1_n_6\ : STD_LOGIC;
   signal \temp_reg[11]_i_1_n_7\ : STD_LOGIC;
-  signal \temp_reg[15]_i_2_n_1\ : STD_LOGIC;
-  signal \temp_reg[15]_i_2_n_2\ : STD_LOGIC;
-  signal \temp_reg[15]_i_2_n_3\ : STD_LOGIC;
-  signal \temp_reg[15]_i_2_n_4\ : STD_LOGIC;
-  signal \temp_reg[15]_i_2_n_5\ : STD_LOGIC;
-  signal \temp_reg[15]_i_2_n_6\ : STD_LOGIC;
-  signal \temp_reg[15]_i_2_n_7\ : STD_LOGIC;
+  signal \temp_reg[15]_i_1_n_1\ : STD_LOGIC;
+  signal \temp_reg[15]_i_1_n_2\ : STD_LOGIC;
+  signal \temp_reg[15]_i_1_n_3\ : STD_LOGIC;
+  signal \temp_reg[15]_i_1_n_4\ : STD_LOGIC;
+  signal \temp_reg[15]_i_1_n_5\ : STD_LOGIC;
+  signal \temp_reg[15]_i_1_n_6\ : STD_LOGIC;
+  signal \temp_reg[15]_i_1_n_7\ : STD_LOGIC;
   signal \temp_reg[3]_i_1_n_0\ : STD_LOGIC;
   signal \temp_reg[3]_i_1_n_1\ : STD_LOGIC;
   signal \temp_reg[3]_i_1_n_2\ : STD_LOGIC;
@@ -80,10 +79,10 @@ architecture STRUCTURE of DAQdesign_CounterUp16bit_7_0_CounterUp16bit is
   signal \temp_reg[7]_i_1_n_5\ : STD_LOGIC;
   signal \temp_reg[7]_i_1_n_6\ : STD_LOGIC;
   signal \temp_reg[7]_i_1_n_7\ : STD_LOGIC;
-  signal \NLW_temp_reg[15]_i_2_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
+  signal \NLW_temp_reg[15]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 to 3 );
   attribute ADDER_THRESHOLD : integer;
   attribute ADDER_THRESHOLD of \temp_reg[11]_i_1\ : label is 11;
-  attribute ADDER_THRESHOLD of \temp_reg[15]_i_2\ : label is 11;
+  attribute ADDER_THRESHOLD of \temp_reg[15]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \temp_reg[3]_i_1\ : label is 11;
   attribute ADDER_THRESHOLD of \temp_reg[7]_i_1\ : label is 11;
 begin
@@ -94,10 +93,10 @@ begin
     )
         port map (
       I0 => \^q\(11),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[11]_i_2_n_0\
     );
 \temp[11]_i_3\: unisim.vcomponents.LUT5
@@ -106,10 +105,10 @@ begin
     )
         port map (
       I0 => \^q\(10),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[11]_i_3_n_0\
     );
 \temp[11]_i_4\: unisim.vcomponents.LUT5
@@ -118,10 +117,10 @@ begin
     )
         port map (
       I0 => \^q\(9),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[11]_i_4_n_0\
     );
 \temp[11]_i_5\: unisim.vcomponents.LUT5
@@ -130,41 +129,34 @@ begin
     )
         port map (
       I0 => \^q\(8),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[11]_i_5_n_0\
     );
-\temp[15]_i_1\: unisim.vcomponents.LUT1
+\temp[15]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"1"
+      INIT => X"AAAA2AAA"
     )
         port map (
-      I0 => CE,
-      O => sel
-    );
-\temp[15]_i_10\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"7FFF"
-    )
-        port map (
-      I0 => \^q\(9),
-      I1 => \^q\(8),
-      I2 => \^q\(11),
-      I3 => \^q\(10),
-      O => \temp[15]_i_10_n_0\
+      I0 => \^q\(15),
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
+      O => \temp[15]_i_2_n_0\
     );
 \temp[15]_i_3\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"AAAA2AAA"
     )
         port map (
-      I0 => \^q\(15),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I0 => \^q\(14),
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[15]_i_3_n_0\
     );
 \temp[15]_i_4\: unisim.vcomponents.LUT5
@@ -172,11 +164,11 @@ begin
       INIT => X"AAAA2AAA"
     )
         port map (
-      I0 => \^q\(14),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I0 => \^q\(13),
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[15]_i_4_n_0\
     );
 \temp[15]_i_5\: unisim.vcomponents.LUT5
@@ -184,26 +176,14 @@ begin
       INIT => X"AAAA2AAA"
     )
         port map (
-      I0 => \^q\(13),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I0 => \^q\(12),
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[15]_i_5_n_0\
     );
-\temp[15]_i_6\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"AAAA2AAA"
-    )
-        port map (
-      I0 => \^q\(12),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
-      O => \temp[15]_i_6_n_0\
-    );
-\temp[15]_i_7\: unisim.vcomponents.LUT4
+\temp[15]_i_6\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"8000"
     )
@@ -212,9 +192,9 @@ begin
       I1 => \^q\(0),
       I2 => \^q\(3),
       I3 => \^q\(2),
-      O => \temp[15]_i_7_n_0\
+      O => \temp[15]_i_6_n_0\
     );
-\temp[15]_i_8\: unisim.vcomponents.LUT4
+\temp[15]_i_7\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"8000"
     )
@@ -223,9 +203,9 @@ begin
       I1 => \^q\(4),
       I2 => \^q\(7),
       I3 => \^q\(6),
-      O => \temp[15]_i_8_n_0\
+      O => \temp[15]_i_7_n_0\
     );
-\temp[15]_i_9\: unisim.vcomponents.LUT4
+\temp[15]_i_8\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"8000"
     )
@@ -234,18 +214,29 @@ begin
       I1 => \^q\(12),
       I2 => \^q\(14),
       I3 => \^q\(15),
+      O => \temp[15]_i_8_n_0\
+    );
+\temp[15]_i_9\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"7FFF"
+    )
+        port map (
+      I0 => \^q\(9),
+      I1 => \^q\(8),
+      I2 => \^q\(11),
+      I3 => \^q\(10),
       O => \temp[15]_i_9_n_0\
     );
 \temp[3]_i_2\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"AAAA2AAA"
+      INIT => X"FFFF0080"
     )
         port map (
-      I0 => \^q\(0),
+      I0 => \temp[15]_i_6_n_0\,
       I1 => \temp[15]_i_7_n_0\,
       I2 => \temp[15]_i_8_n_0\,
       I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I4 => \^q\(0),
       O => \temp[3]_i_2_n_0\
     );
 \temp[3]_i_3\: unisim.vcomponents.LUT5
@@ -254,10 +245,10 @@ begin
     )
         port map (
       I0 => \^q\(3),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[3]_i_3_n_0\
     );
 \temp[3]_i_4\: unisim.vcomponents.LUT5
@@ -266,10 +257,10 @@ begin
     )
         port map (
       I0 => \^q\(2),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[3]_i_4_n_0\
     );
 \temp[3]_i_5\: unisim.vcomponents.LUT5
@@ -278,22 +269,22 @@ begin
     )
         port map (
       I0 => \^q\(1),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[3]_i_5_n_0\
     );
 \temp[3]_i_6\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"55551555"
+      INIT => X"5555D555"
     )
         port map (
       I0 => \^q\(0),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[3]_i_6_n_0\
     );
 \temp[7]_i_2\: unisim.vcomponents.LUT5
@@ -302,10 +293,10 @@ begin
     )
         port map (
       I0 => \^q\(7),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[7]_i_2_n_0\
     );
 \temp[7]_i_3\: unisim.vcomponents.LUT5
@@ -314,10 +305,10 @@ begin
     )
         port map (
       I0 => \^q\(6),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[7]_i_3_n_0\
     );
 \temp[7]_i_4\: unisim.vcomponents.LUT5
@@ -326,10 +317,10 @@ begin
     )
         port map (
       I0 => \^q\(5),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[7]_i_4_n_0\
     );
 \temp[7]_i_5\: unisim.vcomponents.LUT5
@@ -338,16 +329,16 @@ begin
     )
         port map (
       I0 => \^q\(4),
-      I1 => \temp[15]_i_7_n_0\,
-      I2 => \temp[15]_i_8_n_0\,
-      I3 => \temp[15]_i_9_n_0\,
-      I4 => \temp[15]_i_10_n_0\,
+      I1 => \temp[15]_i_6_n_0\,
+      I2 => \temp[15]_i_7_n_0\,
+      I3 => \temp[15]_i_8_n_0\,
+      I4 => \temp[15]_i_9_n_0\,
       O => \temp[7]_i_5_n_0\
     );
 \temp_reg[0]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[3]_i_1_n_7\,
       Q => \^q\(0)
@@ -355,7 +346,7 @@ begin
 \temp_reg[10]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[11]_i_1_n_5\,
       Q => \^q\(10)
@@ -363,7 +354,7 @@ begin
 \temp_reg[11]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[11]_i_1_n_4\,
       Q => \^q\(11)
@@ -389,57 +380,57 @@ begin
 \temp_reg[12]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
-      D => \temp_reg[15]_i_2_n_7\,
+      D => \temp_reg[15]_i_1_n_7\,
       Q => \^q\(12)
     );
 \temp_reg[13]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
-      D => \temp_reg[15]_i_2_n_6\,
+      D => \temp_reg[15]_i_1_n_6\,
       Q => \^q\(13)
     );
 \temp_reg[14]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
-      D => \temp_reg[15]_i_2_n_5\,
+      D => \temp_reg[15]_i_1_n_5\,
       Q => \^q\(14)
     );
 \temp_reg[15]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
-      D => \temp_reg[15]_i_2_n_4\,
+      D => \temp_reg[15]_i_1_n_4\,
       Q => \^q\(15)
     );
-\temp_reg[15]_i_2\: unisim.vcomponents.CARRY4
+\temp_reg[15]_i_1\: unisim.vcomponents.CARRY4
      port map (
       CI => \temp_reg[11]_i_1_n_0\,
-      CO(3) => \NLW_temp_reg[15]_i_2_CO_UNCONNECTED\(3),
-      CO(2) => \temp_reg[15]_i_2_n_1\,
-      CO(1) => \temp_reg[15]_i_2_n_2\,
-      CO(0) => \temp_reg[15]_i_2_n_3\,
+      CO(3) => \NLW_temp_reg[15]_i_1_CO_UNCONNECTED\(3),
+      CO(2) => \temp_reg[15]_i_1_n_1\,
+      CO(1) => \temp_reg[15]_i_1_n_2\,
+      CO(0) => \temp_reg[15]_i_1_n_3\,
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3) => \temp_reg[15]_i_2_n_4\,
-      O(2) => \temp_reg[15]_i_2_n_5\,
-      O(1) => \temp_reg[15]_i_2_n_6\,
-      O(0) => \temp_reg[15]_i_2_n_7\,
-      S(3) => \temp[15]_i_3_n_0\,
-      S(2) => \temp[15]_i_4_n_0\,
-      S(1) => \temp[15]_i_5_n_0\,
-      S(0) => \temp[15]_i_6_n_0\
+      O(3) => \temp_reg[15]_i_1_n_4\,
+      O(2) => \temp_reg[15]_i_1_n_5\,
+      O(1) => \temp_reg[15]_i_1_n_6\,
+      O(0) => \temp_reg[15]_i_1_n_7\,
+      S(3) => \temp[15]_i_2_n_0\,
+      S(2) => \temp[15]_i_3_n_0\,
+      S(1) => \temp[15]_i_4_n_0\,
+      S(0) => \temp[15]_i_5_n_0\
     );
 \temp_reg[1]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[3]_i_1_n_6\,
       Q => \^q\(1)
@@ -447,7 +438,7 @@ begin
 \temp_reg[2]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[3]_i_1_n_5\,
       Q => \^q\(2)
@@ -455,7 +446,7 @@ begin
 \temp_reg[3]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[3]_i_1_n_4\,
       Q => \^q\(3)
@@ -482,7 +473,7 @@ begin
 \temp_reg[4]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[7]_i_1_n_7\,
       Q => \^q\(4)
@@ -490,7 +481,7 @@ begin
 \temp_reg[5]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[7]_i_1_n_6\,
       Q => \^q\(5)
@@ -498,7 +489,7 @@ begin
 \temp_reg[6]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[7]_i_1_n_5\,
       Q => \^q\(6)
@@ -506,7 +497,7 @@ begin
 \temp_reg[7]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[7]_i_1_n_4\,
       Q => \^q\(7)
@@ -532,7 +523,7 @@ begin
 \temp_reg[8]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[11]_i_1_n_7\,
       Q => \^q\(8)
@@ -540,7 +531,7 @@ begin
 \temp_reg[9]\: unisim.vcomponents.FDCE
      port map (
       C => Clk,
-      CE => sel,
+      CE => CE,
       CLR => Clr,
       D => \temp_reg[11]_i_1_n_6\,
       Q => \^q\(9)

@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Sun Aug 23 21:59:14 2020
+--Date        : Tue Aug 25 18:59:38 2020
 --Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 --Command     : generate_target DAQdesign_wrapper.bd
 --Design      : DAQdesign_wrapper
@@ -14,6 +14,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity DAQdesign_wrapper is
   port (
     A : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    ARM : in STD_LOGIC;
     Q0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -22,11 +23,7 @@ entity DAQdesign_wrapper is
     Q5 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q6 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q7 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    SCLR : in STD_LOGIC;
     Z : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    cout_0_1 : out STD_LOGIC;
-    cout_0_2 : out STD_LOGIC;
-    cout_0_3 : out STD_LOGIC;
     diff_0_1 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -55,10 +52,8 @@ entity DAQdesign_wrapper is
     diff_5_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_5_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_6_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    sel : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    sum_0_1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    sum_0_2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    sum_0_3 : out STD_LOGIC_VECTOR ( 15 downto 0 )
+    ready : out STD_LOGIC;
+    sel : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
 end DAQdesign_wrapper;
 
@@ -104,19 +99,15 @@ architecture STRUCTURE of DAQdesign_wrapper is
     diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    SCLR : in STD_LOGIC;
-    sum_0_1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    cout_0_1 : out STD_LOGIC;
-    sum_0_2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    cout_0_2 : out STD_LOGIC;
-    sum_0_3 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    cout_0_3 : out STD_LOGIC
+    ARM : in STD_LOGIC;
+    ready : out STD_LOGIC
   );
   end component DAQdesign;
 begin
 DAQdesign_i: component DAQdesign
      port map (
       A(7 downto 0) => A(7 downto 0),
+      ARM => ARM,
       Q0(15 downto 0) => Q0(15 downto 0),
       Q1(15 downto 0) => Q1(15 downto 0),
       Q2(15 downto 0) => Q2(15 downto 0),
@@ -125,11 +116,7 @@ DAQdesign_i: component DAQdesign
       Q5(15 downto 0) => Q5(15 downto 0),
       Q6(15 downto 0) => Q6(15 downto 0),
       Q7(15 downto 0) => Q7(15 downto 0),
-      SCLR => SCLR,
       Z(7 downto 0) => Z(7 downto 0),
-      cout_0_1 => cout_0_1,
-      cout_0_2 => cout_0_2,
-      cout_0_3 => cout_0_3,
       diff_0_1(16 downto 0) => diff_0_1(16 downto 0),
       diff_0_2(16 downto 0) => diff_0_2(16 downto 0),
       diff_0_3(16 downto 0) => diff_0_3(16 downto 0),
@@ -158,9 +145,7 @@ DAQdesign_i: component DAQdesign
       diff_5_6(16 downto 0) => diff_5_6(16 downto 0),
       diff_5_7(16 downto 0) => diff_5_7(16 downto 0),
       diff_6_7(16 downto 0) => diff_6_7(16 downto 0),
-      sel(2 downto 0) => sel(2 downto 0),
-      sum_0_1(15 downto 0) => sum_0_1(15 downto 0),
-      sum_0_2(15 downto 0) => sum_0_2(15 downto 0),
-      sum_0_3(15 downto 0) => sum_0_3(15 downto 0)
+      ready => ready,
+      sel(2 downto 0) => sel(2 downto 0)
     );
 end STRUCTURE;

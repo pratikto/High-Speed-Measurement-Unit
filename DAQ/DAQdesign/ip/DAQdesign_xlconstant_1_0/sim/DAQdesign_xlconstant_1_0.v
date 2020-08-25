@@ -57,11 +57,11 @@ module DAQdesign_xlconstant_1_0 (
   dout
 );
 
-output wire [0 : 0] dout;
+output wire [15 : 0] dout;
 
   xlconstant_v1_1_7_xlconstant #(
-    .CONST_WIDTH(1),
-    .CONST_VAL('H0)
+    .CONST_WIDTH(16),
+    .CONST_VAL('H0001)
   ) inst (
     .dout(dout)
   );
