@@ -38,17 +38,24 @@ end DAQ_testbench;
 architecture Behavioral of DAQ_testbench is
 component DAQdesign_wrapper
     port(
+    A : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    ARM : in STD_LOGIC;
     Q0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q3 : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    sel : in STD_LOGIC_VECTOR ( 2 downto 0 );
     Q4 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q5 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q6 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q7 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Z : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    A : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    diff_0_1 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_1_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_1_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_1_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -70,15 +77,8 @@ component DAQdesign_wrapper
     diff_5_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_5_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_6_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_1 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
---    SCLR : in STD_LOGIC;
-    ARM : in STD_LOGIC
+    ready : out STD_LOGIC;
+    sel : in STD_LOGIC_VECTOR ( 2 downto 0 )
     );
 end component;
 
@@ -87,7 +87,6 @@ end component;
     signal Z        : STD_LOGIC_VECTOR ( 7 downto 0 );    
     signal A        : STD_LOGIC_VECTOR ( 7 downto 0 );    
     signal sel      : STD_LOGIC_VECTOR ( 2 downto 0 );
---    signal SCLR     : STD_LOGIC;
     signal ARM      : STD_LOGIC;
     
 --  Output signal definition
@@ -126,13 +125,8 @@ end component;
     signal diff_4_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
     signal diff_5_6 : STD_LOGIC_VECTOR ( 16 downto 0 );
     signal diff_5_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
-    signal diff_6_7 : STD_LOGIC_VECTOR ( 16 downto 0 );	
---    signal sum_0_1 : STD_LOGIC_VECTOR ( 15 downto 0 );	
---    signal sum_0_2 : STD_LOGIC_VECTOR ( 15 downto 0 );	
---    signal sum_0_3 : STD_LOGIC_VECTOR ( 15 downto 0 );	
---    signal cout_0_1 : STD_LOGIC;
---    signal cout_0_2 : STD_LOGIC;
---    signal cout_0_3 : STD_LOGIC;
+    signal diff_6_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
+    signal ready    : STD_LOGIC;
     
 --  Constant definition
     constant Aclk : time := 1ps;
@@ -150,7 +144,6 @@ begin
         Z => Z,
         A => A,
         sel => sel,
---        SCLR => SCLR,
 		diff_0_1 => diff_0_1,
 		diff_0_2 => diff_0_2,
 		diff_0_3 => diff_0_3,
@@ -179,33 +172,18 @@ begin
 		diff_5_6 => diff_5_6,
 		diff_5_7 => diff_5_7,
 		diff_6_7 => diff_6_7,
---		cout_0_1 => cout_0_1,		
---		cout_0_2 => cout_0_2,		
---		cout_0_3 => cout_0_3,		
---		sum_0_1 => sum_0_1,		
---		sum_0_2 => sum_0_2,		
---		sum_0_3 => sum_0_3,
-		ARM => ARM		
+		ARM => ARM,		
+		ready => ready		
     );
     
     sel <= "000";
     ARM_stimulus : process
     begin
         ARM <= '0';
-        wait for Aclk*256;
+        wait for Aclk*1024;
         ARM <= '1';
-        wait for Aclk*256;
+        wait for Aclk*1024;
     end process;    
-    
---    SCLR_stimulus : process
---    begin
---        SCLR <= '0';
---        wait for Aclk;
---        SCLR <= '1';
---        wait for Aclk;
---        SCLR <= '0';
---        wait;
---    end process;
     
     z_stimulus : process
     begin

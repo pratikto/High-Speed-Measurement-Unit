@@ -1,12 +1,13 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x54C3C0736372952A",
+      "boundary_crc": "0xE08673962887B966",
       "device": "xc7z020clg400-1",
       "name": "DAQdesign",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2020.1"
+      "tool_version": "2020.1",
+      "validated": "true"
     },
     "design_tree": {
       "xlslice_0": "",
@@ -111,62 +112,119 @@
       "CounterUp16bit_4": "",
       "CounterUp16bit_5": "",
       "CounterUp16bit_6": "",
-      "CounterUp16bit_7": ""
+      "CounterUp16bit_7": "",
+      "arm_0": "",
+      "xlconstant_1": "",
+      "NotA_or_B_0": ""
     },
     "ports": {
       "Q0": {
         "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "Q1": {
         "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "Q2": {
         "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "Q3": {
         "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "sel": {
         "type": "data",
         "direction": "I",
         "left": "2",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "Q4": {
         "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "Q5": {
         "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "Q6": {
         "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "Q7": {
         "type": "data",
         "direction": "O",
         "left": "15",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "Z": {
         "type": "rst",
@@ -174,6 +232,10 @@
         "left": "7",
         "right": "0",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -188,173 +250,357 @@
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_1_3": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_1_4": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_1_5": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_1_6": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_1_7": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_2_3": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_2_4": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_2_5": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_2_6": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_2_7": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_3_4": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_3_5": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_3_6": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_3_7": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_4_5": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_4_6": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_4_7": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_5_6": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_5_7": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_6_7": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_0_1": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_0_2": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_0_3": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_0_4": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_0_5": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_0_6": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "diff_0_7": {
         "type": "data",
         "direction": "O",
         "left": "16",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       },
       "ARM": {
         "type": "data",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ready": {
+        "type": "data",
+        "direction": "O",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
       }
     },
     "components": {
@@ -850,12 +1096,24 @@
           "a": {
             "direction": "I",
             "left": "7",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
           },
           "sel": {
             "direction": "I",
             "left": "2",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "b": {
             "direction": "O"
@@ -1787,12 +2045,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -1816,12 +2086,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -1845,12 +2127,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -1874,12 +2168,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -1903,12 +2209,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -1932,12 +2250,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -1961,12 +2291,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -1990,12 +2332,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2019,12 +2373,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2048,12 +2414,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2077,12 +2455,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2106,12 +2496,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2135,12 +2537,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2164,12 +2578,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2193,12 +2619,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2222,12 +2660,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2251,12 +2701,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2280,12 +2742,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2309,12 +2783,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2338,12 +2824,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2367,12 +2865,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2396,12 +2906,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2425,12 +2947,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2454,12 +2988,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2483,12 +3029,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2512,12 +3070,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2541,12 +3111,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2570,12 +3152,24 @@
           "Y": {
             "direction": "I",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "17",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "Z": {
             "direction": "O",
             "left": "16",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           },
           "sel": {
             "direction": "I"
@@ -2592,7 +3186,13 @@
         },
         "ports": {
           "CE": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "Clk": {
             "type": "clk",
@@ -2604,7 +3204,13 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           }
         }
       },
@@ -2618,7 +3224,13 @@
         },
         "ports": {
           "CE": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "Clk": {
             "type": "clk",
@@ -2630,7 +3242,13 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           }
         }
       },
@@ -2644,7 +3262,13 @@
         },
         "ports": {
           "CE": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "Clk": {
             "type": "clk",
@@ -2656,7 +3280,13 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           }
         }
       },
@@ -2670,7 +3300,13 @@
         },
         "ports": {
           "CE": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "Clk": {
             "type": "clk",
@@ -2682,7 +3318,13 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           }
         }
       },
@@ -2696,7 +3338,13 @@
         },
         "ports": {
           "CE": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "Clk": {
             "type": "clk",
@@ -2708,7 +3356,13 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           }
         }
       },
@@ -2722,7 +3376,13 @@
         },
         "ports": {
           "CE": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "Clk": {
             "type": "clk",
@@ -2734,7 +3394,13 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           }
         }
       },
@@ -2748,7 +3414,13 @@
         },
         "ports": {
           "CE": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "Clk": {
             "type": "clk",
@@ -2760,7 +3432,13 @@
           "Q": {
             "direction": "O",
             "left": "15",
-            "right": "0"
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           }
         }
       },
@@ -2774,7 +3452,13 @@
         },
         "ports": {
           "CE": {
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
           },
           "Clk": {
             "type": "clk",
@@ -2786,7 +3470,88 @@
           "Q": {
             "direction": "O",
             "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
+          }
+        }
+      },
+      "arm_0": {
+        "vlnv": "xilinx.com:module_ref:arm:1.0",
+        "xci_name": "DAQdesign_arm_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "arm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "arm_in": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Zref": {
+            "direction": "I"
+          },
+          "cycle": {
+            "direction": "I",
+            "left": "15",
             "right": "0"
+          },
+          "arm_out": {
+            "direction": "O",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "DAQdesign_xlconstant_1_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0X0001"
+          },
+          "CONST_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "NotA_or_B_0": {
+        "vlnv": "xilinx.com:module_ref:NotA_or_B:1.0",
+        "xci_name": "DAQdesign_NotA_or_B_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "NotA_or_B",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "NotA": {
+            "direction": "I",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
           }
         }
       }
@@ -3000,19 +3765,6 @@
           "KSAddSubb_26/y",
           "KSAddSubb_27/y",
           "KSAddSubb_6/y"
-        ]
-      },
-      "Net1": {
-        "ports": [
-          "mux8to1_0/b",
-          "CounterUp16bit_0/Clr",
-          "CounterUp16bit_1/Clr",
-          "CounterUp16bit_2/Clr",
-          "CounterUp16bit_3/Clr",
-          "CounterUp16bit_4/Clr",
-          "CounterUp16bit_5/Clr",
-          "CounterUp16bit_6/Clr",
-          "CounterUp16bit_7/Clr"
         ]
       },
       "KSAddSubb_0_sum": {
@@ -3349,47 +4101,6 @@
         "ports": [
           "KSAddSubb_27/cout",
           "xlconcat_27/In1"
-        ]
-      },
-      "ARM_1": {
-        "ports": [
-          "ARM",
-          "mux2to1_17bit_7/sel",
-          "mux2to1_17bit_4/sel",
-          "mux2to1_17bit_6/sel",
-          "mux2to1_17bit_5/sel",
-          "mux2to1_17bit_2/sel",
-          "mux2to1_17bit_3/sel",
-          "mux2to1_17bit_1/sel",
-          "mux2to1_17bit_0/sel",
-          "mux2to1_17bit_8/sel",
-          "mux2to1_17bit_9/sel",
-          "mux2to1_17bit_10/sel",
-          "mux2to1_17bit_11/sel",
-          "mux2to1_17bit_12/sel",
-          "mux2to1_17bit_13/sel",
-          "mux2to1_17bit_14/sel",
-          "mux2to1_17bit_15/sel",
-          "mux2to1_17bit_16/sel",
-          "mux2to1_17bit_17/sel",
-          "mux2to1_17bit_18/sel",
-          "mux2to1_17bit_19/sel",
-          "mux2to1_17bit_20/sel",
-          "mux2to1_17bit_21/sel",
-          "mux2to1_17bit_22/sel",
-          "mux2to1_17bit_23/sel",
-          "mux2to1_17bit_24/sel",
-          "mux2to1_17bit_25/sel",
-          "mux2to1_17bit_26/sel",
-          "mux2to1_17bit_27/sel",
-          "CounterUp16bit_0/CE",
-          "CounterUp16bit_1/CE",
-          "CounterUp16bit_2/CE",
-          "CounterUp16bit_3/CE",
-          "CounterUp16bit_4/CE",
-          "CounterUp16bit_5/CE",
-          "CounterUp16bit_6/CE",
-          "CounterUp16bit_7/CE"
         ]
       },
       "xlconcat_0_dout": {
@@ -3759,6 +4470,81 @@
         "ports": [
           "mux2to1_17bit_17/Z",
           "diff_2_7"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "arm_0/cycle"
+        ]
+      },
+      "ARM_2": {
+        "ports": [
+          "ARM",
+          "arm_0/arm_in",
+          "CounterUp16bit_0/CE",
+          "CounterUp16bit_1/CE",
+          "CounterUp16bit_2/CE",
+          "CounterUp16bit_3/CE",
+          "CounterUp16bit_4/CE",
+          "CounterUp16bit_5/CE",
+          "CounterUp16bit_6/CE",
+          "CounterUp16bit_7/CE",
+          "NotA_or_B_0/NotA"
+        ]
+      },
+      "mux8to1_0_b": {
+        "ports": [
+          "mux8to1_0/b",
+          "arm_0/Zref",
+          "NotA_or_B_0/B"
+        ]
+      },
+      "arm_0_arm_out": {
+        "ports": [
+          "arm_0/arm_out",
+          "ready",
+          "mux2to1_17bit_0/sel",
+          "mux2to1_17bit_1/sel",
+          "mux2to1_17bit_3/sel",
+          "mux2to1_17bit_2/sel",
+          "mux2to1_17bit_5/sel",
+          "mux2to1_17bit_6/sel",
+          "mux2to1_17bit_4/sel",
+          "mux2to1_17bit_8/sel",
+          "mux2to1_17bit_9/sel",
+          "mux2to1_17bit_10/sel",
+          "mux2to1_17bit_11/sel",
+          "mux2to1_17bit_12/sel",
+          "mux2to1_17bit_13/sel",
+          "mux2to1_17bit_14/sel",
+          "mux2to1_17bit_15/sel",
+          "mux2to1_17bit_16/sel",
+          "mux2to1_17bit_17/sel",
+          "mux2to1_17bit_18/sel",
+          "mux2to1_17bit_19/sel",
+          "mux2to1_17bit_21/sel",
+          "mux2to1_17bit_22/sel",
+          "mux2to1_17bit_23/sel",
+          "mux2to1_17bit_25/sel",
+          "mux2to1_17bit_26/sel",
+          "mux2to1_17bit_27/sel",
+          "mux2to1_17bit_7/sel",
+          "mux2to1_17bit_24/sel",
+          "mux2to1_17bit_20/sel"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "NotA_or_B_0/C",
+          "CounterUp16bit_7/Clr",
+          "CounterUp16bit_6/Clr",
+          "CounterUp16bit_5/Clr",
+          "CounterUp16bit_4/Clr",
+          "CounterUp16bit_3/Clr",
+          "CounterUp16bit_2/Clr",
+          "CounterUp16bit_1/Clr",
+          "CounterUp16bit_0/Clr"
         ]
       }
     }
