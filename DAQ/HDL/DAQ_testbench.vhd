@@ -38,24 +38,17 @@ end DAQ_testbench;
 architecture Behavioral of DAQ_testbench is
 component DAQdesign_wrapper
     port(
-    A : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    ARM : in STD_LOGIC;
     Q0 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q2 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q3 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    sel : in STD_LOGIC_VECTOR ( 2 downto 0 );
     Q4 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q5 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q6 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q7 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Z : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    diff_0_1 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    A : in STD_LOGIC_VECTOR ( 7 downto 0 );
     diff_1_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_1_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_1_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -77,8 +70,17 @@ component DAQdesign_wrapper
     diff_5_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_5_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_6_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    ARM : in STD_LOGIC;
     ready : out STD_LOGIC;
-    sel : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    clock : in STD_LOGIC;
+    diff_0_1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    diff_0_4 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    not_ready : out STD_LOGIC
     );
 end component;
 
@@ -88,6 +90,7 @@ end component;
     signal A        : STD_LOGIC_VECTOR ( 7 downto 0 );    
     signal sel      : STD_LOGIC_VECTOR ( 2 downto 0 );
     signal ARM      : STD_LOGIC;
+    signal clock      : STD_LOGIC;
     
 --  Output signal definition
     signal Q0       : STD_LOGIC_VECTOR ( 15 downto 0);
@@ -98,10 +101,10 @@ end component;
     signal Q5       : STD_LOGIC_VECTOR ( 15 downto 0);
     signal Q6       : STD_LOGIC_VECTOR ( 15 downto 0);
     signal Q7       : STD_LOGIC_VECTOR ( 15 downto 0);  
-    signal diff_0_1 : STD_LOGIC_VECTOR ( 16 downto 0 );  
+    signal diff_0_1 : STD_LOGIC_VECTOR ( 15 downto 0 );  
     signal diff_0_2 : STD_LOGIC_VECTOR ( 16 downto 0 );
     signal diff_0_3 : STD_LOGIC_VECTOR ( 16 downto 0 );
-	signal diff_0_4 : STD_LOGIC_VECTOR ( 16 downto 0 );
+	signal diff_0_4 : STD_LOGIC_VECTOR ( 15 downto 0 );
     signal diff_0_5 : STD_LOGIC_VECTOR ( 16 downto 0 );
     signal diff_0_6 : STD_LOGIC_VECTOR ( 16 downto 0 );
     signal diff_0_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -127,9 +130,10 @@ end component;
     signal diff_5_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
     signal diff_6_7 : STD_LOGIC_VECTOR ( 16 downto 0 );
     signal ready    : STD_LOGIC;
+    signal not_ready: STD_LOGIC;
     
 --  Constant definition
-    constant Aclk : time := 1ps;
+    constant Aclk : time := 10ps;
 
 begin
     UUT : DAQdesign_wrapper port map(
@@ -173,10 +177,13 @@ begin
 		diff_5_7 => diff_5_7,
 		diff_6_7 => diff_6_7,
 		ARM => ARM,		
-		ready => ready		
+		ready => ready,
+		not_ready => not_ready,
+		clock => clock		
     );
     
     sel <= "000";
+    
     ARM_stimulus : process
     begin
         ARM <= '0';
@@ -185,12 +192,20 @@ begin
         wait for 60000 ps;
         ARM <= '0';
         wait for 20000 ps;
+    end process;     
+    
+    clock_stimulus : process
+    begin
+        clock <= '0';
+        wait for aclk/10;
+        clock <= '1';
+        wait for aclk/10;
     end process;    
     
     z_stimulus : process
     begin
         Z <= "00000000";
-        wait for Aclk*36000;
+        wait for Aclk*3600;
         if sel = "000" then        
             Z <= "00000001";
         elsif sel ="001" then

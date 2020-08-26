@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Wed Aug 26 12:19:21 2020
+// Date        : Wed Aug 26 21:10:49 2020
 // Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {c:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 //               Unit/DAQ/DAQdesign/ip/DAQdesign_arm_0_0/DAQdesign_arm_0_0_sim_netlist.v}
@@ -19,22 +19,26 @@ module DAQdesign_arm_0_0
    (arm_in,
     Zref,
     cycle,
-    arm_out);
+    ready,
+    not_ready);
   input arm_in;
   input Zref;
   input [15:0]cycle;
-  output arm_out;
+  output ready;
+  output not_ready;
 
   wire Zref;
   wire arm_in;
-  wire arm_out;
   wire [15:0]cycle;
+  wire not_ready;
+  wire ready;
 
   DAQdesign_arm_0_0_arm U0
        (.Zref(Zref),
         .arm_in(arm_in),
-        .arm_out(arm_out),
-        .cycle(cycle));
+        .cycle(cycle),
+        .not_ready(not_ready),
+        .ready(ready));
 endmodule
 
 (* ORIG_REF_NAME = "CounterUp16bit" *) 
@@ -567,18 +571,19 @@ endmodule
 
 (* ORIG_REF_NAME = "arm" *) 
 module DAQdesign_arm_0_0_arm
-   (arm_out,
+   (ready,
+    not_ready,
     Zref,
     arm_in,
     cycle);
-  output arm_out;
+  output ready;
+  output not_ready;
   input Zref;
   input arm_in;
   input [15:0]cycle;
 
   wire Zref;
   wire arm_in;
-  wire arm_out;
   wire counter_n_0;
   wire counter_n_1;
   wire counter_n_10;
@@ -603,8 +608,12 @@ module DAQdesign_arm_0_0_arm
   wire geqOp_carry_n_1;
   wire geqOp_carry_n_2;
   wire geqOp_carry_n_3;
+  wire not_ready;
+  wire ready;
   wire [3:0]NLW_geqOp_carry_O_UNCONNECTED;
   wire [3:0]NLW_geqOp_carry__0_O_UNCONNECTED;
+  wire [3:0]NLW_geqOp_carry__1_CO_UNCONNECTED;
+  wire [3:1]NLW_geqOp_carry__1_O_UNCONNECTED;
 
   DAQdesign_arm_0_0_CounterUp16bit counter
        (.DI({counter_n_4,counter_n_5,counter_n_6,counter_n_7}),
@@ -614,7 +623,6 @@ module DAQdesign_arm_0_0_arm
         .cycle(cycle),
         .\temp_reg[14]_0 ({counter_n_8,counter_n_9,counter_n_10,counter_n_11}),
         .\temp_reg[14]_1 ({counter_n_12,counter_n_13,counter_n_14,counter_n_15}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 geqOp_carry
        (.CI(1'b0),
         .CO({geqOp_carry_n_0,geqOp_carry_n_1,geqOp_carry_n_2,geqOp_carry_n_3}),
@@ -622,14 +630,20 @@ module DAQdesign_arm_0_0_arm
         .DI({counter_n_4,counter_n_5,counter_n_6,counter_n_7}),
         .O(NLW_geqOp_carry_O_UNCONNECTED[3:0]),
         .S({counter_n_0,counter_n_1,counter_n_2,counter_n_3}));
-  (* COMPARATOR_THRESHOLD = "11" *) 
   CARRY4 geqOp_carry__0
        (.CI(geqOp_carry_n_0),
-        .CO({arm_out,geqOp_carry__0_n_1,geqOp_carry__0_n_2,geqOp_carry__0_n_3}),
+        .CO({ready,geqOp_carry__0_n_1,geqOp_carry__0_n_2,geqOp_carry__0_n_3}),
         .CYINIT(1'b0),
         .DI({counter_n_12,counter_n_13,counter_n_14,counter_n_15}),
         .O(NLW_geqOp_carry__0_O_UNCONNECTED[3:0]),
         .S({counter_n_8,counter_n_9,counter_n_10,counter_n_11}));
+  CARRY4 geqOp_carry__1
+       (.CI(ready),
+        .CO(NLW_geqOp_carry__1_CO_UNCONNECTED[3:0]),
+        .CYINIT(1'b0),
+        .DI({1'b0,1'b0,1'b0,1'b0}),
+        .O({NLW_geqOp_carry__1_O_UNCONNECTED[3:1],not_ready}),
+        .S({1'b0,1'b0,1'b0,1'b1}));
 endmodule
 `ifndef GLBL
 `define GLBL

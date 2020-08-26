@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, NotA_or_B, arm, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux8to1
+# CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, CounterUp16bit, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, KSAddSubb, NotA_or_B, arm, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux2to1_17bit, mux8to1
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -177,10 +177,11 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_HIGH} \
  ] $Z
-  set diff_0_1 [ create_bd_port -dir O -from 16 -to 0 -type data diff_0_1 ]
+  set clock [ create_bd_port -dir I clock ]
+  set diff_0_1 [ create_bd_port -dir O -from 15 -to 0 -type data diff_0_1 ]
   set diff_0_2 [ create_bd_port -dir O -from 16 -to 0 -type data diff_0_2 ]
   set diff_0_3 [ create_bd_port -dir O -from 16 -to 0 -type data diff_0_3 ]
-  set diff_0_4 [ create_bd_port -dir O -from 16 -to 0 -type data diff_0_4 ]
+  set diff_0_4 [ create_bd_port -dir O -from 15 -to 0 -type data diff_0_4 ]
   set diff_0_5 [ create_bd_port -dir O -from 16 -to 0 -type data diff_0_5 ]
   set diff_0_6 [ create_bd_port -dir O -from 16 -to 0 -type data diff_0_6 ]
   set diff_0_7 [ create_bd_port -dir O -from 16 -to 0 -type data diff_0_7 ]
@@ -205,6 +206,7 @@ proc create_root_design { parentCell } {
   set diff_5_6 [ create_bd_port -dir O -from 16 -to 0 -type data diff_5_6 ]
   set diff_5_7 [ create_bd_port -dir O -from 16 -to 0 -type data diff_5_7 ]
   set diff_6_7 [ create_bd_port -dir O -from 16 -to 0 -type data diff_6_7 ]
+  set not_ready [ create_bd_port -dir O -type data not_ready ]
   set ready [ create_bd_port -dir O -type data ready ]
   set sel [ create_bd_port -dir I -from 2 -to 0 -type data sel ]
 
@@ -296,17 +298,6 @@ proc create_root_design { parentCell } {
      return 1
    }
   
-  # Create instance: KSAddSubb_0, and set properties
-  set block_name KSAddSubb
-  set block_cell_name KSAddSubb_0
-  if { [catch {set KSAddSubb_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   } elseif { $KSAddSubb_0 eq "" } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   }
-  
   # Create instance: KSAddSubb_1, and set properties
   set block_name KSAddSubb
   set block_cell_name KSAddSubb_1
@@ -325,17 +316,6 @@ proc create_root_design { parentCell } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    } elseif { $KSAddSubb_2 eq "" } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   }
-  
-  # Create instance: KSAddSubb_3, and set properties
-  set block_name KSAddSubb
-  set block_cell_name KSAddSubb_3
-  if { [catch {set KSAddSubb_3 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   } elseif { $KSAddSubb_3 eq "" } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
@@ -626,17 +606,40 @@ proc create_root_design { parentCell } {
      return 1
    }
   
-  # Create instance: mux2to1_17bit_0, and set properties
-  set block_name mux2to1_17bit
-  set block_cell_name mux2to1_17bit_0
-  if { [catch {set mux2to1_17bit_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   } elseif { $mux2to1_17bit_0 eq "" } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   }
-  
+  # Create instance: c_addsub_0, and set properties
+  set c_addsub_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_addsub:12.0 c_addsub_0 ]
+  set_property -dict [ list \
+   CONFIG.A_Type {Signed} \
+   CONFIG.A_Width {16} \
+   CONFIG.Add_Mode {Subtract} \
+   CONFIG.B_Type {Signed} \
+   CONFIG.B_Value {0000000000000000} \
+   CONFIG.B_Width {16} \
+   CONFIG.CE {false} \
+   CONFIG.Latency {1} \
+   CONFIG.Latency_Configuration {Manual} \
+   CONFIG.Out_Width {16} \
+   CONFIG.SCLR {true} \
+   CONFIG.SSET {false} \
+ ] $c_addsub_0
+
+  # Create instance: c_addsub_1, and set properties
+  set c_addsub_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_addsub:12.0 c_addsub_1 ]
+  set_property -dict [ list \
+   CONFIG.A_Type {Signed} \
+   CONFIG.A_Width {16} \
+   CONFIG.Add_Mode {Subtract} \
+   CONFIG.B_Type {Signed} \
+   CONFIG.B_Value {0000000000000000} \
+   CONFIG.B_Width {16} \
+   CONFIG.CE {false} \
+   CONFIG.Latency {1} \
+   CONFIG.Latency_Configuration {Manual} \
+   CONFIG.Out_Width {16} \
+   CONFIG.SCLR {true} \
+   CONFIG.SSET {false} \
+ ] $c_addsub_1
+
   # Create instance: mux2to1_17bit_1, and set properties
   set block_name mux2to1_17bit
   set block_cell_name mux2to1_17bit_1
@@ -644,17 +647,6 @@ proc create_root_design { parentCell } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    } elseif { $mux2to1_17bit_1 eq "" } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   }
-  
-  # Create instance: mux2to1_17bit_2, and set properties
-  set block_name mux2to1_17bit
-  set block_cell_name mux2to1_17bit_2
-  if { [catch {set mux2to1_17bit_2 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
-     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   } elseif { $mux2to1_17bit_2 eq "" } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
@@ -945,13 +937,6 @@ proc create_root_design { parentCell } {
      return 1
    }
   
-  # Create instance: xlconcat_0, and set properties
-  set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
-  set_property -dict [ list \
-   CONFIG.IN0_WIDTH {16} \
-   CONFIG.IN1_WIDTH {1} \
- ] $xlconcat_0
-
   # Create instance: xlconcat_1, and set properties
   set xlconcat_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_1 ]
   set_property -dict [ list \
@@ -965,13 +950,6 @@ proc create_root_design { parentCell } {
    CONFIG.IN0_WIDTH {16} \
    CONFIG.IN1_WIDTH {1} \
  ] $xlconcat_2
-
-  # Create instance: xlconcat_3, and set properties
-  set xlconcat_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_3 ]
-  set_property -dict [ list \
-   CONFIG.IN0_WIDTH {16} \
-   CONFIG.IN1_WIDTH {1} \
- ] $xlconcat_3
 
   # Create instance: xlconcat_4, and set properties
   set xlconcat_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_4 ]
@@ -1232,16 +1210,14 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net ARM_2 [get_bd_ports ARM] [get_bd_pins CounterUp16bit_0/CE] [get_bd_pins CounterUp16bit_1/CE] [get_bd_pins CounterUp16bit_2/CE] [get_bd_pins CounterUp16bit_3/CE] [get_bd_pins CounterUp16bit_4/CE] [get_bd_pins CounterUp16bit_5/CE] [get_bd_pins CounterUp16bit_6/CE] [get_bd_pins CounterUp16bit_7/CE] [get_bd_pins NotA_or_B_0/NotA] [get_bd_pins arm_0/arm_in]
-  connect_bd_net -net CounterUp16bit_0_Q [get_bd_ports Q0] [get_bd_pins CounterUp16bit_0/Q] [get_bd_pins KSAddSubb_0/x] [get_bd_pins KSAddSubb_1/x] [get_bd_pins KSAddSubb_2/x] [get_bd_pins KSAddSubb_3/x] [get_bd_pins KSAddSubb_4/x] [get_bd_pins KSAddSubb_5/x] [get_bd_pins KSAddSubb_6/x]
-  connect_bd_net -net CounterUp16bit_1_Q [get_bd_ports Q1] [get_bd_pins CounterUp16bit_1/Q] [get_bd_pins KSAddSubb_0/y] [get_bd_pins KSAddSubb_10/x] [get_bd_pins KSAddSubb_11/x] [get_bd_pins KSAddSubb_12/x] [get_bd_pins KSAddSubb_7/x] [get_bd_pins KSAddSubb_8/x] [get_bd_pins KSAddSubb_9/x]
+  connect_bd_net -net CounterUp16bit_0_Q [get_bd_ports Q0] [get_bd_pins CounterUp16bit_0/Q] [get_bd_pins KSAddSubb_1/x] [get_bd_pins KSAddSubb_2/x] [get_bd_pins KSAddSubb_4/x] [get_bd_pins KSAddSubb_5/x] [get_bd_pins KSAddSubb_6/x] [get_bd_pins c_addsub_0/A] [get_bd_pins c_addsub_1/A]
+  connect_bd_net -net CounterUp16bit_1_Q [get_bd_ports Q1] [get_bd_pins CounterUp16bit_1/Q] [get_bd_pins KSAddSubb_10/x] [get_bd_pins KSAddSubb_11/x] [get_bd_pins KSAddSubb_12/x] [get_bd_pins KSAddSubb_7/x] [get_bd_pins KSAddSubb_8/x] [get_bd_pins KSAddSubb_9/x] [get_bd_pins c_addsub_0/B]
   connect_bd_net -net CounterUp16bit_2_Q [get_bd_ports Q2] [get_bd_pins CounterUp16bit_2/Q] [get_bd_pins KSAddSubb_1/y] [get_bd_pins KSAddSubb_13/x] [get_bd_pins KSAddSubb_14/x] [get_bd_pins KSAddSubb_15/x] [get_bd_pins KSAddSubb_16/x] [get_bd_pins KSAddSubb_17/x] [get_bd_pins KSAddSubb_7/y]
   connect_bd_net -net CounterUp16bit_3_Q [get_bd_ports Q3] [get_bd_pins CounterUp16bit_3/Q] [get_bd_pins KSAddSubb_13/y] [get_bd_pins KSAddSubb_18/x] [get_bd_pins KSAddSubb_19/x] [get_bd_pins KSAddSubb_2/y] [get_bd_pins KSAddSubb_20/x] [get_bd_pins KSAddSubb_21/x] [get_bd_pins KSAddSubb_8/y]
-  connect_bd_net -net CounterUp16bit_4_Q [get_bd_ports Q4] [get_bd_pins CounterUp16bit_4/Q] [get_bd_pins KSAddSubb_14/y] [get_bd_pins KSAddSubb_18/y] [get_bd_pins KSAddSubb_22/x] [get_bd_pins KSAddSubb_23/x] [get_bd_pins KSAddSubb_24/x] [get_bd_pins KSAddSubb_3/y] [get_bd_pins KSAddSubb_9/y]
+  connect_bd_net -net CounterUp16bit_4_Q [get_bd_ports Q4] [get_bd_pins CounterUp16bit_4/Q] [get_bd_pins KSAddSubb_14/y] [get_bd_pins KSAddSubb_18/y] [get_bd_pins KSAddSubb_22/x] [get_bd_pins KSAddSubb_23/x] [get_bd_pins KSAddSubb_24/x] [get_bd_pins KSAddSubb_9/y] [get_bd_pins c_addsub_1/B]
   connect_bd_net -net CounterUp16bit_5_Q [get_bd_ports Q5] [get_bd_pins CounterUp16bit_5/Q] [get_bd_pins KSAddSubb_10/y] [get_bd_pins KSAddSubb_15/y] [get_bd_pins KSAddSubb_19/y] [get_bd_pins KSAddSubb_22/y] [get_bd_pins KSAddSubb_25/x] [get_bd_pins KSAddSubb_26/x] [get_bd_pins KSAddSubb_4/y]
   connect_bd_net -net CounterUp16bit_6_Q [get_bd_ports Q6] [get_bd_pins CounterUp16bit_6/Q] [get_bd_pins KSAddSubb_11/y] [get_bd_pins KSAddSubb_16/y] [get_bd_pins KSAddSubb_20/y] [get_bd_pins KSAddSubb_23/y] [get_bd_pins KSAddSubb_25/y] [get_bd_pins KSAddSubb_27/x] [get_bd_pins KSAddSubb_5/y]
   connect_bd_net -net CounterUp16bit_7_Q [get_bd_ports Q7] [get_bd_pins CounterUp16bit_7/Q] [get_bd_pins KSAddSubb_12/y] [get_bd_pins KSAddSubb_17/y] [get_bd_pins KSAddSubb_21/y] [get_bd_pins KSAddSubb_24/y] [get_bd_pins KSAddSubb_26/y] [get_bd_pins KSAddSubb_27/y] [get_bd_pins KSAddSubb_6/y]
-  connect_bd_net -net KSAddSubb_0_cout [get_bd_pins KSAddSubb_0/cout] [get_bd_pins xlconcat_0/In1]
-  connect_bd_net -net KSAddSubb_0_sum [get_bd_pins KSAddSubb_0/sum] [get_bd_pins xlconcat_0/In0]
   connect_bd_net -net KSAddSubb_10_cout [get_bd_pins KSAddSubb_10/cout] [get_bd_pins xlconcat_10/In1]
   connect_bd_net -net KSAddSubb_10_sum [get_bd_pins KSAddSubb_10/sum] [get_bd_pins xlconcat_10/In0]
   connect_bd_net -net KSAddSubb_11_cout [get_bd_pins KSAddSubb_11/cout] [get_bd_pins xlconcat_11/In1]
@@ -1282,8 +1258,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net KSAddSubb_27_sum [get_bd_pins KSAddSubb_27/sum] [get_bd_pins xlconcat_27/In0]
   connect_bd_net -net KSAddSubb_2_cout [get_bd_pins KSAddSubb_2/cout] [get_bd_pins xlconcat_2/In1]
   connect_bd_net -net KSAddSubb_2_sum [get_bd_pins KSAddSubb_2/sum] [get_bd_pins xlconcat_2/In0]
-  connect_bd_net -net KSAddSubb_3_cout [get_bd_pins KSAddSubb_3/cout] [get_bd_pins xlconcat_3/In1]
-  connect_bd_net -net KSAddSubb_3_sum [get_bd_pins KSAddSubb_3/sum] [get_bd_pins xlconcat_3/In0]
   connect_bd_net -net KSAddSubb_4_cout [get_bd_pins KSAddSubb_4/cout] [get_bd_pins xlconcat_4/In1]
   connect_bd_net -net KSAddSubb_4_sum [get_bd_pins KSAddSubb_4/sum] [get_bd_pins xlconcat_4/In0]
   connect_bd_net -net KSAddSubb_5_cout [get_bd_pins KSAddSubb_5/cout] [get_bd_pins xlconcat_5/In1]
@@ -1297,10 +1271,13 @@ proc create_root_design { parentCell } {
   connect_bd_net -net KSAddSubb_9_cout [get_bd_pins KSAddSubb_9/cout] [get_bd_pins xlconcat_9/In1]
   connect_bd_net -net KSAddSubb_9_sum [get_bd_pins KSAddSubb_9/sum] [get_bd_pins xlconcat_9/In0]
   connect_bd_net -net Net [get_bd_pins CounterUp16bit_0/Clr] [get_bd_pins CounterUp16bit_1/Clr] [get_bd_pins CounterUp16bit_2/Clr] [get_bd_pins CounterUp16bit_3/Clr] [get_bd_pins CounterUp16bit_4/Clr] [get_bd_pins CounterUp16bit_5/Clr] [get_bd_pins CounterUp16bit_6/Clr] [get_bd_pins CounterUp16bit_7/Clr] [get_bd_pins NotA_or_B_0/C]
+  connect_bd_net -net Net1 [get_bd_ports not_ready] [get_bd_pins arm_0/not_ready] [get_bd_pins c_addsub_0/SCLR] [get_bd_pins c_addsub_1/SCLR]
   connect_bd_net -net Z_1 [get_bd_ports Z] [get_bd_pins mux8to1_0/a]
-  connect_bd_net -net arm_0_arm_out [get_bd_ports ready] [get_bd_pins arm_0/arm_out] [get_bd_pins mux2to1_17bit_0/sel] [get_bd_pins mux2to1_17bit_1/sel] [get_bd_pins mux2to1_17bit_10/sel] [get_bd_pins mux2to1_17bit_11/sel] [get_bd_pins mux2to1_17bit_12/sel] [get_bd_pins mux2to1_17bit_13/sel] [get_bd_pins mux2to1_17bit_14/sel] [get_bd_pins mux2to1_17bit_15/sel] [get_bd_pins mux2to1_17bit_16/sel] [get_bd_pins mux2to1_17bit_17/sel] [get_bd_pins mux2to1_17bit_18/sel] [get_bd_pins mux2to1_17bit_19/sel] [get_bd_pins mux2to1_17bit_2/sel] [get_bd_pins mux2to1_17bit_20/sel] [get_bd_pins mux2to1_17bit_21/sel] [get_bd_pins mux2to1_17bit_22/sel] [get_bd_pins mux2to1_17bit_23/sel] [get_bd_pins mux2to1_17bit_24/sel] [get_bd_pins mux2to1_17bit_25/sel] [get_bd_pins mux2to1_17bit_26/sel] [get_bd_pins mux2to1_17bit_27/sel] [get_bd_pins mux2to1_17bit_3/sel] [get_bd_pins mux2to1_17bit_4/sel] [get_bd_pins mux2to1_17bit_5/sel] [get_bd_pins mux2to1_17bit_6/sel] [get_bd_pins mux2to1_17bit_7/sel] [get_bd_pins mux2to1_17bit_8/sel] [get_bd_pins mux2to1_17bit_9/sel]
+  connect_bd_net -net arm_0_arm_out [get_bd_ports ready] [get_bd_pins arm_0/ready] [get_bd_pins mux2to1_17bit_1/sel] [get_bd_pins mux2to1_17bit_10/sel] [get_bd_pins mux2to1_17bit_11/sel] [get_bd_pins mux2to1_17bit_12/sel] [get_bd_pins mux2to1_17bit_13/sel] [get_bd_pins mux2to1_17bit_14/sel] [get_bd_pins mux2to1_17bit_15/sel] [get_bd_pins mux2to1_17bit_16/sel] [get_bd_pins mux2to1_17bit_17/sel] [get_bd_pins mux2to1_17bit_18/sel] [get_bd_pins mux2to1_17bit_19/sel] [get_bd_pins mux2to1_17bit_20/sel] [get_bd_pins mux2to1_17bit_21/sel] [get_bd_pins mux2to1_17bit_22/sel] [get_bd_pins mux2to1_17bit_23/sel] [get_bd_pins mux2to1_17bit_24/sel] [get_bd_pins mux2to1_17bit_25/sel] [get_bd_pins mux2to1_17bit_26/sel] [get_bd_pins mux2to1_17bit_27/sel] [get_bd_pins mux2to1_17bit_3/sel] [get_bd_pins mux2to1_17bit_4/sel] [get_bd_pins mux2to1_17bit_5/sel] [get_bd_pins mux2to1_17bit_6/sel] [get_bd_pins mux2to1_17bit_7/sel] [get_bd_pins mux2to1_17bit_8/sel] [get_bd_pins mux2to1_17bit_9/sel]
+  connect_bd_net -net c_addsub_0_S [get_bd_ports diff_0_1] [get_bd_pins c_addsub_0/S]
+  connect_bd_net -net c_addsub_1_S [get_bd_ports diff_0_4] [get_bd_pins c_addsub_1/S]
   connect_bd_net -net clk_1 [get_bd_ports A] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din] [get_bd_pins xlslice_2/Din] [get_bd_pins xlslice_3/Din] [get_bd_pins xlslice_4/Din] [get_bd_pins xlslice_5/Din] [get_bd_pins xlslice_6/Din] [get_bd_pins xlslice_7/Din]
-  connect_bd_net -net mux2to1_17bit_0_Z [get_bd_ports diff_0_1] [get_bd_pins mux2to1_17bit_0/Z]
+  connect_bd_net -net clock_1 [get_bd_ports clock] [get_bd_pins c_addsub_0/CLK] [get_bd_pins c_addsub_1/CLK]
   connect_bd_net -net mux2to1_17bit_10_Z [get_bd_ports diff_1_5] [get_bd_pins mux2to1_17bit_10/Z]
   connect_bd_net -net mux2to1_17bit_11_Z [get_bd_ports diff_1_6] [get_bd_pins mux2to1_17bit_11/Z]
   connect_bd_net -net mux2to1_17bit_12_Z [get_bd_ports diff_1_7] [get_bd_pins mux2to1_17bit_12/Z]
@@ -1317,7 +1294,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net mux2to1_17bit_25_Z [get_bd_ports diff_5_6] [get_bd_pins mux2to1_17bit_25/Z]
   connect_bd_net -net mux2to1_17bit_26_Z [get_bd_ports diff_5_7] [get_bd_pins mux2to1_17bit_26/Z]
   connect_bd_net -net mux2to1_17bit_27_Z [get_bd_ports diff_6_7] [get_bd_pins mux2to1_17bit_27/Z]
-  connect_bd_net -net mux2to1_17bit_2_Z [get_bd_ports diff_0_4] [get_bd_pins mux2to1_17bit_2/Z]
   connect_bd_net -net mux2to1_17bit_3_Z [get_bd_ports diff_0_3] [get_bd_pins mux2to1_17bit_3/Z]
   connect_bd_net -net mux2to1_17bit_4_Z [get_bd_ports diff_0_7] [get_bd_pins mux2to1_17bit_4/Z]
   connect_bd_net -net mux2to1_17bit_4_Z1 [get_bd_ports diff_4_5] [get_bd_pins mux2to1_17bit_22/Z]
@@ -1330,7 +1306,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net mux2to1_17bit_9_Z [get_bd_ports diff_1_4] [get_bd_pins mux2to1_17bit_9/Z]
   connect_bd_net -net mux8to1_0_b [get_bd_pins NotA_or_B_0/B] [get_bd_pins arm_0/Zref] [get_bd_pins mux8to1_0/b]
   connect_bd_net -net sel_1 [get_bd_ports sel] [get_bd_pins mux8to1_0/sel]
-  connect_bd_net -net xlconcat_0_dout [get_bd_pins mux2to1_17bit_0/Y] [get_bd_pins xlconcat_0/dout]
   connect_bd_net -net xlconcat_10_dout [get_bd_pins mux2to1_17bit_10/Y] [get_bd_pins xlconcat_10/dout]
   connect_bd_net -net xlconcat_11_dout [get_bd_pins mux2to1_17bit_11/Y] [get_bd_pins xlconcat_11/dout]
   connect_bd_net -net xlconcat_12_dout [get_bd_pins mux2to1_17bit_12/Y] [get_bd_pins xlconcat_12/dout]
@@ -1348,7 +1323,6 @@ proc create_root_design { parentCell } {
   connect_bd_net -net xlconcat_26_dout [get_bd_pins mux2to1_17bit_26/Y] [get_bd_pins xlconcat_26/dout]
   connect_bd_net -net xlconcat_27_dout [get_bd_pins mux2to1_17bit_27/Y] [get_bd_pins xlconcat_27/dout]
   connect_bd_net -net xlconcat_2_dout [get_bd_pins mux2to1_17bit_3/Y] [get_bd_pins xlconcat_2/dout]
-  connect_bd_net -net xlconcat_3_dout [get_bd_pins mux2to1_17bit_2/Y] [get_bd_pins xlconcat_3/dout]
   connect_bd_net -net xlconcat_4_dout [get_bd_pins mux2to1_17bit_5/Y] [get_bd_pins xlconcat_4/dout]
   connect_bd_net -net xlconcat_5_dout [get_bd_pins mux2to1_17bit_6/Y] [get_bd_pins xlconcat_5/dout]
   connect_bd_net -net xlconcat_5_dout1 [get_bd_pins mux2to1_17bit_23/Y] [get_bd_pins xlconcat_23/dout]
@@ -1358,9 +1332,9 @@ proc create_root_design { parentCell } {
   connect_bd_net -net xlconcat_7_dout1 [get_bd_pins mux2to1_17bit_24/Y] [get_bd_pins xlconcat_24/dout]
   connect_bd_net -net xlconcat_8_dout [get_bd_pins mux2to1_17bit_8/Y] [get_bd_pins xlconcat_8/dout]
   connect_bd_net -net xlconcat_9_dout [get_bd_pins mux2to1_17bit_9/Y] [get_bd_pins xlconcat_9/dout]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins KSAddSubb_0/add] [get_bd_pins KSAddSubb_1/add] [get_bd_pins KSAddSubb_10/add] [get_bd_pins KSAddSubb_11/add] [get_bd_pins KSAddSubb_12/add] [get_bd_pins KSAddSubb_13/add] [get_bd_pins KSAddSubb_14/add] [get_bd_pins KSAddSubb_15/add] [get_bd_pins KSAddSubb_16/add] [get_bd_pins KSAddSubb_17/add] [get_bd_pins KSAddSubb_18/add] [get_bd_pins KSAddSubb_19/add] [get_bd_pins KSAddSubb_2/add] [get_bd_pins KSAddSubb_20/add] [get_bd_pins KSAddSubb_21/add] [get_bd_pins KSAddSubb_22/add] [get_bd_pins KSAddSubb_23/add] [get_bd_pins KSAddSubb_24/add] [get_bd_pins KSAddSubb_25/add] [get_bd_pins KSAddSubb_26/add] [get_bd_pins KSAddSubb_27/add] [get_bd_pins KSAddSubb_3/add] [get_bd_pins KSAddSubb_4/add] [get_bd_pins KSAddSubb_5/add] [get_bd_pins KSAddSubb_6/add] [get_bd_pins KSAddSubb_7/add] [get_bd_pins KSAddSubb_8/add] [get_bd_pins KSAddSubb_9/add] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins KSAddSubb_1/add] [get_bd_pins KSAddSubb_10/add] [get_bd_pins KSAddSubb_11/add] [get_bd_pins KSAddSubb_12/add] [get_bd_pins KSAddSubb_13/add] [get_bd_pins KSAddSubb_14/add] [get_bd_pins KSAddSubb_15/add] [get_bd_pins KSAddSubb_16/add] [get_bd_pins KSAddSubb_17/add] [get_bd_pins KSAddSubb_18/add] [get_bd_pins KSAddSubb_19/add] [get_bd_pins KSAddSubb_2/add] [get_bd_pins KSAddSubb_20/add] [get_bd_pins KSAddSubb_21/add] [get_bd_pins KSAddSubb_22/add] [get_bd_pins KSAddSubb_23/add] [get_bd_pins KSAddSubb_24/add] [get_bd_pins KSAddSubb_25/add] [get_bd_pins KSAddSubb_26/add] [get_bd_pins KSAddSubb_27/add] [get_bd_pins KSAddSubb_4/add] [get_bd_pins KSAddSubb_5/add] [get_bd_pins KSAddSubb_6/add] [get_bd_pins KSAddSubb_7/add] [get_bd_pins KSAddSubb_8/add] [get_bd_pins KSAddSubb_9/add] [get_bd_pins xlconstant_0/dout]
   connect_bd_net -net xlconstant_1_dout [get_bd_pins arm_0/cycle] [get_bd_pins xlconstant_1/dout]
-  connect_bd_net -net xlconstant_2_dout [get_bd_pins mux2to1_17bit_0/X] [get_bd_pins mux2to1_17bit_1/X] [get_bd_pins mux2to1_17bit_10/X] [get_bd_pins mux2to1_17bit_11/X] [get_bd_pins mux2to1_17bit_12/X] [get_bd_pins mux2to1_17bit_13/X] [get_bd_pins mux2to1_17bit_14/X] [get_bd_pins mux2to1_17bit_15/X] [get_bd_pins mux2to1_17bit_16/X] [get_bd_pins mux2to1_17bit_17/X] [get_bd_pins mux2to1_17bit_18/X] [get_bd_pins mux2to1_17bit_19/X] [get_bd_pins mux2to1_17bit_2/X] [get_bd_pins mux2to1_17bit_20/X] [get_bd_pins mux2to1_17bit_21/X] [get_bd_pins mux2to1_17bit_22/X] [get_bd_pins mux2to1_17bit_23/X] [get_bd_pins mux2to1_17bit_24/X] [get_bd_pins mux2to1_17bit_25/X] [get_bd_pins mux2to1_17bit_26/X] [get_bd_pins mux2to1_17bit_27/X] [get_bd_pins mux2to1_17bit_3/X] [get_bd_pins mux2to1_17bit_4/X] [get_bd_pins mux2to1_17bit_5/X] [get_bd_pins mux2to1_17bit_6/X] [get_bd_pins mux2to1_17bit_7/X] [get_bd_pins mux2to1_17bit_8/X] [get_bd_pins mux2to1_17bit_9/X] [get_bd_pins xlconstant_2/dout]
+  connect_bd_net -net xlconstant_2_dout [get_bd_pins mux2to1_17bit_1/X] [get_bd_pins mux2to1_17bit_10/X] [get_bd_pins mux2to1_17bit_11/X] [get_bd_pins mux2to1_17bit_12/X] [get_bd_pins mux2to1_17bit_13/X] [get_bd_pins mux2to1_17bit_14/X] [get_bd_pins mux2to1_17bit_15/X] [get_bd_pins mux2to1_17bit_16/X] [get_bd_pins mux2to1_17bit_17/X] [get_bd_pins mux2to1_17bit_18/X] [get_bd_pins mux2to1_17bit_19/X] [get_bd_pins mux2to1_17bit_20/X] [get_bd_pins mux2to1_17bit_21/X] [get_bd_pins mux2to1_17bit_22/X] [get_bd_pins mux2to1_17bit_23/X] [get_bd_pins mux2to1_17bit_24/X] [get_bd_pins mux2to1_17bit_25/X] [get_bd_pins mux2to1_17bit_26/X] [get_bd_pins mux2to1_17bit_27/X] [get_bd_pins mux2to1_17bit_3/X] [get_bd_pins mux2to1_17bit_4/X] [get_bd_pins mux2to1_17bit_5/X] [get_bd_pins mux2to1_17bit_6/X] [get_bd_pins mux2to1_17bit_7/X] [get_bd_pins mux2to1_17bit_8/X] [get_bd_pins mux2to1_17bit_9/X] [get_bd_pins xlconstant_2/dout]
   connect_bd_net -net xlslice_0_Dout [get_bd_pins CounterUp16bit_0/Clk] [get_bd_pins xlslice_0/Dout]
   connect_bd_net -net xlslice_1_Dout [get_bd_pins CounterUp16bit_1/Clk] [get_bd_pins xlslice_1/Dout]
   connect_bd_net -net xlslice_2_Dout [get_bd_pins CounterUp16bit_2/Clk] [get_bd_pins xlslice_2/Dout]

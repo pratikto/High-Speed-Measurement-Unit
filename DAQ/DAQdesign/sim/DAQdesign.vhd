@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Wed Aug 26 11:59:58 2020
+--Date        : Wed Aug 26 22:47:47 2020
 --Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 --Command     : generate_target DAQdesign.bd
 --Design      : DAQdesign
@@ -24,10 +24,11 @@ entity DAQdesign is
     Q6 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q7 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Z : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    diff_0_1 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    clock : in STD_LOGIC;
+    diff_0_1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_4 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -52,11 +53,12 @@ entity DAQdesign is
     diff_5_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_5_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_6_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    not_ready : out STD_LOGIC;
     ready : out STD_LOGIC;
     sel : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of DAQdesign : entity is "DAQdesign,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DAQdesign,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=106,numReposBlks=106,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=67,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of DAQdesign : entity is "DAQdesign,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DAQdesign,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=102,numReposBlks=102,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=63,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of DAQdesign : entity is "DAQdesign.hwdef";
 end DAQdesign;
@@ -115,13 +117,6 @@ architecture STRUCTURE of DAQdesign is
     Dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component DAQdesign_xlslice_1_0;
-  component DAQdesign_xlconcat_0_0 is
-  port (
-    In0 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 16 downto 0 )
-  );
-  end component DAQdesign_xlconcat_0_0;
   component DAQdesign_xlconcat_1_0 is
   port (
     In0 : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -136,13 +131,6 @@ architecture STRUCTURE of DAQdesign is
     dout : out STD_LOGIC_VECTOR ( 16 downto 0 )
   );
   end component DAQdesign_xlconcat_2_0;
-  component DAQdesign_xlconcat_3_0 is
-  port (
-    In0 : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 16 downto 0 )
-  );
-  end component DAQdesign_xlconcat_3_0;
   component DAQdesign_xlconcat_4_0 is
   port (
     In0 : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -318,15 +306,6 @@ architecture STRUCTURE of DAQdesign is
     b : out STD_LOGIC
   );
   end component DAQdesign_mux8to1_0_0;
-  component DAQdesign_KSAddSubb_0_0 is
-  port (
-    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    add : in STD_LOGIC;
-    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    cout : out STD_LOGIC
-  );
-  end component DAQdesign_KSAddSubb_0_0;
   component DAQdesign_KSAddSubb_10_0 is
   port (
     x : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -507,15 +486,6 @@ architecture STRUCTURE of DAQdesign is
     cout : out STD_LOGIC
   );
   end component DAQdesign_KSAddSubb_2_0;
-  component DAQdesign_KSAddSubb_3_0 is
-  port (
-    x : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    y : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    add : in STD_LOGIC;
-    sum : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    cout : out STD_LOGIC
-  );
-  end component DAQdesign_KSAddSubb_3_0;
   component DAQdesign_KSAddSubb_4_0 is
   port (
     x : in STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -575,14 +545,6 @@ architecture STRUCTURE of DAQdesign is
     dout : out STD_LOGIC_VECTOR ( 16 downto 0 )
   );
   end component DAQdesign_xlconstant_2_0;
-  component DAQdesign_mux2to1_17bit_0_1 is
-  port (
-    X : in STD_LOGIC_VECTOR ( 16 downto 0 );
-    Y : in STD_LOGIC_VECTOR ( 16 downto 0 );
-    Z : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    sel : in STD_LOGIC
-  );
-  end component DAQdesign_mux2to1_17bit_0_1;
   component DAQdesign_mux2to1_17bit_0_2 is
   port (
     X : in STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -591,14 +553,6 @@ architecture STRUCTURE of DAQdesign is
     sel : in STD_LOGIC
   );
   end component DAQdesign_mux2to1_17bit_0_2;
-  component DAQdesign_mux2to1_17bit_0_3 is
-  port (
-    X : in STD_LOGIC_VECTOR ( 16 downto 0 );
-    Y : in STD_LOGIC_VECTOR ( 16 downto 0 );
-    Z : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    sel : in STD_LOGIC
-  );
-  end component DAQdesign_mux2to1_17bit_0_3;
   component DAQdesign_mux2to1_17bit_1_0 is
   port (
     X : in STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -863,14 +817,6 @@ architecture STRUCTURE of DAQdesign is
     Q : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   end component DAQdesign_CounterUp16bit_7_0;
-  component DAQdesign_arm_0_0 is
-  port (
-    arm_in : in STD_LOGIC;
-    Zref : in STD_LOGIC;
-    cycle : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    arm_out : out STD_LOGIC
-  );
-  end component DAQdesign_arm_0_0;
   component DAQdesign_xlconstant_1_0 is
   port (
     dout : out STD_LOGIC_VECTOR ( 15 downto 0 )
@@ -883,6 +829,33 @@ architecture STRUCTURE of DAQdesign is
     C : out STD_LOGIC
   );
   end component DAQdesign_NotA_or_B_0_0;
+  component DAQdesign_c_addsub_0_0 is
+  port (
+    A : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    B : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    CLK : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    S : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQdesign_c_addsub_0_0;
+  component DAQdesign_c_addsub_0_1 is
+  port (
+    A : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    B : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    CLK : in STD_LOGIC;
+    SCLR : in STD_LOGIC;
+    S : out STD_LOGIC_VECTOR ( 15 downto 0 )
+  );
+  end component DAQdesign_c_addsub_0_1;
+  component DAQdesign_arm_0_0 is
+  port (
+    arm_in : in STD_LOGIC;
+    Zref : in STD_LOGIC;
+    cycle : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    ready : out STD_LOGIC;
+    not_ready : out STD_LOGIC
+  );
+  end component DAQdesign_arm_0_0;
   signal ARM_2 : STD_LOGIC;
   signal CounterUp16bit_0_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal CounterUp16bit_1_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -892,8 +865,6 @@ architecture STRUCTURE of DAQdesign is
   signal CounterUp16bit_5_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal CounterUp16bit_6_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal CounterUp16bit_7_Q : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal KSAddSubb_0_cout : STD_LOGIC;
-  signal KSAddSubb_0_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal KSAddSubb_10_cout : STD_LOGIC;
   signal KSAddSubb_10_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal KSAddSubb_11_cout : STD_LOGIC;
@@ -934,8 +905,6 @@ architecture STRUCTURE of DAQdesign is
   signal KSAddSubb_27_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal KSAddSubb_2_cout : STD_LOGIC;
   signal KSAddSubb_2_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal KSAddSubb_3_cout : STD_LOGIC;
-  signal KSAddSubb_3_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal KSAddSubb_4_cout : STD_LOGIC;
   signal KSAddSubb_4_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal KSAddSubb_5_cout : STD_LOGIC;
@@ -949,10 +918,13 @@ architecture STRUCTURE of DAQdesign is
   signal KSAddSubb_9_cout : STD_LOGIC;
   signal KSAddSubb_9_sum : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal Net : STD_LOGIC;
+  signal Net1 : STD_LOGIC;
   signal Z_1 : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal arm_0_arm_out : STD_LOGIC;
+  signal c_addsub_0_S : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal c_addsub_1_S : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal clk_1 : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal mux2to1_17bit_0_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
+  signal clock_1 : STD_LOGIC;
   signal mux2to1_17bit_10_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal mux2to1_17bit_11_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal mux2to1_17bit_12_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -969,7 +941,6 @@ architecture STRUCTURE of DAQdesign is
   signal mux2to1_17bit_25_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal mux2to1_17bit_26_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal mux2to1_17bit_27_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
-  signal mux2to1_17bit_2_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal mux2to1_17bit_3_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal mux2to1_17bit_4_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal mux2to1_17bit_4_Z1 : STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -982,7 +953,6 @@ architecture STRUCTURE of DAQdesign is
   signal mux2to1_17bit_9_Z : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal mux8to1_0_b : STD_LOGIC;
   signal sel_1 : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal xlconcat_10_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal xlconcat_11_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal xlconcat_12_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -1000,7 +970,6 @@ architecture STRUCTURE of DAQdesign is
   signal xlconcat_26_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal xlconcat_27_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal xlconcat_2_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
-  signal xlconcat_3_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal xlconcat_4_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal xlconcat_5_dout : STD_LOGIC_VECTOR ( 16 downto 0 );
   signal xlconcat_5_dout1 : STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -1025,6 +994,8 @@ architecture STRUCTURE of DAQdesign is
   attribute X_INTERFACE_INFO of ARM : signal is "xilinx.com:signal:data:1.0 DATA.ARM DATA";
   attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of ARM : signal is "XIL_INTERFACENAME DATA.ARM, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of not_ready : signal is "xilinx.com:signal:data:1.0 DATA.NOT_READY DATA";
+  attribute X_INTERFACE_PARAMETER of not_ready : signal is "XIL_INTERFACENAME DATA.NOT_READY, LAYERED_METADATA undef";
   attribute X_INTERFACE_INFO of ready : signal is "xilinx.com:signal:data:1.0 DATA.READY DATA";
   attribute X_INTERFACE_PARAMETER of ready : signal is "XIL_INTERFACENAME DATA.READY, LAYERED_METADATA undef";
   attribute X_INTERFACE_INFO of Q0 : signal is "xilinx.com:signal:data:1.0 DATA.Q0 DATA";
@@ -1046,13 +1017,13 @@ architecture STRUCTURE of DAQdesign is
   attribute X_INTERFACE_INFO of Z : signal is "xilinx.com:signal:reset:1.0 RST.Z RST";
   attribute X_INTERFACE_PARAMETER of Z : signal is "XIL_INTERFACENAME RST.Z, INSERT_VIP 0, POLARITY ACTIVE_HIGH";
   attribute X_INTERFACE_INFO of diff_0_1 : signal is "xilinx.com:signal:data:1.0 DATA.DIFF_0_1 DATA";
-  attribute X_INTERFACE_PARAMETER of diff_0_1 : signal is "XIL_INTERFACENAME DATA.DIFF_0_1, LAYERED_METADATA undef";
+  attribute X_INTERFACE_PARAMETER of diff_0_1 : signal is "XIL_INTERFACENAME DATA.DIFF_0_1, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 16}";
   attribute X_INTERFACE_INFO of diff_0_2 : signal is "xilinx.com:signal:data:1.0 DATA.DIFF_0_2 DATA";
   attribute X_INTERFACE_PARAMETER of diff_0_2 : signal is "XIL_INTERFACENAME DATA.DIFF_0_2, LAYERED_METADATA undef";
   attribute X_INTERFACE_INFO of diff_0_3 : signal is "xilinx.com:signal:data:1.0 DATA.DIFF_0_3 DATA";
   attribute X_INTERFACE_PARAMETER of diff_0_3 : signal is "XIL_INTERFACENAME DATA.DIFF_0_3, LAYERED_METADATA undef";
   attribute X_INTERFACE_INFO of diff_0_4 : signal is "xilinx.com:signal:data:1.0 DATA.DIFF_0_4 DATA";
-  attribute X_INTERFACE_PARAMETER of diff_0_4 : signal is "XIL_INTERFACENAME DATA.DIFF_0_4, LAYERED_METADATA undef";
+  attribute X_INTERFACE_PARAMETER of diff_0_4 : signal is "XIL_INTERFACENAME DATA.DIFF_0_4, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 16}";
   attribute X_INTERFACE_INFO of diff_0_5 : signal is "xilinx.com:signal:data:1.0 DATA.DIFF_0_5 DATA";
   attribute X_INTERFACE_PARAMETER of diff_0_5 : signal is "XIL_INTERFACENAME DATA.DIFF_0_5, LAYERED_METADATA undef";
   attribute X_INTERFACE_INFO of diff_0_6 : signal is "xilinx.com:signal:data:1.0 DATA.DIFF_0_6 DATA";
@@ -1115,10 +1086,11 @@ begin
   Q7(15 downto 0) <= CounterUp16bit_7_Q(15 downto 0);
   Z_1(7 downto 0) <= Z(7 downto 0);
   clk_1(7 downto 0) <= A(7 downto 0);
-  diff_0_1(16 downto 0) <= mux2to1_17bit_0_Z(16 downto 0);
+  clock_1 <= clock;
+  diff_0_1(15 downto 0) <= c_addsub_0_S(15 downto 0);
   diff_0_2(16 downto 0) <= mux2to1_17bit_1_Z(16 downto 0);
   diff_0_3(16 downto 0) <= mux2to1_17bit_3_Z(16 downto 0);
-  diff_0_4(16 downto 0) <= mux2to1_17bit_2_Z(16 downto 0);
+  diff_0_4(15 downto 0) <= c_addsub_1_S(15 downto 0);
   diff_0_5(16 downto 0) <= mux2to1_17bit_5_Z(16 downto 0);
   diff_0_6(16 downto 0) <= mux2to1_17bit_6_Z(16 downto 0);
   diff_0_7(16 downto 0) <= mux2to1_17bit_4_Z(16 downto 0);
@@ -1143,6 +1115,7 @@ begin
   diff_5_6(16 downto 0) <= mux2to1_17bit_25_Z(16 downto 0);
   diff_5_7(16 downto 0) <= mux2to1_17bit_26_Z(16 downto 0);
   diff_6_7(16 downto 0) <= mux2to1_17bit_27_Z(16 downto 0);
+  not_ready <= Net1;
   ready <= arm_0_arm_out;
   sel_1(2 downto 0) <= sel(2 downto 0);
 CounterUp16bit_0: component DAQdesign_CounterUp16bit_0_0
@@ -1200,14 +1173,6 @@ CounterUp16bit_7: component DAQdesign_CounterUp16bit_7_0
       Clk => xlslice_7_Dout(0),
       Clr => Net,
       Q(15 downto 0) => CounterUp16bit_7_Q(15 downto 0)
-    );
-KSAddSubb_0: component DAQdesign_KSAddSubb_0_0
-     port map (
-      add => xlconstant_0_dout(0),
-      cout => KSAddSubb_0_cout,
-      sum(15 downto 0) => KSAddSubb_0_sum(15 downto 0),
-      x(15 downto 0) => CounterUp16bit_0_Q(15 downto 0),
-      y(15 downto 0) => CounterUp16bit_1_Q(15 downto 0)
     );
 KSAddSubb_1: component DAQdesign_KSAddSubb_1_0
      port map (
@@ -1369,14 +1334,6 @@ KSAddSubb_27: component DAQdesign_KSAddSubb_27_0
       x(15 downto 0) => CounterUp16bit_6_Q(15 downto 0),
       y(15 downto 0) => CounterUp16bit_7_Q(15 downto 0)
     );
-KSAddSubb_3: component DAQdesign_KSAddSubb_3_0
-     port map (
-      add => xlconstant_0_dout(0),
-      cout => KSAddSubb_3_cout,
-      sum(15 downto 0) => KSAddSubb_3_sum(15 downto 0),
-      x(15 downto 0) => CounterUp16bit_0_Q(15 downto 0),
-      y(15 downto 0) => CounterUp16bit_4_Q(15 downto 0)
-    );
 KSAddSubb_4: component DAQdesign_KSAddSubb_4_0
      port map (
       add => xlconstant_0_dout(0),
@@ -1435,15 +1392,25 @@ arm_0: component DAQdesign_arm_0_0
      port map (
       Zref => mux8to1_0_b,
       arm_in => ARM_2,
-      arm_out => arm_0_arm_out,
-      cycle(15 downto 0) => xlconstant_1_dout(15 downto 0)
+      cycle(15 downto 0) => xlconstant_1_dout(15 downto 0),
+      not_ready => Net1,
+      ready => arm_0_arm_out
     );
-mux2to1_17bit_0: component DAQdesign_mux2to1_17bit_0_1
+c_addsub_0: component DAQdesign_c_addsub_0_0
      port map (
-      X(16 downto 0) => xlconstant_2_dout(16 downto 0),
-      Y(16 downto 0) => xlconcat_0_dout(16 downto 0),
-      Z(16 downto 0) => mux2to1_17bit_0_Z(16 downto 0),
-      sel => arm_0_arm_out
+      A(15 downto 0) => CounterUp16bit_0_Q(15 downto 0),
+      B(15 downto 0) => CounterUp16bit_1_Q(15 downto 0),
+      CLK => clock_1,
+      S(15 downto 0) => c_addsub_0_S(15 downto 0),
+      SCLR => Net1
+    );
+c_addsub_1: component DAQdesign_c_addsub_0_1
+     port map (
+      A(15 downto 0) => CounterUp16bit_0_Q(15 downto 0),
+      B(15 downto 0) => CounterUp16bit_4_Q(15 downto 0),
+      CLK => clock_1,
+      S(15 downto 0) => c_addsub_1_S(15 downto 0),
+      SCLR => Net1
     );
 mux2to1_17bit_1: component DAQdesign_mux2to1_17bit_0_2
      port map (
@@ -1520,13 +1487,6 @@ mux2to1_17bit_19: component DAQdesign_mux2to1_17bit_13_0
       X(16 downto 0) => xlconstant_2_dout(16 downto 0),
       Y(16 downto 0) => xlconcat_19_dout(16 downto 0),
       Z(16 downto 0) => mux2to1_17bit_19_Z(16 downto 0),
-      sel => arm_0_arm_out
-    );
-mux2to1_17bit_2: component DAQdesign_mux2to1_17bit_0_3
-     port map (
-      X(16 downto 0) => xlconstant_2_dout(16 downto 0),
-      Y(16 downto 0) => xlconcat_3_dout(16 downto 0),
-      Z(16 downto 0) => mux2to1_17bit_2_Z(16 downto 0),
       sel => arm_0_arm_out
     );
 mux2to1_17bit_20: component DAQdesign_mux2to1_17bit_14_0
@@ -1639,12 +1599,6 @@ mux8to1_0: component DAQdesign_mux8to1_0_0
       a(7 downto 0) => Z_1(7 downto 0),
       b => mux8to1_0_b,
       sel(2 downto 0) => sel_1(2 downto 0)
-    );
-xlconcat_0: component DAQdesign_xlconcat_0_0
-     port map (
-      In0(15 downto 0) => KSAddSubb_0_sum(15 downto 0),
-      In1(0) => KSAddSubb_0_cout,
-      dout(16 downto 0) => xlconcat_0_dout(16 downto 0)
     );
 xlconcat_1: component DAQdesign_xlconcat_1_0
      port map (
@@ -1765,12 +1719,6 @@ xlconcat_27: component DAQdesign_xlconcat_27_0
       In0(15 downto 0) => KSAddSubb_27_sum(15 downto 0),
       In1(0) => KSAddSubb_27_cout,
       dout(16 downto 0) => xlconcat_27_dout(16 downto 0)
-    );
-xlconcat_3: component DAQdesign_xlconcat_3_0
-     port map (
-      In0(15 downto 0) => KSAddSubb_3_sum(15 downto 0),
-      In1(0) => KSAddSubb_3_cout,
-      dout(16 downto 0) => xlconcat_3_dout(16 downto 0)
     );
 xlconcat_4: component DAQdesign_xlconcat_4_0
      port map (

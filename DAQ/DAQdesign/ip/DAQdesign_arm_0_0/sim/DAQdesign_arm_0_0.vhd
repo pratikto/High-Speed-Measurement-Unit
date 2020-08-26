@@ -58,7 +58,8 @@ ENTITY DAQdesign_arm_0_0 IS
     arm_in : IN STD_LOGIC;
     Zref : IN STD_LOGIC;
     cycle : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-    arm_out : OUT STD_LOGIC
+    ready : OUT STD_LOGIC;
+    not_ready : OUT STD_LOGIC
   );
 END DAQdesign_arm_0_0;
 
@@ -70,7 +71,8 @@ ARCHITECTURE DAQdesign_arm_0_0_arch OF DAQdesign_arm_0_0 IS
       arm_in : IN STD_LOGIC;
       Zref : IN STD_LOGIC;
       cycle : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-      arm_out : OUT STD_LOGIC
+      ready : OUT STD_LOGIC;
+      not_ready : OUT STD_LOGIC
     );
   END COMPONENT arm;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
@@ -81,6 +83,7 @@ BEGIN
       arm_in => arm_in,
       Zref => Zref,
       cycle => cycle,
-      arm_out => arm_out
+      ready => ready,
+      not_ready => not_ready
     );
 END DAQdesign_arm_0_0_arch;

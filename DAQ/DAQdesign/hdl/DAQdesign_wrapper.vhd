@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Wed Aug 26 11:59:58 2020
+--Date        : Wed Aug 26 22:47:47 2020
 --Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 --Command     : generate_target DAQdesign_wrapper.bd
 --Design      : DAQdesign_wrapper
@@ -24,10 +24,11 @@ entity DAQdesign_wrapper is
     Q6 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Q7 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     Z : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    diff_0_1 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    clock : in STD_LOGIC;
+    diff_0_1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    diff_0_4 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
@@ -52,6 +53,7 @@ entity DAQdesign_wrapper is
     diff_5_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_5_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_6_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
+    not_ready : out STD_LOGIC;
     ready : out STD_LOGIC;
     sel : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
@@ -92,15 +94,17 @@ architecture STRUCTURE of DAQdesign_wrapper is
     diff_5_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_5_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_6_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_1 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_2 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_3 : out STD_LOGIC_VECTOR ( 16 downto 0 );
-    diff_0_4 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_5 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_6 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     diff_0_7 : out STD_LOGIC_VECTOR ( 16 downto 0 );
     ARM : in STD_LOGIC;
-    ready : out STD_LOGIC
+    ready : out STD_LOGIC;
+    clock : in STD_LOGIC;
+    diff_0_1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    diff_0_4 : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    not_ready : out STD_LOGIC
   );
   end component DAQdesign;
 begin
@@ -117,10 +121,11 @@ DAQdesign_i: component DAQdesign
       Q6(15 downto 0) => Q6(15 downto 0),
       Q7(15 downto 0) => Q7(15 downto 0),
       Z(7 downto 0) => Z(7 downto 0),
-      diff_0_1(16 downto 0) => diff_0_1(16 downto 0),
+      clock => clock,
+      diff_0_1(15 downto 0) => diff_0_1(15 downto 0),
       diff_0_2(16 downto 0) => diff_0_2(16 downto 0),
       diff_0_3(16 downto 0) => diff_0_3(16 downto 0),
-      diff_0_4(16 downto 0) => diff_0_4(16 downto 0),
+      diff_0_4(15 downto 0) => diff_0_4(15 downto 0),
       diff_0_5(16 downto 0) => diff_0_5(16 downto 0),
       diff_0_6(16 downto 0) => diff_0_6(16 downto 0),
       diff_0_7(16 downto 0) => diff_0_7(16 downto 0),
@@ -145,6 +150,7 @@ DAQdesign_i: component DAQdesign
       diff_5_6(16 downto 0) => diff_5_6(16 downto 0),
       diff_5_7(16 downto 0) => diff_5_7(16 downto 0),
       diff_6_7(16 downto 0) => diff_6_7(16 downto 0),
+      not_ready => not_ready,
       ready => ready,
       sel(2 downto 0) => sel(2 downto 0)
     );

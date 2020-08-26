@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Wed Aug 26 12:19:21 2020
+-- Date        : Wed Aug 26 21:10:49 2020
 -- Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim {c:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 --               Unit/DAQ/DAQdesign/ip/DAQdesign_arm_0_0/DAQdesign_arm_0_0_sim_netlist.vhdl}
@@ -730,7 +730,8 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity DAQdesign_arm_0_0_arm is
   port (
-    arm_out : out STD_LOGIC;
+    ready : out STD_LOGIC;
+    not_ready : out STD_LOGIC;
     Zref : in STD_LOGIC;
     arm_in : in STD_LOGIC;
     cycle : in STD_LOGIC_VECTOR ( 15 downto 0 )
@@ -763,12 +764,13 @@ architecture STRUCTURE of DAQdesign_arm_0_0_arm is
   signal geqOp_carry_n_1 : STD_LOGIC;
   signal geqOp_carry_n_2 : STD_LOGIC;
   signal geqOp_carry_n_3 : STD_LOGIC;
+  signal \^ready\ : STD_LOGIC;
   signal NLW_geqOp_carry_O_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \NLW_geqOp_carry__0_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  attribute COMPARATOR_THRESHOLD : integer;
-  attribute COMPARATOR_THRESHOLD of geqOp_carry : label is 11;
-  attribute COMPARATOR_THRESHOLD of \geqOp_carry__0\ : label is 11;
+  signal \NLW_geqOp_carry__1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_geqOp_carry__1_O_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 1 );
 begin
+  ready <= \^ready\;
 counter: entity work.DAQdesign_arm_0_0_CounterUp16bit
      port map (
       DI(3) => counter_n_4,
@@ -812,7 +814,7 @@ geqOp_carry: unisim.vcomponents.CARRY4
 \geqOp_carry__0\: unisim.vcomponents.CARRY4
      port map (
       CI => geqOp_carry_n_0,
-      CO(3) => arm_out,
+      CO(3) => \^ready\,
       CO(2) => \geqOp_carry__0_n_1\,
       CO(1) => \geqOp_carry__0_n_2\,
       CO(0) => \geqOp_carry__0_n_3\,
@@ -827,6 +829,16 @@ geqOp_carry: unisim.vcomponents.CARRY4
       S(1) => counter_n_10,
       S(0) => counter_n_11
     );
+\geqOp_carry__1\: unisim.vcomponents.CARRY4
+     port map (
+      CI => \^ready\,
+      CO(3 downto 0) => \NLW_geqOp_carry__1_CO_UNCONNECTED\(3 downto 0),
+      CYINIT => '0',
+      DI(3 downto 0) => B"0000",
+      O(3 downto 1) => \NLW_geqOp_carry__1_O_UNCONNECTED\(3 downto 1),
+      O(0) => not_ready,
+      S(3 downto 0) => B"0001"
+    );
 end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -837,7 +849,8 @@ entity DAQdesign_arm_0_0 is
     arm_in : in STD_LOGIC;
     Zref : in STD_LOGIC;
     cycle : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    arm_out : out STD_LOGIC
+    ready : out STD_LOGIC;
+    not_ready : out STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of DAQdesign_arm_0_0 : entity is true;
@@ -857,7 +870,8 @@ U0: entity work.DAQdesign_arm_0_0_arm
      port map (
       Zref => Zref,
       arm_in => arm_in,
-      arm_out => arm_out,
-      cycle(15 downto 0) => cycle(15 downto 0)
+      cycle(15 downto 0) => cycle(15 downto 0),
+      not_ready => not_ready,
+      ready => ready
     );
 end STRUCTURE;
