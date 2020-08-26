@@ -37,7 +37,9 @@ entity arm is
     Port ( arm_in : in STD_LOGIC;
            Zref : in STD_LOGIC;
            cycle : in STD_LOGIC_VECTOR (15 downto 0);
-           arm_out : out STD_LOGIC);
+           ready : out STD_LOGIC;
+           not_ready : out STD_LOGIC
+           );
 end arm;
 
 architecture Behavioral of arm is
@@ -63,9 +65,11 @@ begin
     process (Q_buff, arm_in)
     begin
         if Q_buff >= cycle then
-            arm_out <= '1';
+            ready <= '1';
+            not_ready <= '0';
         else
-            arm_out <= '0';
+            ready <= '0';
+            not_ready <= '1';
         end if;
     end process;
         
