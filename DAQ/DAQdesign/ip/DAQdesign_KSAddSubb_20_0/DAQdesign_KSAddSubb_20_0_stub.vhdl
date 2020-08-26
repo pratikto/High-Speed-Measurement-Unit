@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Mon Aug 24 11:28:25 2020
+-- Date        : Wed Aug 26 13:12:21 2020
 -- Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub {c:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 --               Unit/DAQ/DAQdesign/ip/DAQdesign_KSAddSubb_20_0/DAQdesign_KSAddSubb_20_0_stub.vhdl}

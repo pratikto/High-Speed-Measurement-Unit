@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Tue Aug 25 14:53:39 2020
+-- Date        : Wed Aug 26 13:44:37 2020
 -- Host        : CNB406-TT081 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim {c:/Users/40600727/OneDrive - Yokogawa ASEAN/High Speed Measurement
 --               Unit/DAQ/DAQdesign/ip/DAQdesign_mux2to1_17bit_14_0/DAQdesign_mux2to1_17bit_14_0_sim_netlist.vhdl}

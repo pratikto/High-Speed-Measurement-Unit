@@ -43,50 +43,51 @@ port (
 end KSAddSubb;
 
 architecture Behavioral of KSAddSubb is
-    component KSA is 
-    port (
-        x : IN std_logic_vector (15 downto 0); -- first number we want to add
-        y : IN std_logic_vector (15 downto 0); -- second number we want to add 
-        cin     : IN std_logic; -- essential input carry
-        sum    : OUT std_logic_vector (15 downto 0); -- the summation 
-        cout   : OUT std_logic -- the output carry 
-);
-end component;
+--    component KSA is 
+--    port (
+--        x : IN std_logic_vector (15 downto 0); -- first number we want to add
+--        y : IN std_logic_vector (15 downto 0); -- second number we want to add 
+--        cin     : IN std_logic; -- essential input carry
+--        sum    : OUT std_logic_vector (15 downto 0); -- the summation 
+--        cout   : OUT std_logic -- the output carry 
+--    );
+--    end component;
 
+    component genericKoggeStoneAdder is
+    Generic ( DEPTH     : positive := 4);
+    port(
+        A            : in  STD_LOGIC_VECTOR (2**DEPTH-1 downto 0);
+        B            : in  STD_LOGIC_VECTOR (2**DEPTH-1 downto 0);
+        CARRY_IN     : in  STD_LOGIC;
+        S            : out STD_LOGIC_VECTOR (2**DEPTH-1 downto 0);
+        CARRY_OUT    : out STD_LOGIC        
+    );
+    end component;
+    
 signal cout_buff : std_logic;
 
 signal BxorAdd : std_logic_vector (15 downto 0);
 begin
-    KSA1 : KSA port map(
-        x => x,
-        y => BxorAdd,
-        cin => add,
-        sum => sum,
-        cout =>cout_buff
-    );
+--    KSA1 : KSA port map(
+--        x => x,
+--        y => BxorAdd,
+--        cin => add,
+--        sum => sum,
+--        cout =>cout_buff
+--    );
+    
+    KSA2 : genericKoggeStoneAdder port map(
+        A => x,
+        B => BxorAdd,
+        CARRY_IN => add,
+        S => sum,
+        CARRY_OUT => cout_buff
+    ); 
     
     cout <= not cout_buff;
-    
-    BxorAdd(0) <= y(0) xor add;
-    BxorAdd(1) <= y(1) xor add;
-    BxorAdd(2) <= y(2) xor add;
-    BxorAdd(3) <= y(3) xor add;
-    BxorAdd(4) <= y(4) xor add;
-    BxorAdd(5) <= y(5) xor add;
-    BxorAdd(6) <= y(6) xor add;
-    BxorAdd(7) <= y(7) xor add;
-    BxorAdd(8) <= y(8) xor add;
-    BxorAdd(9) <= y(9) xor add;
-    BxorAdd(10) <= y(10) xor add;
-    BxorAdd(11) <= y(11) xor add;
-    BxorAdd(12) <= y(12) xor add;
-    BxorAdd(13) <= y(13) xor add;
-    BxorAdd(14) <= y(14) xor add;
-    BxorAdd(15) <= y(15) xor add;
-    
-    
---    looping : for i in 0 to 15 generate
---        BxorAdd(i) <= y(i) xor add;
---    end generate;
+       
+    looping : for i in 0 to 15 generate
+        BxorAdd(i) <= y(i) xor add;
+    end generate;
 
 end Behavioral;
